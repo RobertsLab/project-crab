@@ -11,3 +11,7 @@ December 12, 2017: [Grace processed](https://genefish.wordpress.com/2017/12/13/g
 The pink-cap samples were taken on 11/10/2017
 
 December 15, 2017: [Grace sampled 50µl of hemolymph/RNAlater mixture](https://genefish.wordpress.com/2017/12/15/graces-notebook-friday-december-15-2017/) for Pam. 117 samples total, for the 117 crabs that survived the project. 
+
+December 19-20, 2017: [Grace processed](genefish.wordpress.com/2017/12/20/graces-notebook-tuesday-and-wednesday-december-19th-and-20th-2017/) yellow-capped samples (spun down at 5000g for 10 min, saved supernatant and pellets in separate tubes) and placed in -80 [tray 14](https://docs.google.com/spreadsheets/d/1Qsvz3QTURlPF_hX05BQxjom3484WuMfqQ1ILl9LEljU/edit#gid=2006985773) 
+Pam retreieved the 50µl hemolymph/RNAlater samples this morning. 
+The yellow-cap samples were taken on 11/27/2017
