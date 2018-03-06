@@ -9,6 +9,8 @@ This file contains crab morphology data as well as _Hematodinium_ assay and bloo
 - [20180301-three-samples-per-crab.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/20180301-three-samples-per-crab.xlsx)
 These data are from the master spreadsheet from Pam and the tab labeled "3 samples per crab". I removed some excess comulmns.
 
+**The crabs can be identified using the FRP number in the first column. Each crab has three rows of data (becuase of the three sampling dates).**
+
 We have 113 crabs that have a sample for each of the three time points.
 
 Crabs included have either 0 (uninfected) or 1 (infected) infection status.
