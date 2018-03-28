@@ -60,7 +60,7 @@ Reagents: (all should be at room temperature)
 
 Make working solution
 1. Add 4µL of Qubit reagent to 1.7mL snap cap tube
-2. Add 796mL of Qubit RNA buffer to that same 1.7mL snap cap tube
+2. Add 796µL of Qubit RNA buffer to that same 1.7mL snap cap tube
 3. Vortex 3s
 
 Make standards solutions:
