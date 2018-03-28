@@ -39,8 +39,9 @@ Procedure:
 16. Centrifuge at 8,000g for 3 mins.
 17. Discard supernatant.
 18. Repeat steps 15, 16, and 17 1x.
-18. Resuspend pellet in 50µL of 0.1% DEPC-treated H2O.
-19. Keep sample on ice for short term storage (no more than 2 hrs) or store at -80C.
+19. Centrifuge at 8,000g for 3 mins. Discard supernatant.
+20. Resuspend pellet in 50µL of 0.1% DEPC-treated H2O.
+Keep sample on ice for short term storage (no more than 2 hrs) or store at -80C.
 
 ## Qubit (~5 mins for 2 samples)
 After RNA isolation, pick two samples out of the 9 to run on the Qubit.
