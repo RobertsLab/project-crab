@@ -6,6 +6,9 @@ This file contains data taken during the sampling of hemolymph. It includes crab
 - [20180125-Crab-Collection-DATA_DNA-plates.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/20180125-Crab-Collection-DATA_DNA-plates.xlsx) 
 This file contains crab morphology data as well as _Hematodinium_ assay and blood smears results of all original crabs delivered.
 
+- [Qubit-results.csv](Qubit-results.csv)
+This file contains RNA quantification data from Qubit High Sensitivity taken throughout the RNA isolation attempts. 
+
 - [20180309-crab-hemo-sample-data.csv](https://github.com/RobertsLab/project-crab/blob/master/data/20180309-crab-hemo-sample-data.csv)
 These data are from the master spreadsheet from Pam and the tab labeled "3 samples per crab". I removed some excess comulmns.
 
