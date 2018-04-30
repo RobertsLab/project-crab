@@ -18,6 +18,9 @@ This repository contains data and updates on the progress of the project.
 [Qubit-consolidated.csv](https://github.com/RobertsLab/project-crab/blob/master/data/Qubit-consolidated.csv)
 - Qubit data (RNA quantification) from RNA isolation samples
 
+[samples-for-RNA-isolation.csv](https://github.com/RobertsLab/project-crab/blob/master/data/samples-for-RNA-isolation.csv)
+- subset of samples chosen for RNA isolation (crabs that survived the project)
+
 ## protcols
 
 [RNA-isolation.md](https://github.com/grace-ac/project-crab/blob/master/protocols/RNA-isolation.md)
