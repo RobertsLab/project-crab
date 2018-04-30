@@ -15,8 +15,8 @@ This repository contains data and updates on the progress of the project.
 [20180309-crab-hemo-sample-data.csv](https://github.com/RobertsLab/project-crab/blob/master/data/20180309-crab-hemo-sample-data.csv)
 - data from hemolymph sampling of crabs that survived the whole experiment (three samples per individual crab) with sample tube numbers
 
-[Qubit-results.csv](Qubit-results.csv)
-- Qubit data (RNA quantification) from samples recorded throughout RNA isolation attempts
+[Qubit-consolidated.csv](https://github.com/RobertsLab/project-crab/blob/master/data/Qubit-consolidated.csv)
+- Qubit data (RNA quantification) from RNA isolation samples
 
 ## protcols
 
