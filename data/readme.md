@@ -9,7 +9,7 @@ This file contains crab morphology data as well as _Hematodinium_ assay and bloo
 - [Qubit-consolidated.csv](https://github.com/RobertsLab/project-crab/blob/master/data/Qubit-consolidated.csv)
 This file contains RNA quantification data from Qubit High Sensitivity taken throughout the RNA isolation attempts. 
 
--[samples-for-RNA-isolation.csv](https://github.com/RobertsLab/project-crab/blob/master/data/samples-for-RNA-isolation.csv)
+- [samples-for-RNA-isolation.csv](https://github.com/RobertsLab/project-crab/blob/master/data/samples-for-RNA-isolation.csv)
 This file contains a subset of samples selected for RNA isolation (from crabs that survived experiment)
 
 - [20180309-crab-hemo-sample-data.csv](https://github.com/RobertsLab/project-crab/blob/master/data/20180309-crab-hemo-sample-data.csv)
