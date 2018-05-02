@@ -1,6 +1,6 @@
 This folder contains files of Temperature data from the Juneau lab.
 
-The temperature was recorded using Hobo loggers.   
+The temperature was recorded using Hobo TidBits.   
 
 The names of the loggers are as follows:
 Cold tanks: Bashful, Doc, Dopey   
