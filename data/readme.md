@@ -6,13 +6,7 @@ This file contains data taken during the sampling of hemolymph. It includes crab
 - [20180125-Crab-Collection-DATA_DNA-plates.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/20180125-Crab-Collection-DATA_DNA-plates.xlsx) 
 This file contains crab morphology data as well as _Hematodinium_ assay and blood smears results of all original crabs delivered.
 
-- [Qubit-consolidated.csv](https://github.com/RobertsLab/project-crab/blob/master/data/Qubit-consolidated.csv)
-This file contains RNA quantification data from Qubit High Sensitivity taken throughout the RNA isolation attempts. 
-
-- [samples-for-RNA-isolation.csv](https://github.com/RobertsLab/project-crab/blob/master/data/samples-for-RNA-isolation.csv)
-This file contains a subset of samples selected for RNA isolation (from crabs that survived experiment)
-
-- [20180309-crab-hemo-sample-data.csv](https://github.com/RobertsLab/project-crab/blob/master/data/20180309-crab-hemo-sample-data.csv)
+- [20180309-crab-hemo-sample-data.csv](https://raw.github.com/RobertsLab/project-crab/blob/master/data/20180309-crab-hemo-sample-data.csv)
 These data are from the master spreadsheet from Pam and the tab labeled "3 samples per crab". I removed some excess comulmns.
 
 **The crabs can be identified using the FRP number in the first column. Each crab has three rows of data (becuase of the three sampling dates).**
@@ -33,4 +27,30 @@ Cold, infected
 Ambient, infected
 Warm, infected
 Warm, uninfected
+
+- [20180502_seq_subset.csv](https://raw.github.com/RobertsLab/project-crab/blob/master/data/20180502_seq_subset.csv)
+These data are a subset of all the samples that I did RNA isolation and Qubit on. The data in this file are of ALL samples that had quantifiable RNA (Qubit results) 20ng/µL or higher. 
+
+- [20180514-qPCR-DNA-Qubit.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180514-qPCR-DNA-Qubit.csv)
+These are qPCR and DNA Qubit results from Pam. She performed qPCR for _Hematodinium sp._ in the hemolymph samples from the crabs taken on Day 0 and 1 (before temperature treatment exposure) and on Day 26 (the last day of the experiment). This file is reorganized from what she originally sent me ([qPCR_Qubit_results_to_Grace_050818.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/qPCR_Qubit_results_to_Grace_050818.xlsx)) to be machine readable. There were a lot of empty cells, so all empty cells were replaced with "0". 
+
+- [20180514_seq_samples.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180514_seq_samples.csv)
+These data are for the RNA isolation crab samples that: have 20 ng/µL RNA (Qubit) or more; have three sample dates per crab; and have qPCR and DNA Qubit data from Pam. THIS FILE NEEDS TO BE ORGANIZED. I need to make sure that the infection status of the crab samples are such that we have a good pooling schema for sequencing. If not, I will have to perform more RNA isolations. 
+
+- [Qubit-consolidated.csv](https://raw.github.com/RobertsLab/project-crab/blob/master/data/Qubit-consolidated.csv)
+This file contains RNA quantification data from Qubit High Sensitivity taken throughout the RNA isolation attempts. 
+
+- [goodsamples.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/goodsamples.csv)
+This file contains data from crab samples that had three samples per crab for which all had 20 ng/µL of RNA (Qubit) or more. 
+
+- [isolated_samples.csv](https://github.com/RobertsLab/project-crab/blob/master/data/isolated_samples.csv)
+This file contains ALL RNA isolation and Qubit data for ALL SAMPLES that I performed RNA isolation on. Meaning, that this file contains those that had "Out of Range" RNA (too little/none). 
+
+- [qPCR_Qubit_results_to_Grace_050818.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/qPCR_Qubit_results_to_Grace_050818.xlsx)
+This is a workbook from Pam containing the data from her qPCR and DNA Qubit resutls on the crab hemolymph samples from Day 0 and 1, and Day 26 for _Hematodinium sp._
+
+- [samples-for-RNA-isolation.csv](https://github.com/RobertsLab/project-crab/blob/master/data/samples-for-RNA-isolation.csv)
+This file contains a subset of samples selected for RNA isolation (from crabs that survived experiment)
+
+
 
