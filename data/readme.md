@@ -31,7 +31,7 @@ Warm, uninfected
 - [20180502_seq_subset.csv](https://raw.github.com/RobertsLab/project-crab/blob/master/data/20180502_seq_subset.csv)
 These data are a subset of all the samples that I did RNA isolation and Qubit on. The data in this file are of ALL samples that had quantifiable RNA (Qubit results) 20ng/µL or higher. 
 
-- [20180514-qPCR-DNA-Qubit.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180514-qPCR-DNA-Qubit.csv)
+- [20180516_qPCR_DNA-Qubit.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180516_qPCR_DNA-Qubit.csv)
 These are qPCR and DNA Qubit results from Pam. She performed qPCR for _Hematodinium sp._ in the hemolymph samples from the crabs taken on Day 0 and 1 (before temperature treatment exposure) and on Day 26 (the last day of the experiment). This file is reorganized from what she originally sent me ([qPCR_Qubit_results_to_Grace_050818.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/qPCR_Qubit_results_to_Grace_050818.xlsx)) to be machine readable. There were a lot of empty cells, so all empty cells were replaced with "0". 
 
 - [20180514_seq_samples.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180514_seq_samples.csv)
