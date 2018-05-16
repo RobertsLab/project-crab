@@ -34,7 +34,7 @@ These data are a subset of all the samples that I did RNA isolation and Qubit on
 - [20180516_qPCR_DNA-Qubit.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180516_qPCR_DNA-Qubit.csv)
 These are qPCR and DNA Qubit results from Pam. She performed qPCR for _Hematodinium sp._ in the hemolymph samples from the crabs taken on Day 0 and 1 (before temperature treatment exposure) and on Day 26 (the last day of the experiment). This file is reorganized from what she originally sent me ([qPCR_Qubit_results_to_Grace_050818.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/qPCR_Qubit_results_to_Grace_050818.xlsx)) to be machine readable. There were a lot of empty cells, so all empty cells were replaced with "0". 
 
-- [20180514_seq_samples.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180514_seq_samples.csv)
+- [20180516_seq_samples.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180516_seq_samples.csv)
 These data are for the RNA isolation crab samples that: have 20 ng/µL RNA (Qubit) or more; have three sample dates per crab; and have qPCR and DNA Qubit data from Pam. THIS FILE NEEDS TO BE ORGANIZED. I need to make sure that the infection status of the crab samples are such that we have a good pooling schema for sequencing. If not, I will have to perform more RNA isolations. 
 
 - [Qubit-consolidated.csv](https://raw.github.com/RobertsLab/project-crab/blob/master/data/Qubit-consolidated.csv)
