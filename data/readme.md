@@ -46,8 +46,8 @@ This file contains data from crab samples that had three samples per crab for wh
 - [isolated_samples.csv](https://github.com/RobertsLab/project-crab/blob/master/data/isolated_samples.csv)
 This file contains ALL RNA isolation and Qubit data for ALL SAMPLES that I performed RNA isolation on. Meaning, that this file contains those that had "Out of Range" RNA (too little/none). 
 
-- [qPCR_Qubit_results_to_Grace_050818.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/qPCR_Qubit_results_to_Grace_050818.xlsx)
-This is a workbook from Pam containing the data from her qPCR and DNA Qubit resutls on the crab hemolymph samples from Day 0 and 1, and Day 26 for _Hematodinium sp._ ALL SAMPLES ENDED UP POSITIVE FOR _Hematodinium_ INFECTION (DAY 26 DATA)
+- [master_Hemato_qPCR_results_summaries_050818.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/master_Hemato_qPCR_results_summaries_050818.xlsx)
+This is a workbook from Pam containing the data from her qPCR and DNA Qubit resutls on the crab hemolymph samples from Day 0 and 1, and Day 26 for _Hematodinium sp._ I have made NO EDITS to this file. This is exactly what Pam sent me.
 
 - [samples-for-RNA-isolation.csv](https://github.com/RobertsLab/project-crab/blob/master/data/samples-for-RNA-isolation.csv)
 This file contains a subset of samples selected for RNA isolation (from crabs that survived experiment)
