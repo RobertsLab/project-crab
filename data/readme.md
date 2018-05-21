@@ -37,6 +37,9 @@ These are qPCR and DNA Qubit results from Pam. She performed qPCR for _Hematodin
 - [20180517_sequence_samples.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180517_sequence_samples.csv)
 These data are for the RNA isolation crab samples that: have 20 ng/µL RNA (Qubit) or more; have three sample dates per crab; and have qPCR and DNA Qubit data from Pam. The qPCR and DNA Qubit data are organized such that the data pertaining to Day 26 samples have "d26" at the end of the column name, and those pertaining to Day 0/1 samples have "d01" at the end of the column name. 
 
+- [20180521-qPCR-as-of-050818.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180521-qPCR-as-of-050818.csv)
+These data are from the tab in [master_Hemato_qPCR_results_summaries_050818.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/master_Hemato_qPCR_results_summaries_050818.xlsx) from Pam. Use this for sample selection script in R becasue it includes the tube numbers and thus what day (Day 0/1 or Day 26) that the samples are from.
+
 - [Qubit-consolidated.csv](https://raw.github.com/RobertsLab/project-crab/blob/master/data/Qubit-consolidated.csv)
 This file contains RNA quantification data from Qubit High Sensitivity taken throughout the RNA isolation attempts. 
 
