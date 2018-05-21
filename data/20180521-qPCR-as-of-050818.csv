@@ -1,4 +1,4 @@
-Well,Fluor,Target,Content,Sample,Cq,Cq_Mean,Cq_Std_Dev,Starting_Quantity ,Log_Starting_Quantity,SQ_Mean,SQ_Std_Dev,rep_pos_neg,sample_pos_neg,Qubit_ng/ul,year-FRP,FRP,run,Comments,Sample_day,Tube,treatment_tank,temperature_treatment
+Well,Fluor,Target,Content,Sample,Cq,Cq_Mean,Cq_Std_Dev,Starting_Quantity ,Log_Starting_Quantity,SQ_Mean,SQ_Std_Dev,rep_pos_neg,sample_pos_neg,Qubit_ng/ul,year-FRP,FRP,run,Comments,Day,Tube,treatment_tank,temperature_treatment
 A01,FAM,Hemato,Unkn-01,30-A01,37.85,3.79E+01,0,8.51E-01,-7.00E-02,8.51E-01,0.00E+00,neg,neg,2.58,2017-6223,6223,4/25/18 fourth,,Day_0_1,,4,warm
 B02,FAM,Hemato,Unkn-06,30-A03,N/A,0.00E+00,0,N/A,N/A,0.00E+00,0.00E+00,neg,neg,0.49,2017-6104,6104,4/25/18 fourth,,Day_0_1,,3,cold
 C02,FAM,Hemato,Unkn-11,30-A04,36.72,3.67E+01,0.078,1.90E+00,2.78E-01,1.97E+00,1.09E-01,neg,neg,0.804,2017-6117,6117,4/25/18 fourth,,Day_0_1,,2,cold
