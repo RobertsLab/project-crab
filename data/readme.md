@@ -6,7 +6,7 @@ This file contains data taken during the sampling of hemolymph. It includes crab
 - [20180125-Crab-Collection-DATA_DNA-plates.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/20180125-Crab-Collection-DATA_DNA-plates.xlsx) 
 This file contains crab morphology data as well as _Hematodinium_ assay and blood smears results of all original crabs delivered.
 
-- [20180309-crab-hemo-sample-data.csv](https://raw.github.com/RobertsLab/project-crab/blob/master/data/20180309-crab-hemo-sample-data.csv)
+- [20180309-three-samps-per-crab.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180309-three-samps-per-crab.csv)
 These data are from the master spreadsheet from Pam and the tab labeled "3 samples per crab". I removed some excess comulmns.
 
 **The crabs can be identified using the FRP number in the first column. Each crab has three rows of data (becuase of the three sampling dates).**
@@ -36,6 +36,9 @@ These data are the RNA isolation results and RNA HS Qubit results from ALL sampl
 
 - [20180518-Hemato_qPCR_results.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/20180518-Hemato_qPCR_results.xlsx)
 This is a master workbook from Pam that contains all of the data from her qPCR runs on samples form Day 0/1 and Day 26. There are multiple tabs. To make the [20180522-master-qPCR-all-runs.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180522-master-qPCR-all-runs.csv) I took all the data from the "all runs" tab which is ALL the data. 
+
+- [20180522-master-all-crabs-hemo.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180522-master-all-crabs-hemo.csv)
+This file is DIRECTLY COPY AND PASTED from Pam's [20180125-NPRB-crab-sample-data.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/20180125-NPRB-crab-sample-data.xlsx) tab "all crabs". Has every single crab listed with FRP number, infections status. 
 
 - [20180522-master-qPCR-all-runs.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180522-master-qPCR-all-runs.csv)
 These data are taken from the "all runs" tab in the [20180518-master_Hemato_qPCR_results.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/20180518-master_Hemato_qPCR_results.xlsx) excel workbook from Pam. This file contains ALL data from all of Pam's qPCR runs. 
