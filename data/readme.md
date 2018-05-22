@@ -1,4 +1,4 @@
-This folder contains data from crab collection/maturity data, PCR *Hematodinium spp.* data, and hemolymph collection data. 
+This folder contains data from crab collection/maturity data, PCR *Hematodinium spp.* data, hemolymph collection data, RNA isolation and RNA HS Qubit results, and qPCR and DNA Qubit results.
 
 - [20180125-NPRB-crab-sample-data.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/20180125-NPRB-crab-sample-data.xlsx)
 This file contains data taken during the sampling of hemolymph. It includes crab IDs, maturity status, infection status, and tube numbers that the hemolymph samples are stored in.
@@ -34,7 +34,7 @@ These data are all the RNA HS Qubit data from RNA isolations I have done on crab
 - [20180514-master-Qubit-RNA-isolation.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180514-master-Qubit-RNA-isolation.csv)
 These data are the RNA isolation results and RNA HS Qubit results from ALL samples that I have attempted RNA isolation on. 
 
-- [20180518-master_Hemato_qPCR_results.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/20180518-master_Hemato_qPCR_results.xlsx)
+- [20180518-Hemato_qPCR_results.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/20180518-Hemato_qPCR_results.xlsx)
 This is a master workbook from Pam that contains all of the data from her qPCR runs on samples form Day 0/1 and Day 26. There are multiple tabs. To make the [20180522-master-qPCR-all-runs.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180522-master-qPCR-all-runs.csv) I took all the data from the "all runs" tab which is ALL the data. 
 
 - [20180522-master-qPCR-all-runs.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180522-master-qPCR-all-runs.csv)
