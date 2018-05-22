@@ -28,7 +28,7 @@ Ambient, infected
 Warm, infected
 Warm, uninfected
 
-- [20180509-Master-RNA-Qubit.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180509-Master-RNA-Qubit.csv)
+- [20180509-all-RNA-Qubit.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180509-all-RNA-Qubit.csv)
 These data are all the RNA HS Qubit data from RNA isolations I have done on crab samples. 
 
 - [20180514-master-Qubit-RNA-isolation.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180514-master-Qubit-RNA-isolation.csv)
