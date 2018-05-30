@@ -4,22 +4,30 @@
 
 This repository contains data and updates on the progress of the project. 
 
-## data
+Project website: [bittercrab.science](https://bittercrab.wordpress.com)
 
-[20180125-NPRB-crab-sample-data.xlsx](https://github.com/grace-ac/project-crab/blob/master/data/20180125-NPRB-crab-sample-data.xlsx)
-- hemolymph collection data
+## data
 
 [20180125-Crab-Collection-Data_DNA-plates.xlsx](https://github.com/grace-ac/project-crab/blob/master/data/20180125-Crab-Collection-DATA_DNA-plates.xlsx)
 - morphology and maturity data 
 
-[20180309-crab-hemo-sample-data.csv](https://github.com/RobertsLab/project-crab/blob/master/data/20180309-crab-hemo-sample-data.csv)
-- data from hemolymph sampling of crabs that survived the whole experiment (three samples per individual crab) with sample tube numbers
+[20180125-NPRB-crab-sample-data.xlsx](https://github.com/grace-ac/project-crab/blob/master/data/20180125-NPRB-crab-sample-data.xlsx)
+- hemolymph collection data
 
-[Qubit-consolidated.csv](https://github.com/RobertsLab/project-crab/blob/master/data/Qubit-consolidated.csv)
-- Qubit data (RNA quantification) from RNA isolation samples
+[20180509-all-RNA-Qubit.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180509-all-RNA-Qubit.csv)    
+- RNA HS Qubit data from RNA isolations
 
-[samples-for-RNA-isolation.csv](https://github.com/RobertsLab/project-crab/blob/master/data/samples-for-RNA-isolation.csv)
-- subset of samples chosen for RNA isolation (crabs that survived the project)
+[20180514-master-Qubit-RNA-isolation.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180514-master-Qubit-RNA-isolation.csv)    
+- Crab hemolymph collection data and RNA HS Qubit data for RNA isolation sampels
+
+[20180518-Hemato_qPCR_results.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/20180518-Hemato_qPCR_results.xlsx)     
+- _Hematodinium_ qPCR data
+
+[20180522-master-all-crabs-hemo.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180522-master-all-crabs-hemo.csv)     
+- Hemolymph collection data on all crabs used in whole project
+
+[20180522-master-qPCR-all-runs.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180522-master-qPCR-all-runs.csv)     
+- all runs _Hematodinium_ qPCR results data
 
 ## protcols
 
