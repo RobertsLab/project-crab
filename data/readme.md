@@ -6,9 +6,6 @@ This file contains crab morphology data as well as _Hematodinium_ assay and bloo
 - [20180125-NPRB-crab-sample-data.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/20180125-NPRB-crab-sample-data.xlsx)   
 This file contains data taken during the sampling of hemolymph. It includes crab IDs, maturity status, infection status, and tube numbers that the hemolymph samples are stored in.
 
-- [20180509-all-RNA-Qubit.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180509-all-RNA-Qubit.csv)    
-These data are all the RNA HS Qubit data from RNA isolations I have done on crab samples. 
-
 - [20180514-master-Qubit-RNA-isolation.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180514-master-Qubit-RNA-isolation.csv)     
 These data are the RNA isolation results and RNA HS Qubit results from ALL samples that I have attempted RNA isolation on. 
 
