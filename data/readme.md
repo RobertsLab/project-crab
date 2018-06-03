@@ -18,6 +18,9 @@ This file is DIRECTLY COPY AND PASTED from Pam's [20180125-NPRB-crab-sample-data
 - [20180522-master-qPCR-all-runs.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180522-master-qPCR-all-runs.csv)     
 These data are taken from the "all runs" tab in the [20180518-master_Hemato_qPCR_results.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/20180518-master_Hemato_qPCR_results.xlsx) excel workbook from Pam. This file contains ALL data from all of Pam's qPCR runs. 
 
+- [master88.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/master88.csv)   
+These data are an almost master of the RNA Qubit isolation data, the qPCR data, and the hemolymph sampling data. Not a true master file, but will be used to pick samples for RNA sequencing. 
+
 **Individual crabs can be identified via the FRP number. In some sheets, there is a "year-FRP" and a "FRP" column. The "year-FRP" is formatted '2017-####', and in all sheets there is a "FRP" column, which excludes the year becauase are from 2017.**
 
 We have 113 crabs that have a sample for each of the three time points (survived the entire experiment).
