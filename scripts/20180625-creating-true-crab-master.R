@@ -4,3 +4,9 @@ library(dplyr)
 
 #Need to get all the data in 20180522-master-all-crabs-hemo.csv, 20180522-master-qPCR-all-runs.csv, and 20180514-master-Qubit-RNA-isolation.csv such that each row is an individual crab.
 
+#read in all files to environment
+hemo <- read.csv("../project-crab/data/20180522-master-all-crabs-hemo.csv")
+QubRNA <- read.csv("../project-crab/data/20180514-master-Qubit-RNA-isolation.csv")
+qPCR <- read.csv("../project-crab/data/20180522-master-qPCR-all-runs.csv")
+
+
