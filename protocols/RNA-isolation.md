@@ -28,8 +28,8 @@ Procedure:
 5. Vortex 15s
 6. Incubate at room temperature for 15 mins
 7. Centrifuge at 12,000g for 15 mins
-8. Transfer 750mL of clear supernatant (avoid the blue RNAzol) to a clean snap cap tube. Discarded remaining liquid into RNAzol RT hazardous waste container in fume hood, left old tube open overnight in fume hood to dry out and discard in regular trash.
-9. Add 750mL of 2-propanol. Mix by inversion.
+8. Transfer 750µL of clear supernatant (avoid the blue RNAzol) to a clean snap cap tube. Discarded remaining liquid into RNAzol RT hazardous waste container in fume hood, left old tube open overnight in fume hood to dry out and discard in regular trash.
+9. Add 750µL of 2-propanol. Mix by inversion.
 10. Incubate at room temperature for 10 mins.
 11. Centrifuge at 12,000 g for 15 mins
 12. Discarded supernatant and careful to keep the white genetic material... sometimes floating above the bottom of the tube.
