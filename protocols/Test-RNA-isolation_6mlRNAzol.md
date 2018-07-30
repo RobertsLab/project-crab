@@ -27,7 +27,7 @@ Transfer pelleted hemolymph to a LABELED clear, round-bottomed 13ml tube (found 
 3. Vortex 3s (parafilm over the top of tube)
 4. Add 2,400µL (2.4 ml) of 0.1% DEPC-treated H2O
 5. Vortex 15s (parafilm over the top of tube)
-6. Incubate at room temperature for 15 mins
+6. Incubate at room temperature for 15 mins (I forgot to do this step 7/30/18)
 7. Centrifuge at 12,000g (rcf) for 15 mins
 8. Transfer 4,500µL (4.5 ml) of light blue supernatant (avoiding all the pelleted dark blue at the bottom of the tube) to a **NEW LABELED clean 13ml tube**. Discard remaining liquid into RNAzol RT hazardous waste container in fume hood, leave old tube open overnight in fume hood to dry out and discard in regular trash.
 9. Add 4,500µL (4.5 ml) of 2-propanol (same as isopropanol). Parafilm over top of tube, and Mix by inversion.
