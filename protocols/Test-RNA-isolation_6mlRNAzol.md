@@ -41,5 +41,5 @@ Transfer pelleted hemolymph to a LABELED clear, round-bottomed 13ml tube (found 
 17. Discard supernatant.
 18. Repeat steps 15, 16, and 17 1x.
 19. Centrifuge at 8,000g (rcf) for 3 mins. Discard supernatant.
-20. Resuspend (dissolve) pellet in 50µL of 0.1% DEPC-treated H2O.
+20. Resuspend (dissolve) pellet in 25µL of 0.1% DEPC-treated H2O.
 Keep sample on ice for short term storage (no more than 2 hrs) or store at -80C.
