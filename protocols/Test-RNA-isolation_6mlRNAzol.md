@@ -1,13 +1,13 @@
-## Testing new RNA Isolation for Tanner Crab Hemolymph Samples 
+# Testing new RNA Isolation for Tanner Crab Hemolymph Samples 
 
-Gathering materials/prepping reagents
+### Gathering materials/prepping reagents
 
-(1) Prepare 75% ethanol with 0.1% DEPC-treated H2O. Use 200 proof ehtanol (100%). 
+(1) Prepare 75% ethanol with 0.1% DEPC-treated H2O. Use 200 proof ehtanol (100%).          
 (2) Grab reagents:
 - RNAzol RT (in 209 fridge)
-- 2-propanol (under hood in 209)
+- 2-propanol (isopropanol) (under hood in 209)
 - 75% ethanol (made above)
-- 0.1% DEPC-treated H2O (glass bottle RNA station FTR 209)
+- 0.1% DEPC-treated H2O (glass bottle at RNA station FTR 209)
 - Ice
 
 PPE --> Gloves, safety goggles, lab coat, fume hood
@@ -19,7 +19,7 @@ Equipment:
 - Centrifuge (FTR 213)
 - Vortex
  
-Procedure:          
+### Procedure:          
 Transfer pelleted hemolymph to a LABELED clear, round-bottomed 13ml tube (found in RNA station in FTR 209)
 
 1. Add 6mL of RNAzol to 13ml tube.
