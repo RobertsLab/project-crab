@@ -25,6 +25,7 @@ These data are an _almost_ master of the RNA Qubit isolation data, the qPCR data
 These data are all of the hemolymph sampling data from Pam, joined with all the Qubit results from RNA isolation. These data tell what I have processed (isolated RNA from) as well as what we have that are untouched (except for being spun down and supernatant removed). 
 
 **Individual crabs can be identified via the FRP number. In some sheets, there is a "year-FRP" and a "FRP" column. The "year-FRP" is formatted '2017-####', and in all sheets there is a "FRP" column, which excludes the year becauase are from 2017.**
+0.2ml of hemolymph in ___ ml of RNAlater. 
 
 We have 113 crabs that have a sample for each of the three time points (survived the entire experiment).
 
