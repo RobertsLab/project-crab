@@ -1,4 +1,4 @@
-year-FRP,FRP,Uniq_ID,sample_day,infection_status,maturity,Holding_Tank,Low_Tag,High_Tag,sample,treatment_tank,where,Tube_number,Comments,death,comments,CW,SC,CH,Imm/mat
+year-FRP,FRP,Uniq_ID,sample_day,infection_status,maturity,Holding_Tank,Low_Tag,High_Tag,sample,treatment_tank,where,tube_number,Comments,death,comments,CW,SC,CH,Imm/mat
 2017-6101,6101,6101_84_9,9,0,I,7A,3001,3035,NA,1,drain end,84,,,,115.7,3,20.4,I
 2017-6101,6101,6101_206_12,12,0,I,1C,3001,3035,NA,1,,206,,,,115.7,3,20.4,I
 2017-6101,6101,6101_415_26,26,0,I,1C,3001,3035,NA,1,,415,,,,115.7,3,20.4,I
