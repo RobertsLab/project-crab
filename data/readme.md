@@ -21,7 +21,11 @@ These data are taken from the "all runs" tab in the [20180518-master_Hemato_qPCR
 - [20180603-crab-sampling-file.csv](https://raw.github.com/RobertsLab/project-crab/blob/master/data/20180603-crab-sampling-file.csv)   
 These data are an _almost_ master of the RNA Qubit isolation data, the qPCR data, and the hemolymph sampling data. Not a true master file, but will be used to pick samples for RNA sequencing. The samples selected for sequencing are labeled with an "X" in the "PICK" column.
 
+- [20180801-all-hemo-RNA-Qubit.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180801-all-hemo-RNA-Qubit.csv)    
+These data are all of the hemolymph sampling data from Pam, joined with all the Qubit results from RNA isolation. These data tell what I have processed (isolated RNA from) as well as what we have that are untouched (except for being spun down and supernatant removed). 
+
 **Individual crabs can be identified via the FRP number. In some sheets, there is a "year-FRP" and a "FRP" column. The "year-FRP" is formatted '2017-####', and in all sheets there is a "FRP" column, which excludes the year becauase are from 2017.**
+0.2ml of hemolymph in ___ ml of RNAlater. 
 
 We have 113 crabs that have a sample for each of the three time points (survived the entire experiment).
 
