@@ -1,3 +1,8 @@
+Folder: [Temperature](https://github.com/RobertsLab/project-crab/tree/master/data/Temperature)    
+Contains all the temperature data from the experiment recorded on Hobo TidBits. 
+
+---
+
 This folder contains data from crab collection/maturity data, PCR *Hematodinium spp.* data, hemolymph collection data, RNA isolation and RNA HS Qubit results, and qPCR and DNA Qubit results.
 
 - [20180125-Crab-Collection-DATA_DNA-plates.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/20180125-Crab-Collection-DATA_DNA-plates.xlsx)     
