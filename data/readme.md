@@ -29,7 +29,7 @@ This file is the same as the .csv, except that it contains tabs for each propose
 - [20180801-Qubit-consolidated.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180801-Qubit-consolidated.csv)   
 This file contains the ALL Qubit results with tube numbers for each sample. Was joined with the hemolymph sampling data based on tube number to create the file: [20180801-all-hemo-with-Qubit.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180801-all-hemo-with-Qubit.csv)
 
-- [20180801-all-hemo-with-Qubit.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180801-all-hemo-with-Qubit.csv)    
+- [20180802-all-hemo-with-Qubit.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180802-all-hemo-with-Qubit.csv)    
 These data are all of the hemolymph sampling data from Pam, joined with all the Qubit results from RNA isolation. These data tell what I have processed (isolated RNA from) as well as what we have that are untouched (except for being spun down and supernatant removed). 
 
 **Individual crabs can be identified via the FRP number. In some sheets, there is a "year-FRP" and a "FRP" column. The "year-FRP" is formatted '2017-####', and in all sheets there is a "FRP" column, which excludes the year becauase are from 2017.**
