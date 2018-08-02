@@ -1,5 +1,5 @@
 Folder: [Temperature](https://github.com/RobertsLab/project-crab/tree/master/data/Temperature)    
-Contains all the temperature data from the experiment recording on Hobo TidBits. 
+Contains all the temperature data from the experiment recorded on Hobo TidBits. 
 
 ---
 
