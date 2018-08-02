@@ -21,6 +21,9 @@ These data are an _almost_ master of the RNA Qubit isolation data, the qPCR data
 - [20180702-crab-sampling-file.xls](https://github.com/RobertsLab/project-crab/blob/master/data/20180702-crab-sampling-file.xls)
 This file is the same as the .csv, except that it contains tabs for each proposed pooling scheme for three libraries. It also contains a pool created so Sam can test out an RNeasy Cleanup Kit. 
 
+- [20180801-Qubit-consolidated.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180801-Qubit-consolidated.csv)   
+This file contains the ALL Qubit results with tube numbers for each sample. Was joined with the hemolymph sampling data based on tube number to create the file: [20180801-all-hemo-with-Qubit.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180801-all-hemo-with-Qubit.csv)
+
 - [20180801-all-hemo-with-Qubit.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180801-all-hemo-with-Qubit.csv)    
 These data are all of the hemolymph sampling data from Pam, joined with all the Qubit results from RNA isolation. These data tell what I have processed (isolated RNA from) as well as what we have that are untouched (except for being spun down and supernatant removed). 
 
