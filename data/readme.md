@@ -23,10 +23,10 @@ These data are taken from the "all runs" tab in the [20180518-master_Hemato_qPCR
 - [20180702-crab-sampling-file.xls](https://github.com/RobertsLab/project-crab/blob/master/data/20180702-crab-sampling-file.xls)
 This file is the same as the .csv, except that it contains tabs for each proposed pooling scheme for three libraries. It also contains a pool created so Sam can test out an RNeasy Cleanup Kit. 
 
-- [20180801-Qubit-consolidated.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180801-Qubit-consolidated.csv)   
-This file contains the ALL Qubit results with tube numbers for each sample. Was joined with the hemolymph sampling data based on tube number to create the file: [20180801-all-hemo-with-Qubit.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180801-all-hemo-with-Qubit.csv)
+- [20180817-Qubit-results.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180817-Qubit-results.csv)   
+This file contains the ALL Qubit results with tube numbers for each sample.
 
-- [20180816-all-hemo-with-Qubit.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180816-all-hemo-with-Qubit.csv)    
+- [20180817-hemo-Qubit.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180817-hemo-Qubit.csv)    
 These data are all of the hemolymph sampling data from Pam, joined with all the Qubit results from RNA isolation. These data tell what I have processed (isolated RNA from) as well as what we have that are untouched (except for being spun down and supernatant removed). Qubit results data will be continually added as more samples are isolated. 
 
 **Individual crabs can be identified by the FRP number. In some sheets, there is a "year-FRP" and a "FRP" column. The "year-FRP" is formatted '2017-####', and in all sheets there is a "FRP" column, which excludes the year becauase all are from 2017.**
