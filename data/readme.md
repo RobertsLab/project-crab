@@ -20,9 +20,6 @@ This file is DIRECTLY COPY AND PASTED from Pam's [20180125-NPRB-crab-sample-data
 - [20180522-qPCR-all-runs.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180522-master-qPCR-all-runs.csv)     
 These data are taken from the "all runs" tab in the [20180518-master_Hemato_qPCR_results.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/20180518-master_Hemato_qPCR_results.xlsx) excel workbook from Pam. This file contains ALL data from all of Pam's qPCR runs. 
 
-- [20180702-crab-sampling-file.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180702-crab-sampling-file.csv)   
-These data are an _almost_ master of the RNA Qubit isolation data, the qPCR data, and the hemolymph sampling data. Not a true master file, but will be used to pick samples for RNA sequencing. 
-
 - [20180702-crab-sampling-file.xls](https://github.com/RobertsLab/project-crab/blob/master/data/20180702-crab-sampling-file.xls)
 This file is the same as the .csv, except that it contains tabs for each proposed pooling scheme for three libraries. It also contains a pool created so Sam can test out an RNeasy Cleanup Kit. 
 
