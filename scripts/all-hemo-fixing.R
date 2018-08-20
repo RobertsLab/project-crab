@@ -1,6 +1,5 @@
 # Script for making a clean and valuable data sheet to join new data with as project continues
 
-library(dplyr)
 library(tidyverse)
 
 hemo_table <- read.csv("data/20180522-all-crabs-hemo.csv")
@@ -11,7 +10,7 @@ head(hemo_table)
 
 hemo_table <- 
 mutate(hemo_table, trtmnt_tank = ifelse(treatment_tank == 1 | treatment_tank == 2 | treatment_tank == 3, "cold", ifelse(treatment_tank == 4 | treatment_tank == 5 | treatment_tank == 6, "warm", "ambient"))) %>%
-select(year.FRP, FRP, Uniq_ID, sample_day, infection_status, maturity, tube_number, Comments, death, comments, CW, SC, CH, trtmnt_tank) %>%
+select(year.FRP, FRP, Uniq_ID, trtmnt_tank, sample_day, infection_status, maturity, tube_number) %>%
 arrange(FRP)
 
 
