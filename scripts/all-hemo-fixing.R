@@ -13,3 +13,9 @@ newhemo <- hemo %>%
 
 # Need to change treatment_tank numbers to words. Numbers 1, 2, 3 are COLD; Numbers 4, 5, 6 are WARM; Numbers 7, 8, 9 are AMBIENT. 
 
+newhemo2 <- mutate(newhemo, trtmnt_tank = ifelse(treatment_tank == 1 | treatment_tank == 2 | treatment_tank == 3, "cold", ifelse(treatment_tank == 4 | treatment_tank == 5 | treatment_tank == 6, "warm", "ambient")))
+
+newhemo3 <- newhemo2 %>%
+  select(year.FRP, FRP, Uniq_ID, sample_day, infection_status, maturity, tube_number, Comments, death, comments, CW, SC, CH, trtmnt_tank) %>%
+  arrange(FRP)
+
