@@ -18,4 +18,14 @@ head(hemo_table)
 
 colnames(hemo_table)
 
+write.csv(hemo_table, "analyses/hemo_table.csv")
 
+sample_table <- read.csv("analyses/sample_table.csv")
+
+# Cleaning up qubit file
+qubit <- read.csv("data/20180817-Qubit-results.csv") %>%
+  select(tube_number, Test_Date, Original_sample_conc_ng.ul, total_sample_vol_ul, total_yield_ng) 
+
+
+sample_qubit <- left_join(hemo_table, qubit, by = "tube_number")
+write.csv(sample_qubit, "analyses/sample_qubit_table.csv")
