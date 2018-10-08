@@ -28,4 +28,9 @@ qubit <- read.csv("data/20180817-Qubit-results.csv") %>%
 
 
 sample_qubit <- left_join(sample_table, qubit, by = "tube_number")
+sample_qubit$extraction_method <- "RNAzol"
+
 write.csv(sample_qubit, "analyses/hemosample_qubit_table.csv")
+
+
+
