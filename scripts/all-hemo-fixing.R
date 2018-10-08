@@ -29,6 +29,8 @@ qubit <- read.csv("data/20180817-Qubit-results.csv") %>%
 
 sample_qubit <- left_join(sample_table, qubit, by = "tube_number")
 sample_qubit$extraction_method <- "RNAzol"
+#How do I put in different methods? Some were done using Qiagen RNeasy and others will now be done with Trizol
+#Also, want to add columns for Bioanalyzer and NanoDrop and whether they were lyophilized
 
 write.csv(sample_qubit, "analyses/hemosample_qubit_table.csv")
 
