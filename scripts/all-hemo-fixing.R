@@ -35,4 +35,5 @@ sample_qubit$extraction_method <- "RNAzol"
 write.csv(sample_qubit, "analyses/hemosample_qubit_table.csv")
 
 samsqubit <- read.csv("/Users/graciecrandall/Desktop/QubitData_from_sam_test1-3_spaces.csv", header = TRUE, fileEncoding = "latin1")
+#latin1 deals with µ
 
