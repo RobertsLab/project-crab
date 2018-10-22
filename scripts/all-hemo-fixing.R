@@ -82,3 +82,5 @@ hemo_qubit2 <- left_join(hemo_qubit, qubitnew, by = "tube_number")
 
 #read in .csv from owl
 qubitnew2 <- read.csv("http://owl.fish.washington.edu/scaphapoda/grace/Crab-project/Qubit/QubitData_2018-10-19_13-22-52.csv", make.names(colnames, unique = TRUE))
+
+qubitnew <- read.csv("http://owl.fish.washington.edu/scaphapoda/grace/Crab-project/Qubit/QubitData_2018-10-19_13-22-52.csv", header = TRUE, fileEncoding = "latin1")
