@@ -59,7 +59,7 @@ hemo_qubit <- read.csv("analyses/hemosample_qubit_table.csv")
 
 #upload new qubit data to OWL
 
-#Read in new qubit data. 
+#Read in new qubit data. NEED TO MAKE THIS COME FROM OWL - NOT MY DESKTOP
 qubitnew <- read.csv("../../../Desktop/QubitData_2018-10-10_18-19-56.csv", header = TRUE, fileEncoding = "latin1") 
 
 #before joining with hemo_qubit, add column with contents of extraction type, and whether lyophilized
