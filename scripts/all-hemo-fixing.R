@@ -57,8 +57,10 @@ morequb <- left_join(newqub, newqubd, by = "tube_number")
 #read in hemosample_qubit_table.csv. This .csv is all the hemolymph sampling data, as well as the Qubit data up until now. 
 hemo_qubit <- read.csv("analyses/hemosample_qubit_table.csv")
 
+#upload new qubit data to OWL
+
 #Read in new qubit data. 
-qubitnew <- read.csv("../../../Desktop/QubitData_2018-10-10_18-19-56.csv", header = TRUE, fileEncoding = "latin1")
+qubitnew <- read.csv("../../../Desktop/QubitData_2018-10-10_18-19-56.csv", header = TRUE, fileEncoding = "latin1") 
 
 #before joining with hemo_qubit, add column with contents of extraction type, and whether lyophilized
 qubitnew$extraction_method <- "Tri-reagent"
@@ -76,3 +78,7 @@ qubitnew <- select(tube_number, Test_Date, Original_sample_conc_ng.ul, total_sam
 
 #left_join with hemo_qubit
 hemo_qubit2 <- left_join(hemo_qubit, qubitnew, by = "tube_number")
+
+
+#read in .csv from owl
+qubitnew2 <- read.csv("http://owl.fish.washington.edu/scaphapoda/grace/Crab-project/Qubit/QubitData_2018-10-19_13-22-52.csv", make.names(colnames, unique = TRUE))
