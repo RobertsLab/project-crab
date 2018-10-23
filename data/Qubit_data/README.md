@@ -1,0 +1,1 @@
+This directory contains the Qubit data. This data will be joined with [hemosample_qubit_table.csv](https://github.com/RobertsLab/project-crab/blob/master/analyses/hemosample_qubit_table.csv) after I add things to the Qubit file in [R](https://github.com/RobertsLab/project-crab/blob/master/scripts/all-hemo-fixing.R). 
