@@ -26,28 +26,29 @@ sample_table <- read.csv("analyses/sample_table.csv")
 # Cleaning up qubit file
 qubit <- read.csv("data/20180817-Qubit-results.csv") %>%
   select(tube_number, Test_Date, Original_sample_conc_ng.ul, total_sample_vol_ul, total_yield_ng) 
+#add column for extraction method and that they weren't lyophilized
+qubit$extraciton_method <- "RNAzol"
+qubit$lyophilized_y_n <- "n"
 
 
 sample_qubit <- left_join(sample_table, qubit, by = "tube_number")
-sample_qubit$extraction_method <- "RNAzol"
-#How do I put in different methods? Some were done using Qiagen RNeasy and others will now be done with Trizol
-#Also, want to add columns for Bioanalyzer and NanoDrop and whether they were lyophilized
+
 
 write.csv(sample_qubit, "analyses/hemosample_qubit_table.csv")
 
-samsqubit <- read.csv("/Users/graciecrandall/Desktop/QubitData_from_sam_test1-3_spaces.csv", header = TRUE, fileEncoding = "latin1")
+#samsqubit <- read.csv("/Users/graciecrandall/Desktop/QubitData_from_sam_test1-3_spaces.csv", header = TRUE, fileEncoding = "latin1")
 #latin1 deals with µ
 
 #Need to left_join sample_table with qubit, then add the new qubit data to that joined table
-sample_table$tube_number <- as.factor(sample_table$tube_number)
-newqub <- left_join(sample_table, samsqubit, by = "tube_number")
-newqub$tube_number <- as.factor(newqub$tube_number)
+#sample_table$tube_number <- as.factor(sample_table$tube_number)
+#newqub <- left_join(sample_table, samsqubit, by = "tube_number")
+#newqub$tube_number <- as.factor(newqub$tube_number)
 #add new qubit data
-newqubd <- read.csv("/Users/graciecrandall/Desktop/QubitData_2018-10-10_18-19-56.csv", header = TRUE, fileEncoding = "latin1")
-newqubd$tube_number <- as.factor(newqubd$tube_number)
+#newqubd <- read.csv("/Users/graciecrandall/Desktop/QubitData_2018-10-10_18-19-56.csv", header = TRUE, fileEncoding = "latin1")
+#newqubd$tube_number <- as.factor(newqubd$tube_number)
 
 #add new qubit data to new_qub
-morequb <- left_join(newqub, newqubd, by = "tube_number")
+#morequb <- left_join(newqub, newqubd, by = "tube_number")
 
 #Need to change "tube_number" in newly joined file to factors in order to be able to join more qubit data down the line
 
@@ -78,6 +79,8 @@ qubitnew <- read.csv("data/Qubit_data/QubitData_2018-10-10_18-19-56_UTF8.csv")
 # Add in tube numbers to Qubit file in a new column called "tube_number"
 qubitnew$tube_number <- c("491-1","452-1","455-1","405-1","430-1","441-1","437-1","418-1","410-1","493-1")
 
+qubitnew$tube_number <- as.factor(qubitnew$tube_number)
+
 #rename "Original.sample.conc." column name to include units -- "Original_sample_conc_ng.ul" in order to get rid of unit column, as well as to be able to join with hemosample_qubit_table.csv
 colnames(qubitnew)[colnames(qubitnew)=="Original.sample.conc."] <- "Original_sample_conc_ng.ul"
 
@@ -89,8 +92,12 @@ colnames(qubitnew)[colnames(qubitnew)=="Test.Date"] <- "Test_Date"
 qubitnew$extraction_method <- "Tri-reagent"
 qubitnew$lyophilized_y_n <- "n"
 
+#change "Original_sampel_conc_ng.ul" to character
+qubitnew$Original_sample_conc_ng.ul <- as.character(qubitnew$Original_sample_conc_ng.ul)
+
 #replace "Out of range" in "Original_sample_conc_ng.ul" to "0"s
 qubitnew[qubitnew$Original_sample_conc_ng.ul == "Out of range",]$Original_sample_conc_ng.ul = 0
+
 
 # add total_sample_vol_ul and total_yield_ng
 # make sure that the "total_sample_vol_ul" is the ul of sample remaining after Qubit reading
@@ -115,9 +122,15 @@ qubitnew2 <- subset(qubitnew, select = c(tube_number, Test_Date, Original_sample
 
 #check subset qubit file visually before joining with hemosample_qubit_table.csv
 
+
+
 #left_join with hemo_qubit
 hemo_qubit2 <- left_join(hemo_qubit, qubitnew2, by = "tube_number")
 
+#Warning message:
+#Column `tube_number` joining factors with different levels, coercing to character vector
+
+#Don't want that because it ends up making .x and .y columns.... 
 
 
 
