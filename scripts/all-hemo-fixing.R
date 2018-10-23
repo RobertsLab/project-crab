@@ -83,7 +83,7 @@ hemo_qubit2 <- left_join(hemo_qubit, qubitnew, by = "tube_number")
 #read in .csv from owl
 qubitnew2 <- read.csv("http://owl.fish.washington.edu/scaphapoda/grace/Crab-project/Qubit/QubitData_2018-10-19_13-22-52.csv", header = TRUE, sep = ",", quote = "", fileEncoding = "latin1")
 
-qubitnew2 <- read.csv("http://owl.fish.washington.edu/scaphapoda/grace/Crab-project/Qubit/QubitData_2018-10-19_13-22-52.csv"(system("iconv -f utf-8 -t utf-8 -c QubitData_2018-10-19_13-22-52.csv | sed 's/(L)/(uL)/g' | sed 's/ng\/L/ng\/uL/g' > QubitData_2018-10-19_13-22-52_UTF8.csv")))
+qubitnew2 <- read.csv("http://owl.fish.washington.edu/scaphapoda/grace/Crab-project/Qubit/QubitData_2018-10-19_13-22-52.csv", system("iconv -f utf-8 -t utf-8 -c QubitData_2018-10-19_13-22-52.csv | sed 's/(L)/(uL)/g' | sed 's/ng\\/L/ng\\/uL/g' > QubitData_2018-10-19_13-22-52_UTF8.csv"))
 ?system
 
 ?read.csv
