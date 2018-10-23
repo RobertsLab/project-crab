@@ -1,7 +1,6 @@
 # Script for making a clean and valuable data sheet to join new data with as project continues
 
 library(tidyverse)
-library(datasets)
 
 hemo_table <- read.csv("data/20180522-all-crabs-hemo.csv")
 
@@ -53,17 +52,17 @@ morequb <- left_join(newqub, newqubd, by = "tube_number")
 
 #################################################################################################
 
-# 2018-10-22
+# 2018-10-23
 #read in hemosample_qubit_table.csv. This .csv is all the hemolymph sampling data, as well as the Qubit data up until now. 
 hemo_qubit <- read.csv("analyses/hemosample_qubit_table.csv")
 
 #upload new qubit data GitHub: https://github.com/RobertsLab/project-crab/tree/master/data/Qubit_data
 
 #download qubit data from GitHub, and read in to R
-qubitnew <- read_csv()
+qubitnew <- read_csv("https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/Qubit_data/QubitData_2018-10-10_18-19-56.csv")
 
 # Add in tube numbers to Qubit file in a new column called "tube_numbers"
-
+qubitnew$tube_numbers <- 
 
 #rename "Original.sample.conc." column name to include units -- "Original_sample_conc_ng.ul" in order to get rid of unit columns
 colnames(qubitnew)[colnames(qubitnew)=="Original.sample.conc."] <- "Original_sample_conc_ng.ul"
