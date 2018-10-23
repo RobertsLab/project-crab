@@ -1,6 +1,7 @@
 # Script for making a clean and valuable data sheet to join new data with as project continues
 
 library(tidyverse)
+library(dplyr)
 
 hemo_table <- read.csv("data/20180522-all-crabs-hemo.csv")
 
@@ -53,6 +54,7 @@ morequb <- left_join(newqub, newqubd, by = "tube_number")
 #################################################################################################
 
 # 2018-10-23
+
 #read in hemosample_qubit_table.csv. This .csv is all the hemolymph sampling data, as well as the Qubit data up until now. 
 hemo_qubit <- read.csv("analyses/hemosample_qubit_table.csv")
 
@@ -86,10 +88,12 @@ qubitnew$lyophilized_y_n <- "n"
 
 # add total_sample_vol_ul and total_yield_ng
 qubitnew$total_sample_vol_ul <- "10"
-qubitnew$total_yield_ng <- with(qubitnew, qubitnew$Original_sample_conc_ng.ul * qubitnew$total_sample_vol_ul)
+qubitnew$total_yield_ng <- with(qubitnew, "Original_sample_conc_ng.ul" * "total_sample_vol_ul")
 
-qubitnew$Original_sample_conc_ng.ul <- as.numeric(qubitnew$Original_sample_conc_ng.ul)
-qubitnew$total_sample_vol_ul <- as.numeric(qubitnew$total_sample_vol_ul)
+#is it not working because of the "Out of range" in "Original_sample_conc_ng.ul"?
+
+qubitnew$Original_sample_conc_ng.ul <- as.character(qubitnew$Original_sample_conc_ng.ul)
+qubitnew$total_sample_vol_ul <- as.character(qubitnew$total_sample_vol_ul)
 
 #call out the columns of interest of qubitnew
 qubitnew <- select(tube_number, Test_Date, Original_sample_conc_ng.ul, total_sample_vol_ul, total_yield_ng, extraction_method, lyophilized_y_n)
