@@ -76,7 +76,7 @@ qubitnew <- read.csv("data/Qubit_data/QubitData_2018-10-10_18-19-56_UTF8.csv")
 # Add in tube numbers to Qubit file in a new column called "tube_numbers"
 qubitnew$tube_numbers <- c("491-1","452-1","455-1","405-1","430-1","441-1","437-1","418-1","410-1","493-1")
 
-#rename "Original.sample.conc." column name to include units -- "Original_sample_conc_ng.ul" in order to get rid of unit columns
+#rename "Original.sample.conc." column name to include units -- "Original_sample_conc_ng.ul" in order to get rid of unit column, as well as to be able to join with hemosample_qubit_table.csv
 colnames(qubitnew)[colnames(qubitnew)=="Original.sample.conc."] <- "Original_sample_conc_ng.ul"
 
 
@@ -86,7 +86,10 @@ qubitnew$lyophilized_y_n <- "n"
 
 # add total_sample_vol_ul and total_yield_ng
 qubitnew$total_sample_vol_ul <- "10"
-qubitnew$total_yield_ng <- 
+qubitnew$total_yield_ng <- with(qubitnew, qubitnew$Original_sample_conc_ng.ul * qubitnew$total_sample_vol_ul)
+
+qubitnew$Original_sample_conc_ng.ul <- as.numeric(qubitnew$Original_sample_conc_ng.ul)
+qubitnew$total_sample_vol_ul <- as.numeric(qubitnew$total_sample_vol_ul)
 
 #call out the columns of interest of qubitnew
 qubitnew <- select(tube_number, Test_Date, Original_sample_conc_ng.ul, total_sample_vol_ul, total_yield_ng, extraction_method, lyophilized_y_n)
