@@ -79,7 +79,7 @@ qubitnew <- read.csv("data/Qubit_data/QubitData_2018-10-10_18-19-56_UTF8.csv")
 # Add in tube numbers to Qubit file in a new column called "tube_number"
 qubitnew$tube_number <- c("491-1","452-1","455-1","405-1","430-1","441-1","437-1","418-1","410-1","493-1")
 
-qubitnew$tube_number <- as.factor(qubitnew$tube_number)
+qubitnew$tube_number <- as.character(qubitnew$tube_number)
 
 #rename "Original.sample.conc." column name to include units -- "Original_sample_conc_ng.ul" in order to get rid of unit column, as well as to be able to join with hemosample_qubit_table.csv
 colnames(qubitnew)[colnames(qubitnew)=="Original.sample.conc."] <- "Original_sample_conc_ng.ul"
@@ -122,7 +122,7 @@ qubitnew2 <- subset(qubitnew, select = c(tube_number, Test_Date, Original_sample
 
 #check subset qubit file visually before joining with hemosample_qubit_table.csv
 
-
+hemo_qubit$tube_number <- as.character(hemo_qubit$tube_number)
 
 #left_join with hemo_qubit
 hemo_qubit2 <- left_join(hemo_qubit, qubitnew2, by = "tube_number")
