@@ -58,9 +58,13 @@ morequb <- left_join(newqub, newqubd, by = "tube_number")
 hemo_qubit <- read.csv("analyses/hemosample_qubit_table.csv")
 
 #upload new qubit data to OWL
+#download qubit data from OWL, and save to your local computer
+download.file("http://owl.fish.washington.edu/scaphapoda/grace/Crab-project/Qubit/QubitData_2018-10-19_13-22-52.csv", destfile = "../../../Documents/")
 
-#Read in new qubit data from OWL
-qubitnew <- read.csv("http://owl.fish.washington.edu/scaphapoda/grace/Crab-project/Qubit/QubitData_2018-10-19_13-22-52.csv", system("iconv -f utf-8 -t utf-8 -c QubitData_2018-10-19_13-22-52.csv | sed 's/(L)/(uL)/g' | sed 's/ng\\/L/ng\\/uL/g' > QubitData_2018-10-19_13-22-52_UTF8.csv"))
+?download.file
+
+#Read in new qubit data from your local computer
+
 
 #rename "Original.sample.conc." column name to include units -- "Original_sample_conc_ng.ul" in order to get rid of unit columns
 colnames(qubitnew)[colnames(qubitnew)=="Original.sample.conc."] <- "Original_sample_conc_ng.ul"
