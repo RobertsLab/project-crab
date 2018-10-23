@@ -58,11 +58,23 @@ hemo_qubit <- read.csv("analyses/hemosample_qubit_table.csv")
 
 #upload new qubit data GitHub: https://github.com/RobertsLab/project-crab/tree/master/data/Qubit_data
 
-#download qubit data from GitHub, and read in to R
-qubitnew <- read_csv("https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/Qubit_data/QubitData_2018-10-10_18-19-56.csv")
+# in bash, run the following code, making sure to be in the correct working directory, and using the correct QubitData .csv
+
+#D-10-19-119-59:~ graciecrandall$ cd
+#D-10-19-119-59:~ graciecrandall$ cd Documents/GitHub/project-crab/data/Qubit_data/
+#D-10-19-119-59:Qubit_data graciecrandall$ iconv -f utf-8 -t utf-8 -c QubitData_2018-10-10_18-19-56.csv | \
+#> sed 's/(L)/(uL)/g' | \
+#> sed 's/ng\/L/ng\/uL/g' \
+#> > QubitData_2018-10-10_18-19-56_UTF8.csv
+#D-10-19-119-59:Qubit_data graciecrandall$ ls
+#QubitData_2018-10-10_18-19-56.csv	QubitData_2018-10-19_13-22-52_UTF8.csv
+#QubitData_2018-10-10_18-19-56_UTF8.csv	README.md
+
+#read in the new qubit csv
+qubitnew <- read.csv("data/Qubit_data/QubitData_2018-10-10_18-19-56_UTF8.csv")
 
 # Add in tube numbers to Qubit file in a new column called "tube_numbers"
-qubitnew$tube_numbers <- 
+qubitnew$tube_numbers <- c("491-1","452-1","455-1","405-1","430-1","441-1","437-1","418-1","410-1","493-1")
 
 #rename "Original.sample.conc." column name to include units -- "Original_sample_conc_ng.ul" in order to get rid of unit columns
 colnames(qubitnew)[colnames(qubitnew)=="Original.sample.conc."] <- "Original_sample_conc_ng.ul"
