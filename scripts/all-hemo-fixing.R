@@ -60,7 +60,10 @@ hemo_qubit <- read.csv("analyses/hemosample_qubit_table.csv")
 #upload new qubit data to OWL
 
 #Read in new qubit data. NEED TO MAKE THIS COME FROM OWL - NOT MY DESKTOP
-qubitnew <- read.csv("../../../Desktop/QubitData_2018-10-10_18-19-56.csv", header = TRUE, fileEncoding = "latin1") 
+qubitnew <- read.csv("http://owl.fish.washington.edu/scaphapoda/grace/Crab-project/Qubit/QubitData_2018-10-19_13-22-52.csv", system("iconv -f utf-8 -t utf-8 -c QubitData_2018-10-19_13-22-52.csv | sed 's/(L)/(uL)/g' | sed 's/ng\\/L/ng\\/uL/g' > QubitData_2018-10-19_13-22-52_UTF8.csv"))
+
+#rename "Original.sample.conc." column name to include units -- "Original_sample_conc_ng.ul" in order to get rid of unit columns
+colnames(qubitnew)[colnames(qubitnew)=="Original.sample.conc."] <- "Original_sample_conc_ng.ul"
 
 #before joining with hemo_qubit, add column with contents of extraction type, and whether lyophilized
 qubitnew$extraction_method <- "Tri-reagent"
@@ -69,22 +72,13 @@ qubitnew$lyophilized_y_n <- "n"
 # add total_sample_vol_ul and total_yield_ng
 qubitnew$total_sample_vol_ul <- "10"
 qubitnew$total_yield_ng <- 
-  
-#rename "Original.sample.conc." column name to include units -- "Original_sample_conc_ng.ul" in order to get rid of unit columns
-colnames(qubitnew)[colnames(qubitnew)=="Original.sample.conc."] <- "Original_sample_conc_ng.ul"
 
 #call out the columns of interest of qubitnew
-qubitnew <- select(tube_number, Test_Date, Original_sample_conc_ng.ul, total_sample_vol_ul, total_yield_ng, extraction_method, lyophilized_y_n, qubitnew$total_sample_vol_ul
+qubitnew <- select(tube_number, Test_Date, Original_sample_conc_ng.ul, total_sample_vol_ul, total_yield_ng, extraction_method, lyophilized_y_n)
 
 #left_join with hemo_qubit
 hemo_qubit2 <- left_join(hemo_qubit, qubitnew, by = "tube_number")
 
-#troubleshooting 10/22/18
-#read in .csv from owl
-qubitnew2 <- read.csv("http://owl.fish.washington.edu/scaphapoda/grace/Crab-project/Qubit/QubitData_2018-10-19_13-22-52.csv", header = TRUE, sep = ",", quote = "", fileEncoding = "latin1")
 
-qubitnew2 <- read.csv("http://owl.fish.washington.edu/scaphapoda/grace/Crab-project/Qubit/QubitData_2018-10-19_13-22-52.csv", system("iconv -f utf-8 -t utf-8 -c QubitData_2018-10-19_13-22-52.csv | sed 's/(L)/(uL)/g' | sed 's/ng\\/L/ng\\/uL/g' > QubitData_2018-10-19_13-22-52_UTF8.csv"))
-?system
 
-?read.csv
 
