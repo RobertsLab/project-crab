@@ -57,13 +57,12 @@ morequb <- left_join(newqub, newqubd, by = "tube_number")
 #read in hemosample_qubit_table.csv. This .csv is all the hemolymph sampling data, as well as the Qubit data up until now. 
 hemo_qubit <- read.csv("analyses/hemosample_qubit_table.csv")
 
-#upload new qubit data to OWL
-#download qubit data from OWL, and save to your local computer
-download.file("http://owl.fish.washington.edu/scaphapoda/grace/Crab-project/Qubit/QubitData_2018-10-19_13-22-52.csv", destfile = "../../../Documents/")
+#upload new qubit data GitHub: https://github.com/RobertsLab/project-crab/tree/master/data/Qubit_data
 
-?download.file
+#download qubit data from GitHub, and read in to R
+qubitnew <- read_csv()
 
-#Read in new qubit data from your local computer
+# Add in tube numbers to Qubit file in a new column called "tube_numbers"
 
 
 #rename "Original.sample.conc." column name to include units -- "Original_sample_conc_ng.ul" in order to get rid of unit columns
