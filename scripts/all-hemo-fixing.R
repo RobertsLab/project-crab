@@ -120,8 +120,14 @@ colnames(qubitnew)
 #call out the columns of interest of qubitnew
 qubitnew2 <- subset(qubitnew, select = c(tube_number, Test_Date, Original_sample_conc_ng.ul, total_sample_vol_ul, total_yield_ng, extraction_method, lyophilized_y_n))
 
+#change some columns in qubitnew2 to match type in hemo_qubit
+qubitnew2$Original_sample_conc_ng.ul <- as.factor(qubitnew2$Original_sample_conc_ng.ul)
+qubitnew2$total_sample_vol_ul <- as.integer(qubitnew2$total_sample_vol_ul)
+qubitnew2$total_yield_ng <- as.factor(qubitnew2$total_yield_ng)
+qubitnew2$extraction_method <- as.factor(qubitnew2$extraction_method)
+qubitnew2$lyophilized_y_n <- as.factor(qubitnew2$lyophilized_y_n)
 #check subset qubit file visually before joining with hemosample_qubit_table.csv
-
+#change tube number in hemo_qubit to character to match qubitnew2
 hemo_qubit$tube_number <- as.character(hemo_qubit$tube_number)
 
 #left_join with hemo_qubit
