@@ -125,6 +125,9 @@ qubitnew2 <- subset(qubitnew, select = c(tube_number, Test_Date, Original_sample
 #change tube number in hemo_qubit to character to match qubitnew2
 hemo_qubit$tube_number <- as.character(hemo_qubit$tube_number)
 
+#change qubitnew2 column variable types to match hemo_qubit to avoid .x and .y duplicate columns when left_join
+
+
 #left_join with hemo_qubit
 hemo_qubit2 <- left_join(hemo_qubit, qubitnew2, by = "tube_number")
 
