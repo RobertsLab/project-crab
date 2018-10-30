@@ -77,4 +77,4 @@ colnames(qubitnew)
 qubitnew2 <- subset(qubitnew, select = c(tube_number, Test_Date, Original_sample_conc_ng.ul, total_sample_vol_ul, total_yield_ng, extraction_method, lyophilized_y_n))
 
 #check subset qubitnew2 file visually before concatenating to qubitresults
-
+# figure out how to append the qubitnew2 to qubitresults
