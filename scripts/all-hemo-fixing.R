@@ -134,5 +134,12 @@ hemo_qubit2 <- left_join(hemo_qubit, qubitnew2, by = "tube_number")
 
 #I don't want it like this because it ends up making .x and .y columns.... 
 
+#Try changing column variables so that they match in the .x and .y columns...
+qubitnew2$Original_sample_conc_ng.ul <- as.factor(qubitnew2$Original_sample_conc_ng.ul)
+qubitnew2$total_sample_vol_ul <- as.integer(qubitnew2$total_sample_vol_ul)
+qubitnew2$total_yield_ng <- as.factor(qubitnew2$total_yield_ng)
+qubitnew2$lyophilized_y_n <- as.factor(qubitnew2$lyophilized_y_n)
 
+#re-join hemo_qubit and qubitnew2, now that qubitnew2 
 
+hemo_qubit3 <- left_join(hemo_qubit, qubitnew2, by = "tube_number")
