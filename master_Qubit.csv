@@ -196,3 +196,6 @@
 "195","462-2","10/5/18 14:01","ng/mL",5,"40","RNAzol","n"
 "196","471-1","10/5/18 14:01","ng/mL",5,"40","RNAzol","n"
 "197","101A","10/5/18 14:01","ng/mL",5,"40","RNAzol","n"
+"","tube_number","Test_Date","Original_sample_conc_ng.ul","total_sample_vol_ul","total_yield_ng","extraction_method","lyophilized_y_n"
+"1","423-2","2018/10/31 17:53:49",25,12,300,"RNeasy","n"
+"2","414-2","2018/10/31 17:53:35",28.6,12,343.2,"RNeasy","n"
