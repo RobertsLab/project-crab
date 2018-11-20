@@ -44,12 +44,13 @@ colnames(qubitnew)
 #call out the columns of interest of qubitnew
 qubitnew2 <- subset(qubitnew, select = c(tube_number, Test_Date, Original_sample_conc_ng.ul, total_sample_vol_ul, total_yield_ng, extraction_method, lyophilized_y_n))
 
-#check subset qubitnew2 file visually before concatenating to qubitresults
+#check that qubitnew2 looks good
 
-#left_join with RNAzol_Qubit.csv
+#read in the RNAzol Qubit data (current master of all QUbit results thus far)
 RNAzol <- read.csv("analyses/RNAzol_Qubit.csv")
+# RNAzol has a column "X" that new qubit data does not. Call out the columns of interest. 
+RNAz <- subset(RNAzol, select = c(tube_number, Test_Date, Original_sample_conc_ng.ul, total_sample_vol_ul, total_yield_ng, extraction_method, lyophilized_y_n))
 
-#concatenate new Qubit data to RNAzol_Qubit.csv (current "master Qubit results" csv)
-
-
+#rbind the new qubit results to RNAzol Qubit results
+masterQ <- 
 
