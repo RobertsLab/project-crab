@@ -1,5 +1,5 @@
 library(dplyr)
-
+library(readr)
 # read .csv the combined qubit file containing all qubit results from RNAzol extractions
 RNAzolQubit <- read.csv("data/20180817-Qubit-results.csv")
 
@@ -19,7 +19,7 @@ RNAzolQubit <- write.csv(RNAzolQubit, "analyses/RNAzol_Qubit.csv")
 RzolQ <- read.csv("analyses/RNAzol_Qubit.csv")
 
 # read .csv the new qubit file 
-qubitnew <- read.csv("data/Qubit_data/QubitData_2018-10-10_18-19-56.csv", sep = ",", encoding = "UTF-8")
+qubitnew <- read.csv("data/Qubit_data/QubitData_2018-10-10_18-19-56.csv")
 
 # make the new qubit data .csv into a UTF
 shell( iconv -f utf-8 -t utf-8 -c QubitData_2018-10-10_18-19-56.csv | \ sed 's/(L)/(uL)/g' | \ sed 's/ng\/L/ng\/uL/g' \ > QubitData_2018-10-10_18-19-56_UTF8.csv, flag = "-c", mustWork = TRUE)
