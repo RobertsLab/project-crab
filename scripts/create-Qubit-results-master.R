@@ -1,3 +1,5 @@
+#Oct 31st RNeasy Samples
+
 #read in new UTF version of QubitData
 qubitnew <- read.csv("data/Qubit_data/QubitData_2018-10-31_17-54-22_UTF8.csv")
 
@@ -46,6 +48,8 @@ qubitnew2 <- subset(qubitnew, select = c(tube_number, Test_Date, Original_sample
 
 #check that qubitnew2 looks good
 
+##################################################################
+#COMBINE INTO MASTER QUBIT RESULTS CSV
 #read in the RNAzol Qubit data (current master of all QUbit results thus far)
 RNAzol <- read.csv("analyses/RNAzol_Qubit.csv")
 # RNAzol has a column "X" that new qubit data does not. Call out the columns of interest. 
