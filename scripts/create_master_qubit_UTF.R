@@ -1,3 +1,5 @@
+library(dplyr)
+
 # read .csv the combined qubit file containing all qubit results from RNAzol extractions
 RNAzolQubit <- read.csv("data/20180817-Qubit-results.csv")
 
@@ -12,17 +14,15 @@ RNAzolQubit <- subset(RNAzolQubit, select = c(tube_number, Test_Date, Original_s
 #write.csv to analyses
 RNAzolQubit <- write.csv(RNAzolQubit, "analyses/RNAzol_Qubit.csv")
 ############################################################################
-
+#Here is where you start now:
 # read .csv the RNAzol-Qubit.csv
 RzolQ <- read.csv("analyses/RNAzol_Qubit.csv")
 
 # read .csv the new qubit file 
-qubitnew <- read.csv("data/Qubit_data/QubitData_2018-10-10_18-19-56.csv")
+qubitnew <- read.csv("data/Qubit_data/QubitData_2018-10-10_18-19-56.csv", sep = ",", encoding = "UTF-8")
 
 # make the new qubit data .csv into a UTF
 shell( iconv -f utf-8 -t utf-8 -c QubitData_2018-10-10_18-19-56.csv | \ sed 's/(L)/(uL)/g' | \ sed 's/ng\/L/ng\/uL/g' \ > QubitData_2018-10-10_18-19-56_UTF8.csv, flag = "-c", mustWork = TRUE)
-
-## figure out how
 
 # since I already have this file made into a UTF from the "all-hemo-fixing.R" script, I'll use it and continue
 
