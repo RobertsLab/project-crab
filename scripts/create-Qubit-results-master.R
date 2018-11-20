@@ -49,4 +49,7 @@ qubitnew2 <- subset(qubitnew, select = c(tube_number, Test_Date, Original_sample
 #left_join with RNAzol_Qubit.csv
 RNAzol <- read.csv("analyses/RNAzol_Qubit.csv")
 
-#concatenate the new Qubit data to the master
+#concatenate new Qubit data to RNAzol_Qubit.csv (current "master Qubit results" csv)
+
+
+
