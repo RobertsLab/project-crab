@@ -147,4 +147,4 @@ hemo_qubit3 <- left_join(hemo_qubit, qubitnew2, by = "tube_number")
 RNAzol <- read.csv("analyses/RNAzol_Qubit.csv")
 RNAz <- subset(RNAzol, select = c(tube_number, Test_Date, Original_sample_conc_ng.ul, total_sample_vol_ul, total_yield_ng, extraction_method, lyophilized_y_n))
 
-write.csv(RNAz, "analyses/RNAzol_qubit.csv")
+RNAz <- write.csv(RNAz, "analyses/RNAzol_qubit.csv")
