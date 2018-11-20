@@ -54,6 +54,7 @@ qubitnew2 <- subset(qubitnew, select = c(tube_number, Test_Date, Original_sample
 RNAzol <- read.csv("analyses/RNAzol_Qubit.csv")
 # RNAzol has a column "X" that new qubit data does not. Call out the columns of interest. 
 RNAz <- subset(RNAzol, select = c(tube_number, Test_Date, Original_sample_conc_ng.ul, total_sample_vol_ul, total_yield_ng, extraction_method, lyophilized_y_n))
+write.csv(RNAz, "analyses/master_qubit.csv")
 
 #Need to remove the headers from the qubitnew2
-
+system("cat analyses/master_qubit.csv analyses/edit-QubitData_2018-10-31_17-54-22.csv > analyses/master_Qubit.csv")
