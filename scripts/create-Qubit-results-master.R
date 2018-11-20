@@ -52,5 +52,5 @@ RNAzol <- read.csv("analyses/RNAzol_Qubit.csv")
 RNAz <- subset(RNAzol, select = c(tube_number, Test_Date, Original_sample_conc_ng.ul, total_sample_vol_ul, total_yield_ng, extraction_method, lyophilized_y_n))
 
 #rbind the new qubit results to RNAzol Qubit results
-masterQ <- 
+system("cat analyses/RNAzol_Qubit.csv analyses/edit-QubitData_2018-10-31_17-54-22.csv > analyses/master_Qubit.csv")
 
