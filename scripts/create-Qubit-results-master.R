@@ -60,4 +60,4 @@ RNAz <- subset(RNAzol, select = c(tube_number, Test_Date, Original_sample_conc_n
 #append new data to RNAz
 masterQ <- system("sed 1d analyses/edit-QubitData_2018-10-31_17-54-22.csv > analyses/103118-Qubitdata.csv | cat analyses/RNAzol_Qubit.csv analyses/103118-Qubitdata.csv > analyses/master_Qubit.csv")
 
-mQ <- read.csv("analyses/master_Qubit.csv")
+mQ <- read.csv("analyses/103118-Qubitdata.csv")
