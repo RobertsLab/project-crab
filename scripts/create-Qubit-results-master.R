@@ -54,6 +54,12 @@ write.csv(qubitnew2, "edit-QubitData_2018-10-31_17-54-22.csv")
 
 ##################################################################
 #COMBINE INTO MASTER QUBIT RESULTS CSV
+#remove "X" column from "RNAzol_Qubit.csv"
+RNAz <- read.csv("analyses/RNAzol_Qubit.csv")
+Rnaz <- subset(RNAz, select = c(tube_number, Test_Date, Original_sample_conc_ng.ul, total_sample_vol_ul, total_yield_ng, extraction_method, lyophilized_y_n))
+
+#write.csv new RNA qubit results without the "X" collumn
+write.csv(Rnaz, "analyses/rnazol_qubit.csv")
 
 #append new data to RNAzol_Qubit.csv
 system("sed 1d analyses/edit-QubitData_2018-10-31_17-54-22.csv > analyses/103118-Qubitdata.csv | cat analyses/RNAzol_Qubit.csv analyses/103118-Qubitdata.csv > analyses/master_Qubit.csv")
