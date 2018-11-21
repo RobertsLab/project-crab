@@ -49,15 +49,13 @@ qubitnew2 <- subset(qubitnew, select = c(tube_number, Test_Date, Original_sample
 
 #check that qubitnew2 looks good
 
+#write out new qubit data to .csv
+write.csv(qubitnew2, "edit-QubitData_2018-10-31_17-54-22.csv")
+
 ##################################################################
 #COMBINE INTO MASTER QUBIT RESULTS CSV
-#read in the RNAzol Qubit data (current master of all QUbit results thus far)
-RNAzol <- read.csv("analyses/RNAzol_Qubit.csv")
 
-# RNAzol has a column "X" that new qubit data does not. Call out all columns except column "X".
-RNAz <- subset(RNAzol, select = c(tube_number, Test_Date, Original_sample_conc_ng.ul, total_sample_vol_ul, total_yield_ng, extraction_method, lyophilized_y_n))
-
-#append new data to RNAz
-masterQ <- system("sed 1d analyses/edit-QubitData_2018-10-31_17-54-22.csv > analyses/103118-Qubitdata.csv | cat analyses/RNAzol_Qubit.csv analyses/103118-Qubitdata.csv > analyses/master_Qubit.csv")
+#append new data to RNAzol_Qubit.csv
+system("sed 1d analyses/edit-QubitData_2018-10-31_17-54-22.csv > analyses/103118-Qubitdata.csv | cat analyses/RNAzol_Qubit.csv analyses/103118-Qubitdata.csv > analyses/master_Qubit.csv")
 
 mQ <- read.csv("analyses/master_Qubit.csv")

@@ -24,7 +24,7 @@ system("pwd")
 #QubitData_2018-10-31_17-54-22.csv
 system("iconv -f utf-8 -t utf-8 -c data/Qubit_data/QubitData_2018-10-31_17-54-22.csv | sed 's/(L)/(uL)/g' | sed 's/ng\\/L/ng\\/uL/g' > data/Qubit_data/QubitData_2018-10-31_17-54-22_UTF8.csv")
 
-#move to "create_qubit_master.R" to finish remaining additions to file
+#move to "create-Qubit-results-master.R" to finish remaining additions to file
 
 
 
