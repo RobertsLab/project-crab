@@ -62,7 +62,7 @@ KEEP TRACK OF TUBE NUMBERS!!!!
 1ul of sample, 199ul Buffer+dye solution
 
 #### Running samples
-Vortex all 14 tubes        
+Vortex all tubes        
 Run standards        
 Run samples (be sure to set to 1ul on Qubit)     
 
