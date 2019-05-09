@@ -18,3 +18,15 @@ colnames(newres)[colnames(newres)=="Original.sample.conc."]<- "Original_sample_c
 #subset the columns of interest
 newres2 <- subset(newres, select = c(Uniq_ID, Test_Date, Original_sample_conc_ng.ul, extraction_method))
 
+#write.csv to analyses
+write.csv(newres2, "analyses/qubit_results-for-libraries.csv")
+
+
+#read the new csv in
+newqub <- read.csv("analyses/qubit_results-for-libraries.csv")
+
+#convert new csv file to UTF-8
+system("pwd")
+
+#QubitData_2018-10-31_17-54-22.csv
+system("iconv -f utf-8 -t utf-8 -c analyses/qubit_results-for-libraries.csv | sed 's/(L)/(uL)/g' | sed 's/ng\\/L/ng\\/uL/g' > analyses/qubit_results-for-libraries.csv_UTF8.csv")                   
