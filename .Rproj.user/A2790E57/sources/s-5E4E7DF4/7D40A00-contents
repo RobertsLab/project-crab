@@ -18,7 +18,7 @@ library(readxl)
 
 Read in files to join
 ```{r}
-qubit <- read_excel("../data/master-qubit.xlsx", sheet = "qubit-iso")
+qubit <- read_excel("../analyses/master-qubit.xlsx", sheet = "qubit-iso")
 sample <- read.csv("../analyses/sample_table.csv")
 ```
 

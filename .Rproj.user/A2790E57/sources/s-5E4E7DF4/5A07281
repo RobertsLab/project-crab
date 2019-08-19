@@ -12,16 +12,16 @@
     "path" : null,
     "project_path" : null,
     "properties" : {
-        "cacheKey" : "43FFB95B",
+        "cacheKey" : "E7E80050",
         "caption" : "qubit",
-        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=qubit&cache_key=43FFB95B",
-        "displayedObservations" : 401,
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=qubit&cache_key=E7E80050",
+        "displayedObservations" : "397",
         "environment" : "",
         "expression" : "qubit",
         "object" : "qubit",
-        "preview" : 0,
-        "totalObservations" : 401,
-        "variables" : 18
+        "preview" : "0",
+        "totalObservations" : "397",
+        "variables" : "18"
     },
     "read_only" : false,
     "read_only_alternatives" : [
