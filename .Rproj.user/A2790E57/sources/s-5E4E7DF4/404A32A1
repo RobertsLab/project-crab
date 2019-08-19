@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1561501923415.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "404A32A1",
+    "lastKnownWriteTime" : 1561501931,
+    "last_content_update" : 1561501931417,
+    "path" : "~/Documents/GitHub/project-crab/scripts/all-hemo-fixing.R",
+    "project_path" : "scripts/all-hemo-fixing.R",
+    "properties" : {
+        "cursorPosition" : "3,14",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
