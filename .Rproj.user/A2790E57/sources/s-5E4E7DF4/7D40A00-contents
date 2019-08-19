@@ -27,3 +27,8 @@ Join files based on "tube_number" column
 master <- left_join(sample, qubit, by = "tube_number")
 head(master)
 ```
+
+Write out master file into analyses
+```{r}
+write.csv(master, "../analyses/master-qubit-sample.csv")
+```
