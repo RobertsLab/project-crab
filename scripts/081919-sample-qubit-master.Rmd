@@ -18,7 +18,7 @@ library(readxl)
 
 Read in files to join
 ```{r}
-qubit <- read_excel("../data/master-qubit.xlsx", sheet = "qubit-iso")
+qubit <- read_excel("../analyses/master-qubit.xlsx", sheet = "qubit-iso")
 sample <- read.csv("../analyses/sample_table.csv")
 ```
 
@@ -26,4 +26,9 @@ Join files based on "tube_number" column
 ```{r}
 master <- left_join(sample, qubit, by = "tube_number")
 head(master)
+```
+
+Write out master file into analyses
+```{r}
+write.csv(master, "../analyses/master-qubit-sample.csv")
 ```
