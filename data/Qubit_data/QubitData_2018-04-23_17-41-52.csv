@@ -1,0 +1,8 @@
+Run ID,Assay Name,Test Name,Test Date,Qubit� tube conc.,Units,Original sample conc.,Units,Sample Volume (킠),Dilution Factor,Std 1 RFU,Std 2 RFU,Std 3 RFU,Excitation,Emission,Green RFU,Far Red RFU,tube
+2018-04-23_174015,RNA High sensitivity,Sample_#180423-174136,4/23/18 17:41,201,ng/mL,8.04,ng/킠,5,40,89.95,1891.37,,Red,Far Red,,897.6,409
+2018-04-23_174015,RNA High sensitivity,Sample_#180423-174126,4/23/18 17:41,167,ng/mL,6.68,ng/킠,5,40,89.95,1891.37,,Red,Far Red,,761.32,215
+2018-04-23_174015,RNA High sensitivity,Sample_#180423-174117,4/23/18 17:41,21,ng/mL,0.84,ng/킠,5,40,89.95,1891.37,,Red,Far Red,,166.1,253
+2018-04-23_174015,RNA High sensitivity,Sample_#180423-174108,4/23/18 17:41,28.9,ng/mL,1.16,ng/킠,5,40,89.95,1891.37,,Red,Far Red,,197.48,23
+2018-04-23_174015,RNA High sensitivity,Sample_#180423-174058,4/23/18 17:40,206,ng/mL,8.24,ng/킠,5,40,89.95,1891.37,,Red,Far Red,,916.35,444
+2018-04-23_174015,RNA High sensitivity,Sample_#180423-174047,4/23/18 17:40,120,ng/mL,4.8,ng/킠,5,40,89.95,1891.37,,Red,Far Red,,571.61,251
+2018-04-23_174015,RNA High sensitivity,Sample_#180423-174037,4/23/18 17:40,147,ng/mL,5.88,ng/킠,5,40,89.95,1891.37,,Red,Far Red,,682.22,125

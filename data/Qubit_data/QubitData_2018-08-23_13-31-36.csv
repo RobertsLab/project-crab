@@ -1,0 +1,2 @@
+Run ID,Assay Name,Test Name,Test Date,Qubit¨ tube conc.,Units,Original sample conc.,Units,Sample Volume (µL),Dilution Factor,Std 1 RFU,Std 2 RFU,Std 3 RFU,Excitation,Emission,Green RFU,Far Red RFU,sample
+2018-08-23_133053,RNA High sensitivity,Sample_#180823-133119,8/23/18 13:31,204,ng/mL,20.4,ng/µL,2,100,88.85,1858.32,,Red,Far Red,,890.78,d26pooled_sample

@@ -1,0 +1,2 @@
+Run ID,Assay Name,Test Name,Test Date,Qubit¨ tube conc.,Units,Original sample conc.,Units,Sample Volume (µL),Dilution Factor,Std 1 RFU,Std 2 RFU,Std 3 RFU,Excitation,Emission,Green RFU,Far Red RFU,tube_number
+2018-04-25_142113,RNA High sensitivity,Sample_#180425-142134,4/25/18 14:21,147,ng/mL,5.88,ng/µL,5,40,89.38,1757.87,,Red,Far Red,,639.45,496

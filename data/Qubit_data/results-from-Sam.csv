@@ -1,0 +1,41 @@
+tube_number,Run_ID,Assay_Name,Test_Name,Test_Date,Qubit_tube_conc_ng/ul,Original_sample_conc_ng/ul
+404,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130151,8/9/18 13:01,Out of range,Out of range
+408,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130200,8/9/18 13:02,90.2,18
+413,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130207,8/9/18 13:02,Out of range,Out of range
+415,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130215,8/9/18 13:02,Out of range,Out of range
+417,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130222,8/9/18 13:02,86.4,17.3
+420,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130231,8/9/18 13:02,149,29.8
+422,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130238,8/9/18 13:02,Out of range,Out of range
+426,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130247,8/9/18 13:02,26.4,5.28
+431,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130254,8/9/18 13:02,41.9,8.38
+433,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130301,8/9/18 13:03,Out of range,Out of range
+439,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130309,8/9/18 13:03,34.7,6.94
+442,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130315,8/9/18 13:03,20,4
+443,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130322,8/9/18 13:03,36.4,7.28
+445,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130329,8/9/18 13:03,Out of range,Out of range
+446,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130338,8/9/18 13:03,Out of range,Out of range
+447,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130345,8/9/18 13:03,36,7.2
+449,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130353,8/9/18 13:03,79.5,15.9
+450,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130359,8/9/18 13:03,Out of range,Out of range
+456,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130407,8/9/18 13:04,Out of range,Out of range
+460,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130414,8/9/18 13:04,Out of range,Out of range
+467,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130421,8/9/18 13:04,Out of range,Out of range
+472,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130428,8/9/18 13:04,Out of range,Out of range
+473,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130434,8/9/18 13:04,24,4.8
+475,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130445,8/9/18 13:04,Out of range,Out of range
+479,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130455,8/9/18 13:04,Out of range,Out of range
+480,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130501,8/9/18 13:05,34.3,6.86
+481,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130508,8/9/18 13:05,Out of range,Out of range
+483,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130516,8/9/18 13:05,Out of range,Out of range
+484,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130524,8/9/18 13:05,45.6,9.12
+485,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130531,8/9/18 13:05,27.6,5.52
+488,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130538,8/9/18 13:05,48.7,9.74
+489,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130545,8/9/18 13:05,Out of range,Out of range
+490,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130554,8/9/18 13:05,Out of range,Out of range
+495,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130602,8/9/18 13:06,Out of range,Out of range
+500,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130609,8/9/18 13:06,Out of range,Out of range
+509,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130617,8/9/18 13:06,Out of range,Out of range
+511,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130625,8/9/18 13:06,Out of range,Out of range
+512,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130633,8/9/18 13:06,Out of range,Out of range
+514,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130641,8/9/18 13:06,Out of range,Out of range
+517,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130649,8/9/18 13:06,Out of range,Out of range
