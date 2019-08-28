@@ -1,7 +1,9 @@
-# Script for making a clean and valuable data sheet to join new data with as project continues
+#===============================================================
+# SCRIPT FOR MAKING A MASTER HEMOLYMPH SAMPLING FILE
+#===============================================================
 
-library(tidyverse)
-library(dplyr)
+#library(tidyverse)
+#library(dplyr)
 
 #hemo_table <- read.csv("data/20180522-all-crabs-hemo.csv")
 
@@ -14,12 +16,18 @@ library(dplyr)
 #select(FRP, Uniq_ID, trtmnt_tank, sample_day, infection_status, maturity, tube_number) %>%
 #arrange(Uniq_ID)
 
-
 #head(hemo_table)
 
 #colnames(hemo_table)
 
 #write.csv(hemo_table, "analyses/hemo_table.csv")
+
+
+
+#===============================================================
+# REST OF SCRIPT IS FOR FUTURE REFERENCE ON CODE.
+# NO LONGER USED 
+#===============================================================
 
 #sample_table <- read.csv("analyses/sample_table.csv")
 
@@ -57,7 +65,7 @@ library(dplyr)
 # 2018-10-23
 
 #read in hemosample_qubit_table.csv. This .csv is all the hemolymph sampling data, as well as the Qubit data up until now. 
-hemo_qubit <- read.csv("analyses/hemosample_qubit_table.csv")
+#hemo_qubit <- read.csv("analyses/hemosample_qubit_table.csv")
 
 #upload new qubit data GitHub: https://github.com/RobertsLab/project-crab/tree/master/data/Qubit_data
 
@@ -74,72 +82,71 @@ hemo_qubit <- read.csv("analyses/hemosample_qubit_table.csv")
 #QubitData_2018-10-10_18-19-56_UTF8.csv	README.md
 
 #read in the new qubit csv
-qubitnew <- read.csv("data/Qubit_data/QubitData_2018-10-10_18-19-56_UTF8.csv")
+#qubitnew <- read.csv("data/Qubit_data/QubitData_2018-10-10_18-19-56_UTF8.csv")
 
 # Add in tube numbers to Qubit file in a new column called "tube_number"
-qubitnew$tube_number <- c("491-1","452-1","455-1","405-1","430-1","441-1","437-1","418-1","410-1","493-1")
+#qubitnew$tube_number <- c("491-1","452-1","455-1","405-1","430-1","441-1","437-1","418-1","410-1","493-1")
 
-qubitnew$tube_number <- as.character(qubitnew$tube_number)
+#qubitnew$tube_number <- as.character(qubitnew$tube_number)
 
 #rename "Original.sample.conc." column name to include units -- "Original_sample_conc_ng.ul" in order to get rid of unit column, as well as to be able to join with hemosample_qubit_table.csv
-colnames(qubitnew)[colnames(qubitnew)=="Original.sample.conc."] <- "Original_sample_conc_ng.ul"
+#colnames(qubitnew)[colnames(qubitnew)=="Original.sample.conc."] <- "Original_sample_conc_ng.ul"
 
 #rename "Test.Date" to "Test_Date" so that it joins correctly with hemoqubit
-colnames(qubitnew)[colnames(qubitnew)=="Test.Date"] <- "Test_Date"
+#colnames(qubitnew)[colnames(qubitnew)=="Test.Date"] <- "Test_Date"
 
-hjkhk
 #before joining with hemo_qubit, add column with contents of extraction type, and whether lyophilized
-qubitnew$extraction_method <- "Tri-reagent"
-qubitnew$lyophilized_y_n <- "n"
+#qubitnew$extraction_method <- "Tri-reagent"
+#qubitnew$lyophilized_y_n <- "n"
 
 #change "Original_sampel_conc_ng.ul" to character
-qubitnew$Original_sample_conc_ng.ul <- as.character(qubitnew$Original_sample_conc_ng.ul)
+#qubitnew$Original_sample_conc_ng.ul <- as.character(qubitnew$Original_sample_conc_ng.ul)
 
 #replace "Out of range" in "Original_sample_conc_ng.ul" to "0"s
-qubitnew[qubitnew$Original_sample_conc_ng.ul == "Out of range",]$Original_sample_conc_ng.ul = 0
+#qubitnew[qubitnew$Original_sample_conc_ng.ul == "Out of range",]$Original_sample_conc_ng.ul = 0
 
 
 # add total_sample_vol_ul and total_yield_ng
 # make sure that the "total_sample_vol_ul" is the ul of sample remaining after Qubit reading
-qubitnew$total_sample_vol_ul <- "5"
+#qubitnew$total_sample_vol_ul <- "5"
 
 # make "total_sample_vol_ul" and "Original_sample_conc_ng.ul" into numeric
-qubitnew$total_sample_vol_ul <- as.numeric(qubitnew$total_sample_vol_ul)
-qubitnew$Original_sample_conc_ng.ul <- as.numeric(qubitnew$Original_sample_conc_ng.ul)
+#qubitnew$total_sample_vol_ul <- as.numeric(qubitnew$total_sample_vol_ul)
+#qubitnew$Original_sample_conc_ng.ul <- as.numeric(qubitnew$Original_sample_conc_ng.ul)
 
 # make "Original_sample_conc_ng.ul" and "total_sample_vol_ul" into objects
-x <- qubitnew$Original_sample_conc_ng.ul
-y <- qubitnew$total_sample_vol_ul
+#x <- qubitnew$Original_sample_conc_ng.ul
+#y <- qubitnew$total_sample_vol_ul
 
 # make new column called "total_yield_ng" that multiplies "Original_sample_conc_ng.ul" and "total_sample_vol_ul"
-qubitnew$total_yield_ng <- x * y
+#qubitnew$total_yield_ng <- x * y
 
 #list column names
-colnames(qubitnew)
+#colnames(qubitnew)
 
 #call out the columns of interest of qubitnew
-qubitnew2 <- subset(qubitnew, select = c(tube_number, Test_Date, Original_sample_conc_ng.ul, total_sample_vol_ul, total_yield_ng, extraction_method, lyophilized_y_n))
+#qubitnew2 <- subset(qubitnew, select = c(tube_number, Test_Date, Original_sample_conc_ng.ul, total_sample_vol_ul, total_yield_ng, extraction_method, lyophilized_y_n))
 
 
 #check subset qubit file visually before joining with hemosample_qubit_table.csv
 #change tube number in hemo_qubit to character to match qubitnew2
-hemo_qubit$tube_number <- as.character(hemo_qubit$tube_number)
+#hemo_qubit$tube_number <- as.character(hemo_qubit$tube_number)
 
 #change qubitnew2 column variable types to match hemo_qubit to avoid .x and .y duplicate columns when left_join
 
 
 #left_join with hemo_qubit
-hemo_qubit2 <- left_join(hemo_qubit, qubitnew2, by = "tube_number")
+#hemo_qubit2 <- left_join(hemo_qubit, qubitnew2, by = "tube_number")
 
 
 #I don't want it like this because it ends up making .x and .y columns.... 
 
 #Try changing column variables so that they match in the .x and .y columns...
-qubitnew2$Original_sample_conc_ng.ul <- as.factor(qubitnew2$Original_sample_conc_ng.ul)
-qubitnew2$total_sample_vol_ul <- as.integer(qubitnew2$total_sample_vol_ul)
-qubitnew2$total_yield_ng <- as.factor(qubitnew2$total_yield_ng)
-qubitnew2$lyophilized_y_n <- as.factor(qubitnew2$lyophilized_y_n)
+#qubitnew2$Original_sample_conc_ng.ul <- as.factor(qubitnew2$Original_sample_conc_ng.ul)
+#qubitnew2$total_sample_vol_ul <- as.integer(qubitnew2$total_sample_vol_ul)
+#qubitnew2$total_yield_ng <- as.factor(qubitnew2$total_yield_ng)
+#qubitnew2$lyophilized_y_n <- as.factor(qubitnew2$lyophilized_y_n)
 
 #re-join hemo_qubit and qubitnew2, now that qubitnew2 
 
-hemo_qubit3 <- left_join(hemo_qubit, qubitnew2, by = "tube_number")
+#hemo_qubit3 <- left_join(hemo_qubit, qubitnew2, by = "tube_number")
