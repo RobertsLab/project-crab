@@ -1,8 +1,5 @@
 ## analyses directory for [RobertsLab/project-crab](https://github.com/RobertsLab/project-crab)
 
-[hemosample_qubit_table.csv](https://github.com/RobertsLab/project-crab/blob/master/analyses/hemosample_qubit_table.csv)    
-hemolymph sampling data `join`-ed with qubit results. Only contains those from RNAzol extractions. _May delete this soon_
-
 [master-qubit-sample.csv](https://github.com/RobertsLab/project-crab/blob/master/analyses/master-qubit-sample.csv)    
 master sample sheet. contains hemolymph sampling data, extraction qubit results, method of extraction, how much of the hemolymph slurry was used, and links to notebook posts that descibe those extractions. 
 
