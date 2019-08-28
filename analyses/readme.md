@@ -1,7 +1,7 @@
 ## analyses directory for [RobertsLab/project-crab](https://github.com/RobertsLab/project-crab)
 
 [master-qubit-sample.csv](https://github.com/RobertsLab/project-crab/blob/master/analyses/master-qubit-sample.csv)    
-master sample sheet. contains hemolymph sampling data, extraction qubit results, method of extraction, how much of the hemolymph slurry was used, and links to notebook posts that descibe those extractions. 
+master sample sheet. contains hemolymph sampling data, extraction qubit results, method of extraction, how much of the hemolymph slurry was used, and links to notebook posts that descibe those extractions. Created using [this script](https://github.com/RobertsLab/project-crab/blob/master/scripts/081919-sample-qubit-master.Rmd) to `join` [master-qubit.xlsx](https://github.com/RobertsLab/project-crab/blob/master/analyses/master-qubit.xlsx) and [sample_table.csv](https://github.com/RobertsLab/project-crab/blob/master/analyses/sample_table.csv) by "tube_number". 
 
 [master-qubit.xlsx](https://github.com/RobertsLab/project-crab/blob/master/analyses/master-qubit.xlsx)    
 master qubit file made in excel. Took all qubit data (both from my and Sam's extractions), added in extraction method, ul of sample used, qubit results, links to notebook posts describing extraction process. **Will add to this master excel doc every time I do another set of extractions. Then this will be what is `join`-ed with the hemolymph sampling data to create an updated [master-qubit-sample.csv](https://github.com/RobertsLab/project-crab/blob/master/analyses/master-qubit-sample.csv)**
