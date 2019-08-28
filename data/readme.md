@@ -12,16 +12,16 @@ Contains all the temperature data from the experiment recorded on Hobo TidBits.
 This folder contains data from crab collection/maturity data, PCR *Hematodinium spp.* data, hemolymph collection data, RNA isolation and RNA HS Qubit results, and qPCR and DNA Qubit results.
 
 - [20180522-all-crabs-hemo.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180522-master-all-crabs-hemo.csv)     
-This file is copy and pasted from Pam's [20180125-NPRB-crab-sample-data.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/20180125-NPRB-crab-sample-data.xlsx) tab "all crabs". I added a column of "Uniq_ID"s. This was made by concatonating the FRP_Tubenumber_sampleday. Has every single crab used in experiment listed with FRP number, infections status. Includes the crabs that died along the way.
+This file is copy and pasted from Pam's [20180125-NPRB-crab-sample-data.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/20180125-NPRB-crab-sample-data.xlsx) tab "all crabs". I added a column of "Uniq_ID"s. This was made by concatonating the FRP_Tubenumber_sampleday. Has every single crab used in experiment listed with FRP number, infections status. Includes the crabs that died along the way. Used in [all-hemo-fixing.R](https://github.com/RobertsLab/project-crab/blob/master/scripts/all-hemo-fixing.R) to create [sample_table.csv](https://github.com/RobertsLab/project-crab/blob/master/analyses/sample_table.csv).
 
 - [20180522-qPCR-all-runs.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180522-master-qPCR-all-runs.csv)     
 These data are taken from the "all runs" tab in the [20180518-master_Hemato_qPCR_results.xlsx](https://github.com/RobertsLab/project-crab/blob/master/data/20180518-master_Hemato_qPCR_results.xlsx) excel workbook from Pam. This file contains ALL data from all of Pam's qPCR runs. 
 
 - [20180817-Qubit-results.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180817-Qubit-results.csv)   
-This file contains the ALL Qubit results with tube numbers for each sample.
+This file contains the most of the Qubit results with tube numbers for each sample. Was used to create the excel RNA isolation master spreadsheet, [master-qubit.xlsx](https://github.com/RobertsLab/project-crab/blob/master/analyses/master-qubit.xlsx).
 
 - [20180817-hemo-Qubit.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180817-hemo-Qubit.csv)    
-These data are all of the hemolymph sampling data from Pam, joined with all the Qubit results from RNA isolation. These data tell what I have processed (isolated RNA from) as well as what we have that are untouched (except for being spun down and supernatant removed). Qubit results data will be continually added as more samples are isolated. 
+These data are all of the hemolymph sampling data from Pam, joined with all the Qubit results from RNA isolation. These data tell what I have processed (isolated RNA from) as well as what we have that are untouched (except for being spun down and supernatant removed). Qubit results data will be continually added as more samples are isolated. **OLD**.
 
 **Individual crabs can be identified by the FRP number. In some sheets, there is a "year-FRP" and a "FRP" column. The "year-FRP" is formatted '2017-####', and in all sheets there is a "FRP" column, which excludes the year becauase all are from 2017.**
 0.2ml of hemolymph in ___ ml of RNAlater. 
