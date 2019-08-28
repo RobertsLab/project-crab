@@ -20,8 +20,6 @@ These data are taken from the "all runs" tab in the [20180518-master_Hemato_qPCR
 - [20180817-Qubit-results.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180817-Qubit-results.csv)   
 This file contains the most of the Qubit results with tube numbers for each sample. Was used to create the excel RNA isolation master spreadsheet, [master-qubit.xlsx](https://github.com/RobertsLab/project-crab/blob/master/analyses/master-qubit.xlsx).
 
-- [20180817-hemo-Qubit.csv](https://raw.githubusercontent.com/RobertsLab/project-crab/master/data/20180817-hemo-Qubit.csv)    
-These data are all of the hemolymph sampling data from Pam, joined with all the Qubit results from RNA isolation. These data tell what I have processed (isolated RNA from) as well as what we have that are untouched (except for being spun down and supernatant removed). Qubit results data will be continually added as more samples are isolated. **OLD**.
 
 **Individual crabs can be identified by the FRP number. In some sheets, there is a "year-FRP" and a "FRP" column. The "year-FRP" is formatted '2017-####', and in all sheets there is a "FRP" column, which excludes the year becauase all are from 2017.**
 0.2ml of hemolymph in ___ ml of RNAlater. 
