@@ -1,3 +1,0 @@
-"Run ID","Assay Name","Test Name","Test Date","Qubit tube conc.","Units","Original sample conc.","Units","Sample Volume (uL)","Dilution Factor","Std 1 RFU","Std 2 RFU","Std 3 RFU","Excitation","Emission","Green RFU","Far Red RFU"
-"2018-10-31_175254","RNA High sensitivity","Sample_#181031-175349","2018/10/31 17:53:49","125","ng/mL","25.0","ng/uL","1","200","85.57","1585.55",,"Red","Far Red",,"505.02"
-"2018-10-31_175254","RNA High sensitivity","Sample_#181031-175335","2018/10/31 17:53:35","143","ng/mL","28.6","ng/uL","1","200","85.57","1585.55",,"Red","Far Red",,"567.57"
