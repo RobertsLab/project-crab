@@ -9,7 +9,8 @@ beginning of script was used to create the [sample_table.csv](https://github.com
 [hemo-qubit_master.R](https://github.com/RobertsLab/project-crab/blob/master/scripts/hemo-qubit_master.R)   
 all no longer used, since the [081919-sample-qubit-master.Rmd](https://github.com/RobertsLab/project-crab/blob/master/scripts/081919-sample-qubit-master.Rmd) script is now how I'll be creating the master sheet. Has some potentially useful code in it for the future, so I'll keep it for now. _May delete later_. 
 
-
+[taxa-blast.Rmd](https://github.com/RobertsLab/project-crab/blob/master/scripts/taxa-blast.Rmd)   
+subsets genes from taxonomy blast of first assembled transcriptome (pooled: Day 26, cold and ambient, uninfected and infected) that are related to crabs ([crab-genes.csv](https://github.com/RobertsLab/project-crab/blob/master/analyses/crab-genes.csv)) and related to _Hematodinium_ ([hemat-genes.csv](https://github.com/RobertsLab/project-crab/blob/master/analyses/hemat-genes.csv)).
 
 ---
 ### Order of operations for adding new Qubit results:    
