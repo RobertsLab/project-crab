@@ -1,4 +1,4 @@
-## analyses directory for [RobertsLab/project-crab](https://github.com/RobertsLab/project-crab)
+## `analyses` directory for [RobertsLab/project-crab](https://github.com/RobertsLab/project-crab)
 
 [crab-genes.csv](https://github.com/RobertsLab/project-crab/blob/master/analyses/crab-genes.csv)    
 table of genes related to crabs from the taxonomy blast of first assembled transcriptome (pooled: Day 26, cold and ambient, uninfected and infected 1217 2018 (on Mox)
