@@ -2,7 +2,7 @@ Folder: [Excel-data-from-Pam](https://github.com/RobertsLab/project-crab/tree/ma
 Contains all excel spreadsheets from Pam
 
 Folder: [Qubit_data](https://github.com/RobertsLab/project-crab/tree/master/data/Qubit_data)   
-Contains Qubit result .csv files and converted UTF8.csv files
+Contains Qubit result .csv files that were used to create the [master qubit data excel document](https://github.com/RobertsLab/project-crab/blob/master/analyses/master-qubit.xlsx). 
 
 Folder: [Temperature](https://github.com/RobertsLab/project-crab/tree/master/data/Temperature)    
 Contains all the temperature data from the experiment recorded on Hobo TidBits. 
