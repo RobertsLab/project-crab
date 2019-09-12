@@ -1,4 +1,4 @@
-## protocol directory for [RobertsLab/project-crab](https://github.com/RobertsLab/project-crab)
+## `protocol` directory for [RobertsLab/project-crab](https://github.com/RobertsLab/project-crab)
 
 [20190318-RNAextraction.md](https://github.com/RobertsLab/project-crab/blob/master/protocols/20190318-RNAextraction.md)   
 RNA extraction protocol for Qiagen RNeasy Plus Micro Kit using QIAshredder columns
