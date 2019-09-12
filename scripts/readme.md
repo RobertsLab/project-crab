@@ -8,3 +8,10 @@ beginning of script was used to create the [sample_table.csv](https://github.com
 
 [hemo-qubit_master.R](https://github.com/RobertsLab/project-crab/blob/master/scripts/hemo-qubit_master.R)   
 all no longer used, since the [081919-sample-qubit-master.Rmd](https://github.com/RobertsLab/project-crab/blob/master/scripts/081919-sample-qubit-master.Rmd) script is now how I'll be creating the master sheet. Has some potentially useful code in it for the future, so I'll keep it for now. _May delete later_. 
+
+
+
+---
+### Order of operations for adding new Qubit results:    
+1. Add qubit result file and manually add in remaining information into the [master qubit spreadsheet](https://github.com/RobertsLab/project-crab/blob/master/analyses/master-qubit.xlsx)    
+2. Use the [081919-sample-qubit-master.Rmd](https://github.com/RobertsLab/project-crab/blob/master/scripts/081919-sample-qubit-master.Rmd) Rmd script to `join` the qubit master sheet to the hemolymph [sample_table.csv](https://github.com/RobertsLab/project-crab/blob/master/analyses/sample_table.csv)
