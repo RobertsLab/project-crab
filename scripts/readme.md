@@ -1,4 +1,4 @@
-## scripts directory for [RobertsLab/project-crab](https://github.com/RobertsLab/project-crab)
+## `scripts` directory for [RobertsLab/project-crab](https://github.com/RobertsLab/project-crab)
 
 [081919-sample-qubit-master.Rmd](https://github.com/RobertsLab/project-crab/blob/master/scripts/081919-sample-qubit-master.Rmd)   
 creates [master-qubit-sample.csv](https://github.com/RobertsLab/project-crab/blob/master/analyses/master-qubit-sample.csv) by `join`-ing the hemolymph [sample_table.csv](https://github.com/RobertsLab/project-crab/blob/master/analyses/sample_table.csv) with the isolation data tab in the [master-qubit.xlsx](https://github.com/RobertsLab/project-crab/blob/master/analyses/master-qubit.xlsx) file. 
