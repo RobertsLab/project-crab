@@ -10,6 +10,7 @@ Load packages
 library(tidyverse)
 library(ggplot2)
 library(dplyr)
+library(data.table)
 ```
 
 Read in file (`rsync`-ed from Mox)
@@ -25,11 +26,12 @@ colnames(tb) <- cnames
 
 Filter out genes related to _Hematodinium_ in scientific name (should be 236 rows)
 ```{r}
-hema <- tb[grep("Hematodinium", tb$sscinames)]
-
+hema <- tb[grep("Hematodinium", tb$sscinames),]
+write.csv(hema, "../analyses/hemat-genes.csv")
 ```
 
 Filter genes related to "crab" in common name (should be 2,455 rows)
 ```{r}
-
+crab <- tb[grep("crab", tb$scomnames),]
+write.csv(crab, "../analyses/crab-genes.csv")
 ```
