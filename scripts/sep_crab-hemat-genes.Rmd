@@ -1,0 +1,19 @@
+---
+title: "sep_crab-hemat"
+output: github_document
+---
+
+R markdown file to separate genes related to _Hematodinium_ and crabs.
+
+Join uniprot-transcriptome BLAST with dinoflagellate-transcriptome BLAST
+
+What doesn't match is crab. 
+Create 2 tables: Hematodinium-related and Crab-related. 
+
+Get GOslim terms for each table separately, and dig deeper into genes separately. 
+
+```{r}
+library(dplyr)
+library(tidyverse)
+library(data.table)
+```
