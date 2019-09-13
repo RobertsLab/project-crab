@@ -1,4 +1,10 @@
-## analyses directory for [RobertsLab/project-crab](https://github.com/RobertsLab/project-crab)
+## `analyses` directory for [RobertsLab/project-crab](https://github.com/RobertsLab/project-crab)
+
+[crab-genes.csv](https://github.com/RobertsLab/project-crab/blob/master/analyses/crab-genes.csv)    
+table of genes related to crabs from the taxonomy blast of first assembled transcriptome (pooled: Day 26, cold and ambient, uninfected and infected 1217 2018 (on Mox)
+
+[hemat-genes.csv](https://github.com/RobertsLab/project-crab/blob/master/analyses/hemat-genes.csv)    
+table of genes related to _Hematodinium_ from the taxonomy blast of first assembled transcriptome (pooled: Day 26, cold and ambient, uninfected and infected) 1217 2018 (on Mox)
 
 [master-qubit-sample.csv](https://github.com/RobertsLab/project-crab/blob/master/analyses/master-qubit-sample.csv)    
 master sample sheet. contains hemolymph sampling data, extraction qubit results, method of extraction, how much of the hemolymph slurry was used, and links to notebook posts that descibe those extractions. Created using [this script](https://github.com/RobertsLab/project-crab/blob/master/scripts/081919-sample-qubit-master.Rmd) to `join` [master-qubit.xlsx](https://github.com/RobertsLab/project-crab/blob/master/analyses/master-qubit.xlsx) and [sample_table.csv](https://github.com/RobertsLab/project-crab/blob/master/analyses/sample_table.csv) by "tube_number". 
