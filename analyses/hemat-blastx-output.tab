@@ -1,4 +1,4 @@
-"Trinity_protein" "V2" "V3" "V4" "V5" "V6" "V7" "V8" "V9" "V10" "V11" "V12"
+"Trinity_protein" "sseqid" "pident" "length" "mismatch" "gapopen" "qstart" "qend" "sstart" "send" "evalue" "bitscore"
 "1" "TRINITY_DN21464_c0_g1_i1" "tr|A0A1Q9E613|A0A1Q9E613_SYMMI" 38.298 611 346 10 801 2570 567 1167 6.69e-116 382
 "2" "TRINITY_DN21426_c0_g2_i1" "tr|A0A1Q9DMD0|A0A1Q9DMD0_SYMMI" 46.383 470 235 3 126 1484 34 503 2.34e-134 406
 "3" "TRINITY_DN21474_c0_g1_i1" "tr|A0A1Q9E557|A0A1Q9E557_SYMMI" 27.5 240 165 4 938 231 75 309 2.73e-28 114
