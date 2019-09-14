@@ -20,7 +20,7 @@ library(data.table)
 
 Read in dinoflagellate-transcriptome BLAST output:
 ```{r}
-dino <- read.csv("../../../../Desktop/dino-blast-out.csv", header = FALSE)
+dino <- read.table("http://owl.fish.washington.edu/scaphapoda/grace/PCSGA-2019/Cb_v1_blastx_uniprot2864_imac.tab", sep = '\t', header = FALSE)
 ```
 
 Read in uniprot-transcriptome BLAST output: 
@@ -30,14 +30,19 @@ uni <- read.csv("../../../GitHub/grace-Cbairdi-transcriptome/analyses/Blastquery
 
 Rename columns
 ```{r}
-dcol <- c("Trinity_protein", "V2", "V3", "V4", "V5", "V6", "V7", "V8", "V9")
+dcol <- c("Trinity_protein", "V2", "V3", "V4", "V5", "V6", "V7", "V8", "V9", "V10", "V11", "V12")
 colnames(dino) <- dcol
 ```
 
 Join tables based on trinity
 ```{r}
-crab_genes <- anti_join(x = uni, y = dino, by = "Trinity_protein", copy = FALSE)
+crab <- anti_join(uni, dino, by = "Trinity_protein")
 ```
 
-Save crab_genes and dino_genes separately
+Save crab and dino separately into analyses
+```{r}
+
+
+
+```
 
