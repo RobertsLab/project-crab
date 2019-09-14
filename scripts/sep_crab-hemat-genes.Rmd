@@ -41,8 +41,9 @@ crab <- anti_join(uni, dino, by = "Trinity_protein")
 
 Save crab and dino separately into analyses
 ```{r}
-
-
-
+write.csv(crab, "../analyses/crab-GOslim.csv")
+write.table(dino, "../analyses/hemat-blastx-output.tab")
 ```
+
+Next step: use jupyter notebook to annotate dinoflagellate blastx output. 
 
