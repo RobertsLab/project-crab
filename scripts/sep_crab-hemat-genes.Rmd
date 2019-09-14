@@ -30,7 +30,7 @@ uni <- read.csv("../../../GitHub/grace-Cbairdi-transcriptome/analyses/Blastquery
 
 Rename columns
 ```{r}
-dcol <- c("Trinity_protein", "V2", "V3", "V4", "V5", "V6", "V7", "V8", "V9", "V10", "V11", "V12")
+dcol <- c("Trinity_protein", "sseqid", "pident", "length", "mismatch", "gapopen", "qstart", "qend", "sstart", "send", "evalue", "bitscore")
 colnames(dino) <- dcol
 ```
 
