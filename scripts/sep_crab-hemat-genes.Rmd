@@ -25,13 +25,14 @@ dino <- read.table("http://owl.fish.washington.edu/scaphapoda/grace/PCSGA-2019/C
 
 Read in uniprot-transcriptome BLAST output: 
 ```{r}
-uni <- read.csv("../../../GitHub/grace-Cbairdi-transcriptome/analyses/Blastquery-GOslim-sep.csv", header = TRUE)
+uni <- read.csv("http://owl.fish.washington.edu/scaphapoda/grace/PCSGA-2019/1108-cbairdiblast-sprot.tab", sep = '\t', header = TRUE)
 ```
 
 Rename columns
 ```{r}
-dcol <- c("Trinity_protein", "sseqid", "pident", "length", "mismatch", "gapopen", "qstart", "qend", "sstart", "send", "evalue", "bitscore")
-colnames(dino) <- dcol
+blastcol <- c("Trinity_protein", "sseqid", "pident", "length", "mismatch", "gapopen", "qstart", "qend", "sstart", "send", "evalue", "bitscore")
+colnames(dino) <- blastcol
+colnames(uni) <- blastcol
 ```
 
 Join tables based on trinity
@@ -41,7 +42,7 @@ crab <- anti_join(uni, dino, by = "Trinity_protein")
 
 Save crab and dino separately into analyses
 ```{r}
-write.csv(crab, "../analyses/crab-GOslim.csv")
+write.csv(crab, "../analyses/crab-blastx.tab")
 write.table(dino, "../analyses/hemat-blastx-output.tab")
 ```
 
