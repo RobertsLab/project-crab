@@ -1,5 +1,8 @@
 ## `analyses` directory for [RobertsLab/project-crab](https://github.com/RobertsLab/project-crab)
 
+[hemat-Blastquery-GOslim.sorted](https://github.com/RobertsLab/project-crab/blob/master/analyses/hemat-Blastquery-GOslim.sorted)    
+`blastx` output of transcriptome (library01) against dinoflagellate database - annotated with GOslim from this notebook: [091419-hemat-BLAST-to-slim.ipynb](https://github.com/RobertsLab/project-crab/blob/master/notebooks/091419-hemat-BLAST-to-slim.ipynb).
+
 [crab-GOslim.csv](https://github.com/RobertsLab/project-crab/blob/master/analyses/crab-GOslim.csv)      
 GOslim terms annotating Trinity_proteins that are crab. List was determined by using `anti_join` between [Blastquery-GOslim-sep.csv](https://github.com/fish546-2018/grace-Cbairdi-transcriptome/blob/master/analyses/Blastquery-GOslim-sep.csv) and this [hemat-blastx-output.tab](https://github.com/RobertsLab/project-crab/blob/master/analyses/hemat-blastx-output.tab). [hemat-blastx-output.tab](https://github.com/RobertsLab/project-crab/blob/master/analyses/hemat-blastx-output.tab) was done by Steven - `blastx` of the transcriptome against a blast database made of dinoflagellate. 
 
