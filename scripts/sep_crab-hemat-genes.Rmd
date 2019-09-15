@@ -5,12 +5,12 @@ output: github_document
 
 R markdown file to separate genes related to _Hematodinium_ and crabs.
 
-Join uniprot-transcriptome BLAST with dinoflagellate-transcriptome BLAST
+Join uniprot-transcriptome BLASTx with dinoflagellate-transcriptome BLASTx
 
 What doesn't match is crab. 
 Create 2 tables: Hematodinium-related and Crab-related. 
 
-Get GOslim terms for each table separately, and dig deeper into genes separately. 
+Get GOslim terms for each table separately, and dig deeper into genes separately (jupyter notebook). 
 
 ```{r}
 library(dplyr)
@@ -35,7 +35,7 @@ colnames(dino) <- blastcol
 colnames(uni) <- blastcol
 ```
 
-Join tables based on trinity
+Join tables based on Trinity_protein column
 ```{r}
 crab <- anti_join(uni, dino, by = "Trinity_protein")
 ```
