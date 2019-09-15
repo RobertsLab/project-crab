@@ -1,0 +1,11 @@
+---
+title: "crab-hemat-full-GO-annot"
+output: html_document
+---
+Script for analyzing full GO annotation files for hematodinium and crab
+
+```{r}
+hemat <- read.table("../analyses/_blast-annot-hemat.tab", sep = '\t', )
+
+
+```
