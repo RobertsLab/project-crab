@@ -31,6 +31,9 @@ Get frequency of GOslim terms
 GOnumhemat <- aggregate(data.frame(count = hemat$V2), list(value = hemat$V2), length)
 write.csv(GOnumhemat, "../analyses/hemat-GOslim-count.csv")
 ```
+
+Next steps: Open .csv's, get percentages of the frequency of GOslim terms, use googlesheets to create pie charts for Hematodinium and crab
+
 ---------------------------------------------------------------------------
 
 Rename columns
