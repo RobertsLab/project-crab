@@ -10,6 +10,8 @@ Join uniprot-transcriptome BLASTx with dinoflagellate-transcriptome BLASTx
 What doesn't match is crab. 
 Create 2 tables: Hematodinium-related and Crab-related. 
 
+*What DOES match, need to preserve and analyse* 
+
 Get GOslim terms for each table separately, and dig deeper into genes separately (jupyter notebook). 
 
 ```{r}
@@ -35,15 +37,33 @@ colnames(dino) <- blastcol
 colnames(uni) <- blastcol
 ```
 
-Join tables based on Trinity_protein column
+anti_join tables based on Trinity_protein column
 ```{r}
-crab <- anti_join(uni, dino, by = "Trinity_protein")
+crab <- anti_join(uni, dino, by = "Trinity_protein") %>% select(Trinity_protein, sseqid, evalue) %>% distinct()
+```
+```{r}
+as_tibble(crab)
 ```
 
-Save crab and dino separately into analyses
+*get swiss-prot hits for dino!*
 ```{r}
-write.csv(crab, "../analyses/crab-blastx.tab")
-write.table(dino, "../analyses/hemat-blastx-output.tab")
+hemat <- inner_join(uni, dino, by = "Trinity_protein") %>% select(Trinity_protein, sseqid.x, evalue.x) %>% distinct()
+```
+```{r}
+as_tibble(hemat)
+```
+
+Check and make sure hemat and crab Trinity # are unique.
+```{r}
+inner_join(hemat, crab, by = "Trinity_protein")
+```
+
+Zero rows from inner_join ^ --> good to go!
+
+Save crab and hemat separately into analyses
+```{r}
+write.table(crab,  quote = FALSE, sep = "\t", row.names=FALSE, "../analyses/crab-blastx-sp.tab")
+write.table(hemat,  quote = FALSE,sep = "\t", row.names=FALSE, "../analyses/hemat-blastx-sp.tab")
 ```
 
 Next step: use jupyter notebook to annotate dinoflagellate blastx output. 

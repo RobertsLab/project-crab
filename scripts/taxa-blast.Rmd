@@ -35,3 +35,4 @@ Filter genes related to "crab" in common name (should be 2,455 rows)
 crab <- tb[grep("crab", tb$scomnames),]
 write.csv(crab, "../analyses/crab-genes.csv")
 ```
+
