@@ -1,0 +1,19 @@
+---
+title: "crab-hemat-GOslim"
+output: github_document
+---
+Rmarkdown for creating visuals/analyses for crab and Hematodinium GOslim terms
+
+```{r}
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+```
+
+Read in crab-uniprot GOslim list:   
+```{r}
+crab <- read.table("../analyses/crab-Blastquery-GOslim.sorted", sep = '\t')
+```
+
+Get counts for each unique GOterm
+
