@@ -21,6 +21,13 @@ Get frequency of GOslim terms
 GOnumcrab <- aggregate(data.frame(count = crab$V2), list(value = crab$V2), length)
 write.csv(GOnumcrab, "../analyses/crab-GOslim-count.csv")
 ```
+Save stress response -related GO terms for crab:   
+```{r}
+stressGo <- filter(crab, crab$V2 == "stress response")
+write.table(stressGo, "../analyses/crab-stress-genes.tab", quote = FALSE, sep = '\t')
+```
+
+
 
 Load hemat-Blastquery-GOslim.sorted (biological process)
 ```{r}
