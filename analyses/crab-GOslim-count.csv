@@ -1,12 +1,15 @@
-"","GOslim","count"
-"1","bone, tooth or skin structural activity",5
-"2","cytoskeletal activity",4204
-"3","enzyme regulator activity",3362
-"4","extracellular structural activity",133
-"5","kinase activity",6017
-"6","nucleic acid binding activity",27609
-"7","other molecular function",123937
-"8","signal transduction activity",6776
-"9","transcription regulatory activity",7684
-"10","translation activity",242
-"11","transporter activity",8429
+"","value","count"
+"1","cell adhesion",3227
+"2","cell cycle and proliferation",11440
+"3","cell organization and biogenesis",34475
+"4","cell-cell signaling",2869
+"5","death",4257
+"6","developmental processes",34599
+"7","DNA metabolism",10510
+"8","other biological processes",39756
+"9","other metabolic processes",37122
+"10","protein metabolism",21595
+"11","RNA metabolism",30397
+"12","signal transduction",14266
+"13","stress response",16823
+"14","transport",22087
