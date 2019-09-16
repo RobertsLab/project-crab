@@ -1,0 +1,12 @@
+---
+title: "join-crab-hemat-blastout-with-uniprot-GO-database"
+output: html_document
+---
+
+Downloaded uniprot/sprot database (added GO terms) and will `join` with crab-uniprot blastoutput and hematodinium-uniprot blastoutput. Then I'll use GOterms and e-values in Revigo to make visualizations. 
+
+Read in crab and hematodinium blastoutputs. 
+```{r}
+crab <- read.table("")
+
+```

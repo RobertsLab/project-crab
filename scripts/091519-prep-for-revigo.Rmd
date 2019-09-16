@@ -10,8 +10,6 @@ Link to database creating website: https://www.uniprot.org/uniprot/?query=review
 ```{r}
 library(dplyr)
 library(tidyverse)
-install.packages("seqinr")
-library(seqinr)
 library(data.table)
 ```
 
@@ -57,15 +55,33 @@ write.table(crab,  quote = FALSE, sep = "\t", row.names=FALSE, "../analyses/crab
 write.table(hemat,  quote = FALSE,sep = "\t", row.names=FALSE, "../analyses/hemat-blastx-sp-full.tab")
 ```
 
+Read in crab and hemat full blastoutputs
+```{r}
+crabfull <- read.table("../analyses/_blast-sep2-crab.tab", sep = '\t', header = FALSE)
+hematfull <- read.table("../analyses/_blast-sep2-hemat.tab", sep = '\t', header = FALSE)
+blastcrabcol <- c("Trinity_protein", "V2", "uniprot_ID", "V4", "V5", "V6", "V7", "V8", "V9", "10", "V11", "V12", "evalue", "14")
+colnames(crabfull) <- blastcrabcol
+blasthematcol <- c("Trinity_protein", "V2", "uniprot_ID", "4", "5", "6", "7", "8", "9", "10", "11", "12", "evalue", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27")
+colnames(hematfull) <- blasthematcol
+```
+
 
 Read in uniprot/sprot database with GO information from downloads. 
 ```{r}
-db <- read.fasta("../../../../Downloads/uniprot-reviewed_yes.fasta")
+db <- read.table("../../../../Downloads/uniprot-reviewed_yes2.tab", sep = '\t', fill = TRUE, header = TRUE)
+dbcols <- c("uniprot_ID", "entry_name", "status", "protein_names", "gene_names", "organism", "length", "GO", "GO_IDs")
+colnames(db) <- dbcols
 ```
-
-`join` database with crab-blastoutput
+`join` database with crab-blastoutput by uniprot ID and save GO ID and e-value into a new file (for REVIGO)
 ```{r}
-crabGO <- left_join(crab, db, by = )
+crabGO <- left_join(crabfull, db, by = "uniprot_ID" )
+crabGO2 <- select(crabGO, "uniprot_ID")
+write.table(crabGO2, quote = FALSE, sep = '\t', row.names = FALSE,   "../analyses/crab-forRevigo.tab")
 ```
 
 `join` databse with hematodinium-blastoutput
+```{r}
+hematGO <- left_join(hematfull, db, by = "uniprot_ID")
+hematGO2 <- select(hematGO, "GO_IDs", "evalue")
+write.table(hematGO2, quote = FALSE, sep = '\t', row.names = FALSE,  "../analyses/hemat-forRevigo.tab")
+```
