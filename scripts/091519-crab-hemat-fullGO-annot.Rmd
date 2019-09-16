@@ -5,7 +5,6 @@ output: html_document
 Script for analyzing full GO annotation files for hematodinium and crab
 
 ```{r}
-hemat <- read.table("../analyses/_blast-annot-hemat.tab", sep = '\t', )
-
-
+crab <- read.table("https://raw.githubusercontent.com/RobertsLab/project-crab/master/analyses/_blast-annot-crab.tab", sep = '\t')
 ```
+
