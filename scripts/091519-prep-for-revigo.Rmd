@@ -1,0 +1,71 @@
+---
+title: "join-crab-hemat-blastout-with-uniprot-GO-database"
+output: html_document
+---
+
+Downloaded uniprot/sprot database (added GO terms) and will `join` with crab-uniprot blastoutput and hematodinium-uniprot blastoutput. Then I'll use GOterms and e-values in Revigo to make visualizations. 
+
+Link to database creating website: https://www.uniprot.org/uniprot/?query=reviewed:yes# 
+
+```{r}
+library(dplyr)
+library(tidyverse)
+install.packages("seqinr")
+library(seqinr)
+library(data.table)
+```
+
+Read in crab and hematodinium blastoutputs. 
+Read in dinoflagellate-transcriptome BLAST output:
+```{r}
+dino <- read.table("http://owl.fish.washington.edu/scaphapoda/grace/PCSGA-2019/Cb_v1_blastx_uniprot2864_imac.tab", sep = '\t', header = FALSE)
+```
+
+Read in uniprot-transcriptome BLAST output: 
+```{r}
+uni <- read.csv("http://owl.fish.washington.edu/scaphapoda/grace/PCSGA-2019/1108-cbairdiblast-sprot.tab", sep = '\t', header = TRUE)
+```
+
+Rename columns
+```{r}
+blastcol <- c("Trinity_protein", "sseqid", "pident", "length", "mismatch", "gapopen", "qstart", "qend", "sstart", "send", "evalue", "bitscore")
+colnames(dino) <- blastcol
+colnames(uni) <- blastcol
+```
+
+anti_join tables based on Trinity_protein column
+```{r}
+crab <- anti_join(uni, dino, by = "Trinity_protein") %>%  distinct()
+```
+```{r}
+as_tibble(crab)
+```
+*get swiss-prot hits for dino!*
+```{r}
+hemat <- inner_join(uni, dino, by = "Trinity_protein") %>% distinct()
+```
+```{r}
+as_tibble(hemat)
+```
+Check and make sure hemat and crab Trinity # are unique.
+```{r}
+inner_join(hemat, crab, by = "Trinity_protein")
+```
+Save crab and hemat separately into analyses
+```{r}
+write.table(crab,  quote = FALSE, sep = "\t", row.names=FALSE, "../analyses/crab-blastx-sp-full.tab")
+write.table(hemat,  quote = FALSE,sep = "\t", row.names=FALSE, "../analyses/hemat-blastx-sp-full.tab")
+```
+
+
+Read in uniprot/sprot database with GO information from downloads. 
+```{r}
+db <- read.fasta("../../../../Downloads/uniprot-reviewed_yes.fasta")
+```
+
+`join` database with crab-blastoutput
+```{r}
+crabGO <- left_join(crab, db, by = )
+```
+
+`join` databse with hematodinium-blastoutput
