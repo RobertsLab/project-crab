@@ -26,7 +26,16 @@ Save stress response -related GO terms for crab:
 stressGo <- filter(crab, crab$V2 == "stress response")
 write.table(stressGo, "../analyses/crab-stress-genes.tab", quote = FALSE, sep = '\t', row.names = FALSE)
 ```
-
+Join _blast-annot.tab (for crab) with crab stress genes to get Uniprot IDs
+```{r}
+bannot <- read.table("../analyses/_blast-annot.tab", sep = '\t')
+bannotcol <- c("uniprot_ID", "Trinity_protein", "GO")
+colnames(bannot) <- bannotcol
+stresscol <- c("Trinity_protein", "GOterm")
+colnames(stressGo) <- stresscol
+unistress <- left_join(stressGo, bannot, by = "Trinity_protein")
+write.table(unistress, "../analyses/crab-stress-uniprotID.tab", sep = '\t', quote = FALSE, row.names = FALSE)
+```
 
 
 Load hemat-Blastquery-GOslim.sorted (biological process)
