@@ -22,7 +22,7 @@ GOnumcrab <- aggregate(data.frame(count = crab$V2), list(value = crab$V2), lengt
 write.csv(GOnumcrab, "../analyses/crab-GOslim-count.csv")
 ```
 
-Load hemat-Blastquery-GOslim.sorted
+Load hemat-Blastquery-GOslim.sorted (biological process)
 ```{r}
 hemat <- read.table("../analyses/hemat-Blastquery-GOslim.sorted", sep = '\t')
 ```
