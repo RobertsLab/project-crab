@@ -51,7 +51,7 @@ write.csv(GOnumhemat, "../analyses/hemat-GOslim-count.csv")
 Next steps: Open .csv's, get percentages of the frequency of GOslim terms, use googlesheets to create pie charts for Hematodinium and crab
 
 ---------------------------------------------------------------------------
-
+THE REMAINDER OF SCRIPT IS FOR PLAYING AROUND WITH PIE CHARTS IN R
 Rename columns
 ```{r}
 crabcol <- c("GOslim", "count")
