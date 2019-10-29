@@ -202,17 +202,17 @@
 "201",6121,"6121_352_12","ambient",12,1,"I","352","2019-04-01_155616","RNA High sensitivity","Sample_#190401-155738",2019-04-01 15:57:38,"Out of range","Out of range",10,20,"RNeasy","15",10,NA,"pellet",NA,NA,"used manifold for 24 samples and QIA shredder columns","https://grace-ac.github.io/24sample-RNeasy-extraction/"
 "202",6121,"6121_352_12","ambient",12,1,"I","352","2019-04-03_122608","RNA High sensitivity","Sample_#190403-122702",2019-04-03 12:27:00,"Out of range","Out of range",1,200,"RNeasy","15",14,NA,"pellet",NA,NA,NA,"https://grace-ac.github.io/bairdi-RNA-RNeasy/"
 "203",6121,"6121_352_12","ambient",12,1,"I","352","2019-04-03_122608","RNA High sensitivity","Sample_#190403-122702",2019-04-03 12:27:02,"Out of range","Out of range",1,200,"RNeasy","15",14,NA,"pellet",NA,NA,"QIAshredder columns","https://grace-ac.github.io/bairdi-RNA-RNeasy/"
-"204",6122,"6122_325_12","ambient",12,1,"I","325",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"204",6122,"6122_325_12","ambient",12,1,"I","325","2019-10-28_171734","RNA High sensitivity","Sample_#191028-171816",2019-10-28 17:21:29,"311","31.1",2,100,"Zymo_microprep","35",15,404.3,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
 "205",6123,"6123_345_12","ambient",12,0,"I","345","2019-04-30_143341","RNA High sensitivity","Sample_#190430-143804",2019-04-30 14:38:04,"191","19.100000000000001",2,100,"Zymo_microprep","70",15,248.3,"pellet","y",NA,"https://robertslab.github.io/sams-notebook/2019/05/21/Sample-Submission-Tanner-Crab-Infected-vs-Uninfected-RNAseq.html","https://robertslab.github.io/sams-notebook/2019/04/30/RNA-Isolation-and-Quantification-C.bairdi-Hemolymph-Pellet-in-RNAlater.html"
 "206",6124,"6124_347_12","ambient",12,0,"M","347","2019-04-30_143341","RNA High sensitivity","Sample_#190430-143811",2019-04-30 14:38:11,"188","18.8",2,100,"Zymo_microprep","70",15,244.4,"pellet","y",NA,"https://robertslab.github.io/sams-notebook/2019/05/21/Sample-Submission-Tanner-Crab-Infected-vs-Uninfected-RNAseq.html","https://robertslab.github.io/sams-notebook/2019/04/30/RNA-Isolation-and-Quantification-C.bairdi-Hemolymph-Pellet-in-RNAlater.html"
-"207",6125,"6125_303_12","ambient",12,1,"I","303",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"207",6125,"6125_303_12","ambient",12,1,"I","303","2019-10-28_171734","RNA High sensitivity","Sample_#191028-171824",2019-10-28 17:21:29,"274","27.4",2,100,"Zymo_microprep","35",15,356.2,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
 "208",6127,"6127_335_12","ambient",12,0,"I","335","2018-05-02_130729","RNA High sensitivity","Sample_#180502-130824",2018-05-02 13:08:00,"86.4","3.46",5,40,"RNAzol","all",50,155.7,"pellet",NA,NA,NA,"https://grace-ac.github.io/RNA-iso-Data-org/"
 "209",6130,"6130_339_12","ambient",12,0,"I","339","2018-04-09_131825","RNA High sensitivity","Sample_#180409-131924",2018-04-09 13:19:00,"22","0.88",5,40,"RNAzol","all",50,39.6,"pellet",NA,NA,NA,"https://github.com/grace-ac/grace-ac.github.io/blob/master/_posts/2018-04-10-Crab-updates.md"
 "210",6131,"6131_314_12","ambient",12,0,"I","314","2018-04-09_131825","RNA High sensitivity","Sample_#180409-131936",2018-04-09 13:19:00,"35.6","1.42",5,40,"RNAzol","all",50,63.9,"pellet",NA,NA,NA,"https://github.com/grace-ac/grace-ac.github.io/blob/master/_posts/2018-04-10-Crab-updates.md"
 "211",6134,"6134_353_12","ambient",12,1,"I","353","2018-04-06_133810","RNA High sensitivity","Sample_#180406-133914",2018-04-06 13:39:00,"67","2.68",5,40,"RNAzol","all",50,120.6,"pellet",NA,NA,NA,"https://grace-ac.github.io/Qubit-and-DecaPod/"
 "212",6135,"6135_327_12","ambient",12,1,"M","327","2018-04-06_133810","RNA High sensitivity","Sample_#180406-133855",2018-04-06 13:38:00,"50.2","2.0099999999999998",5,40,"RNAzol","all",50,90.45,"pellet",NA,NA,NA,"https://grace-ac.github.io/Qubit-and-DecaPod/"
 "213",6136,"6136_321_12","ambient",12,0,"M","321",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"214",6137,"6137_301_12","ambient",12,1,"I","301",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"214",6137,"6137_301_12","ambient",12,1,"I","301","2019-10-28_171734","RNA High sensitivity","Sample_#191028-171806",2019-10-28 17:21:29,"289","28.9",2,100,"Zymo_microprep","35",15,375.7,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
 "215",6139,"6139_332_12","ambient",12,3,"M","332","2019-04-30_143341","RNA High sensitivity","Sample_#190430-143751",2019-04-30 14:37:51,"160","16",2,100,"Zymo_microprep","70",15,208,"pellet","y",NA,"https://robertslab.github.io/sams-notebook/2019/05/21/Sample-Submission-Tanner-Crab-Infected-vs-Uninfected-RNAseq.html","https://robertslab.github.io/sams-notebook/2019/04/30/RNA-Isolation-and-Quantification-C.bairdi-Hemolymph-Pellet-in-RNAlater.html"
 "216",6142,"6142_346_12","ambient",12,0,"I","346","2018-04-09_131825","RNA High sensitivity","Sample_#180409-131947",2018-04-09 13:19:00,"44.9","1.8",5,40,"RNAzol","all",50,81,"pellet",NA,NA,NA,"https://github.com/grace-ac/grace-ac.github.io/blob/master/_posts/2018-04-10-Crab-updates.md"
 "217",6143,"6143_343_12","ambient",12,0,"M","343",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -230,8 +230,8 @@
 "229",6168,"6168_357_12","ambient",12,1,"I","357",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "230",6169,"6169_328_12","ambient",12,1,"I","328",NA,"RNA High sensitivity",NA,2018-04-26 00:00:00,"Out of range","Out of range",NA,NA,"RNAzol","all",50,NA,"pellet",NA,NA,"isolated on 4/26/19 - all contaminated","https://grace-ac.github.io/RNA-isolation-data-org-in-R/"
 "231",6170,"6170_320_12","ambient",12,1,"I","320",NA,"RNA High sensitivity",NA,2018-04-26 00:00:00,"Out of range","Out of range",NA,NA,"RNAzol","all",50,NA,"pellet",NA,NA,"isolated on 4/26/19 - all contaminated","https://grace-ac.github.io/RNA-isolation-data-org-in-R/"
-"232",6176,"6176_329_12","ambient",12,0,"M","329",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"233",6179,"6179_315_12","ambient",12,0,"M","315",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"232",6176,"6176_329_12","ambient",12,0,"M","329","2019-10-28_171734","RNA High sensitivity","Sample_#191028-171833",2019-10-28 17:21:29,"29","2.9",2,100,"Zymo_microprep","35",15,37.7,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
+"233",6179,"6179_315_12","ambient",12,0,"M","315","2019-10-28_171734","RNA High sensitivity","Sample_#191028-171842",2019-10-28 17:21:29,"178","17.8",2,100,"Zymo_microprep","35",15,231.4,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
 "234",6181,"6181_355_12","ambient",12,0,"I","355","2018-04-28_154149","RNA High sensitivity","Sample_#180428-154247",2018-04-28 15:42:00,"83","3.32",5,40,"RNAzol","all",50,149.4,"pellet",NA,NA,NA,"https://grace-ac.github.io/RNA-isolations-DecaPod/"
 "235",6182,"6182_354_12","ambient",12,1,"I","354",NA,"RNA High sensitivity",NA,2018-04-26 00:00:00,"Out of range","Out of range",NA,NA,"RNAzol","all",50,NA,"pellet",NA,NA,"isolated on 4/26/19 - all contaminated","https://grace-ac.github.io/RNA-isolation-data-org-in-R/"
 "236",6183,"6183_322_12","ambient",12,1,"I","322","2018-05-01_175527","RNA High sensitivity","Sample_#180501-175925",2018-05-01 17:59:00,"67.3","2.69",5,40,"RNAzol","all",50,121.05,"pellet",NA,NA,NA,"https://grace-ac.github.io/RNA-isolations/"
@@ -248,7 +248,7 @@
 "247",6206,"6206_319_12","ambient",12,1,"I","319",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "248",6211,"6211_349_12","ambient",12,1,"I","349","2018-04-09_133705","RNA High sensitivity","Sample_#180409-133806",2018-04-09 13:38:00,"139","5.56",5,40,"RNAzol","all",50,250.2,"pellet",NA,NA,NA,"https://github.com/grace-ac/grace-ac.github.io/blob/master/_posts/2018-04-10-Crab-updates.md"
 "249",6212,"6212_334_12","ambient",12,1,"I","334","2019-04-30_143341","RNA High sensitivity","Sample_#190430-143757",2019-04-30 14:37:57,"156","15.6",2,100,"Zymo_microprep","70",15,202.8,"pellet","y",NA,"https://robertslab.github.io/sams-notebook/2019/05/21/Sample-Submission-Tanner-Crab-Infected-vs-Uninfected-RNAseq.html","https://robertslab.github.io/sams-notebook/2019/04/30/RNA-Isolation-and-Quantification-C.bairdi-Hemolymph-Pellet-in-RNAlater.html"
-"250",6213,"6213_310_12","ambient",12,0,"I","310",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"250",6213,"6213_310_12","ambient",12,0,"I","310","2019-10-28_171734","RNA High sensitivity","Sample_#191028-171850",2019-10-28 17:21:29,"273","27.3",2,100,"Zymo_microprep","35",15,354.9,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
 "251",6214,"6214_311_12","ambient",12,1,"I","311","2018-05-02_130729","RNA High sensitivity","Sample_#180502-130814",2018-05-02 13:08:00,"51.2","2.0499999999999998",5,40,"RNAzol","all",50,92.25,"pellet",NA,NA,NA,"https://grace-ac.github.io/RNA-iso-Data-org/"
 "252",6241,"6241_323_12","ambient",12,1,"I","323",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "253",6252,"6252_330_12","ambient",12,3,"M","330","2019-04-30_143341","RNA High sensitivity","Sample_#190430-143738",2019-04-30 14:37:38,"110","11",2,100,"Zymo_microprep","70",15,143,"pellet","y",NA,"https://robertslab.github.io/sams-notebook/2019/05/21/Sample-Submission-Tanner-Crab-Infected-vs-Uninfected-RNAseq.html","https://robertslab.github.io/sams-notebook/2019/04/30/RNA-Isolation-and-Quantification-C.bairdi-Hemolymph-Pellet-in-RNAlater.html"
@@ -257,21 +257,21 @@
 "256",6102,"6102_236_12","cold",12,0,"I","236",NA,"RNA High sensitivity",NA,2019-03-19 00:00:00,"Out of range","Out of range",1,NA,"RNeasy","15",14,NA,"pellet",NA,NA,NA,"https://grace-ac.github.io/24sample-RNeasy-extraction/"
 "257",6102,"6102_236_12","cold",12,0,"I","236","2019-04-01_155616","RNA High sensitivity","Sample_#190401-155812",2019-04-01 15:58:12,"Out of range","Out of range",10,20,"RNeasy","15",10,NA,"pellet",NA,NA,"used manifold for 24 samples and QIA shredder columns","https://grace-ac.github.io/24sample-RNeasy-extraction/"
 "258",6103,"6103_215_12","cold",12,1,"I","215","2018-04-23_174015","RNA High sensitivity","Sample_#180423-174126",2018-04-23 17:41:00,"167","6.68",5,40,"RNAzol","all",50,300.6,"pellet",NA,NA,NA,NA
-"259",6104,"6104_259_12","cold",12,0,"I","259",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"259",6104,"6104_259_12","cold",12,0,"I","259","2019-10-28_171734","RNA High sensitivity","Sample_#191028-171859",2019-10-28 17:21:29,"317","31.7",2,100,"Zymo_microprep","35",15,412.1,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
 "260",6105,"6105_234_12","cold",12,1,"I","234",NA,"RNA High sensitivity",NA,2019-03-19 00:00:00,"Out of range","Out of range",1,NA,"RNeasy","15",14,NA,"pellet",NA,NA,NA,"https://grace-ac.github.io/24sample-RNeasy-extraction/"
 "261",6105,"6105_234_12","cold",12,1,"I","234","2019-04-01_155616","RNA High sensitivity","Sample_#190401-155805",2019-04-01 15:58:05,"Out of range","Out of range",10,20,"RNeasy","15",10,NA,"pellet",NA,NA,"used manifold for 24 samples and QIA shredder columns","https://grace-ac.github.io/24sample-RNeasy-extraction/"
 "262",6105,"6105_234_12","cold",12,1,"I","234","2019-04-03_122608","RNA High sensitivity","Sample_#190403-122718",2019-04-03 12:27:00,"Out of range","Out of range",1,200,"RNeasy","15",14,NA,"pellet",NA,NA,NA,"https://grace-ac.github.io/bairdi-RNA-RNeasy/"
 "263",6105,"6105_234_12","cold",12,1,"I","234","2019-04-03_122608","RNA High sensitivity","Sample_#190403-122718",2019-04-03 12:27:18,"Out of range","Out of range",1,200,"RNeasy","15",14,NA,"pellet",NA,NA,"QIAshredder columns","https://grace-ac.github.io/bairdi-RNA-RNeasy/"
-"264",6106,"6106_241_12","cold",12,0,"M","241",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"264",6106,"6106_241_12","cold",12,0,"M","241","2019-10-28_171734","RNA High sensitivity","Sample_#191028-171907",2019-10-28 17:21:29,"130","13",2,100,"Zymo_microprep","35",15,169,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
 "265",6108,"6108_255_12","cold",12,1,"I","255","2019-04-30_143341","RNA High sensitivity","Sample_#190430-143711",2019-04-30 14:37:11,"166","16.600000000000001",2,100,"Zymo_microprep","70",15,215.8,"pellet","y",NA,"https://robertslab.github.io/sams-notebook/2019/05/21/Sample-Submission-Tanner-Crab-Infected-vs-Uninfected-RNAseq.html","https://robertslab.github.io/sams-notebook/2019/04/30/RNA-Isolation-and-Quantification-C.bairdi-Hemolymph-Pellet-in-RNAlater.html"
 "266",6113,"6113_214_12","cold",12,0,"I","214","2018-04-24_145028","RNA High sensitivity","Sample_#180424-145111",2018-04-24 14:51:00,"88.7","3.55",5,40,"RNAzol","all",50,159.75,"pellet",NA,NA,NA,"https://grace-ac.github.io/RNA-isolation-update/"
 "267",6116,"6116_212_12","cold",12,1,"I","212",NA,"RNA High sensitivity",NA,2019-03-19 00:00:00,"Out of range","Out of range",1,NA,"RNeasy","15",14,NA,"pellet",NA,NA,NA,"https://grace-ac.github.io/24sample-RNeasy-extraction/"
 "268",6116,"6116_212_12","cold",12,1,"I","212","2019-04-01_155616","RNA High sensitivity","Sample_#190401-155719",2019-04-01 15:57:19,"Out of range","Out of range",10,20,"RNeasy","15",10,NA,"pellet",NA,NA,"used manifold for 24 samples and QIA shredder columns","https://grace-ac.github.io/24sample-RNeasy-extraction/"
 "269",6117,"6117_225_12","cold",12,0,"I","225","2018-04-24_145028","RNA High sensitivity","Sample_#180424-145143",2018-04-24 14:51:00,"44.1","1.76",5,40,"RNAzol","all",50,79.2,"pellet",NA,NA,NA,"https://grace-ac.github.io/RNA-isolation-update/"
-"270",6118,"6118_240_12","cold",12,1,"I","240",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"270",6118,"6118_240_12","cold",12,1,"I","240","2019-10-28_171734","RNA High sensitivity","Sample_#191028-171916",2019-10-28 17:21:29,"216","21.6",2,100,"Zymo_microprep","35",15,280.8,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
 "271",6119,"6119_258_12","cold",12,0,"I","258","2018-04-10_172219","RNA High sensitivity","Sample_#180410-172253",2018-04-10 17:22:00,"96.4","3.86",5,40,"RNAzol","all",50,173.7,"pellet",NA,NA,NA,"https://github.com/grace-ac/grace-ac.github.io/blob/master/_posts/2018-04-10-Crab-updates.md"
-"272",6120,"6120_248_12","cold",12,1,"I","248",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"273",6126,"6126_201_12","cold",12,1,"I","201",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"272",6120,"6120_248_12","cold",12,1,"I","248","2019-10-28_171734","RNA High sensitivity","Sample_#191028-171924",2019-10-28 17:21:29,"134","13.4",2,100,"Zymo_microprep","35",15,174.2,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
+"273",6126,"6126_201_12","cold",12,1,"I","201","2019-10-28_171734","RNA High sensitivity","Sample_#191028-171933",2019-10-28 17:21:29,"62.7","6.27",2,100,"Zymo_microprep","35",15,81.51,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
 "274",6128,"6128_231_12","cold",12,1,"I","231",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "275",6132,"6132_205_12","cold",12,0,"I","205","2018-04-10_172219","RNA High sensitivity","Sample_#180410-172304",2018-04-10 17:23:00,"40.9","1.64",5,40,"RNAzol","all",50,73.8,"pellet",NA,NA,NA,"https://github.com/grace-ac/grace-ac.github.io/blob/master/_posts/2018-04-10-Crab-updates.md"
 "276",6133,"6133_223_12","cold",12,0,"I","223","2018-04-10_172219","RNA High sensitivity","Sample_#180410-172313",2018-04-10 17:23:00,"206","8.24",5,40,"RNAzol","all",50,370.8,"pellet",NA,NA,NA,"https://github.com/grace-ac/grace-ac.github.io/blob/master/_posts/2018-04-10-Crab-updates.md"
@@ -279,9 +279,9 @@
 "278",6140,"6140_237_12","cold",12,1,"I","237",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "279",6141,"6141_249_12","cold",12,1,"I","249",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "280",6147,"6147_204_12","cold",12,0,"I","204","2018-04-29_175738","RNA High sensitivity","Sample_#180429-175836",2018-04-29 17:58:00,"89.9","3.6",5,40,"RNAzol","all",50,162,"pellet",NA,NA,NA,"https://grace-ac.github.io/RNA-isolations-DecaPod/"
-"281",6148,"6148_213_12","cold",12,1,"I","213",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"282",6149,"6149_226_12","cold",12,1,"I","226",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"283",6151,"6151_243_12","cold",12,1,"I","243",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"281",6148,"6148_213_12","cold",12,1,"I","213","2019-10-28_171734","RNA High sensitivity","Sample_#191028-171952",2019-10-28 17:21:29,"340","34",2,100,"Zymo_microprep","35",15,442,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
+"282",6149,"6149_226_12","cold",12,1,"I","226","2019-10-28_171734","RNA High sensitivity","Sample_#191028-172000",2019-10-28 17:21:29,"262","26.2",2,100,"Zymo_microprep","35",15,340.6,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
+"283",6151,"6151_243_12","cold",12,1,"I","243","2019-10-28_171734","RNA High sensitivity","Sample_#191028-172009",2019-10-28 17:21:29,"23","2.2999999999999998",2,100,"Zymo_microprep","35",15,29.9,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
 "284",6153,"6153_209_12","cold",12,0,"M","209",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "285",6154,"6154_232_12","cold",12,0,"I","232","2018-04-29_175738","RNA High sensitivity","Sample_#180429-175848",2018-04-29 17:58:00,"59.4","2.38",5,40,"RNAzol","all",50,107.1,"pellet",NA,NA,NA,"https://grace-ac.github.io/RNA-isolations-DecaPod/"
 "286",6156,"6156_242_12","cold",12,0,"I","242",NA,"RNA High sensitivity",NA,2019-03-19 00:00:00,"Out of range","Out of range",1,NA,"RNeasy","15",14,NA,"pellet",NA,NA,NA,"https://grace-ac.github.io/24sample-RNeasy-extraction/"
@@ -305,7 +305,7 @@
 "304",6188,"6188_245_12","cold",12,1,"I","245",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "305",6189,"6189_216_12","cold",12,0,"I","216",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "306",6190,"6190_256_12","cold",12,3,"M","256",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"307",6191,"6191_227_12","cold",12,0,"I","227",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"307",6191,"6191_227_12","cold",12,0,"I","227","2019-10-28_171734","RNA High sensitivity","Sample_#191028-171943",2019-10-28 17:21:29,"180","18",2,100,"Zymo_microprep","35",15,234,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
 "308",6194,"6194_235_12","cold",12,0,"M","235","2019-04-30_143341","RNA High sensitivity","Sample_#190430-143658",2019-04-30 14:36:58,"137","13.7",2,100,"Zymo_microprep","70",15,178.1,"pellet","y",NA,"https://robertslab.github.io/sams-notebook/2019/05/21/Sample-Submission-Tanner-Crab-Infected-vs-Uninfected-RNAseq.html","https://robertslab.github.io/sams-notebook/2019/04/30/RNA-Isolation-and-Quantification-C.bairdi-Hemolymph-Pellet-in-RNAlater.html"
 "309",6196,"6196_203_12","cold",12,1,"I","203",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "310",6197,"6197_244_12","cold",12,0,"M","244","2019-04-30_143341","RNA High sensitivity","Sample_#190430-143704",2019-04-30 14:37:05,"239","23.9",2,100,"Zymo_microprep","70",15,310.7,"pellet","y",NA,"https://robertslab.github.io/sams-notebook/2019/05/21/Sample-Submission-Tanner-Crab-Infected-vs-Uninfected-RNAseq.html","https://robertslab.github.io/sams-notebook/2019/04/30/RNA-Isolation-and-Quantification-C.bairdi-Hemolymph-Pellet-in-RNAlater.html"
@@ -356,29 +356,29 @@
 "355",6239,"6239_291_12","warm",12,1,"I","291",NA,"RNA High sensitivity",NA,2019-03-19 00:00:00,"Out of range","Out of range",1,NA,"RNeasy","15",14,NA,"pellet",NA,NA,NA,"https://grace-ac.github.io/24sample-RNeasy-extraction/"
 "356",6239,"6239_291_12","warm",12,1,"I","291","2019-04-01_155616","RNA High sensitivity","Sample_#190401-155917",2019-04-01 15:59:17,"Out of range","Out of range",10,20,"RNeasy","15",10,NA,"pellet",NA,NA,"used manifold for 24 samples and QIA shredder columns","https://grace-ac.github.io/24sample-RNeasy-extraction/"
 "357",6240,"6240_362_12","warm",12,1,"I","362",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"358",6242,"6242_377_12","warm",12,0,"M","377",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"358",6242,"6242_377_12","warm",12,0,"M","377","2019-10-28_171734","RNA High sensitivity","Sample_#191028-172018",2019-10-28 17:21:29,"223","22.3",2,100,"Zymo_microprep","35",15,289.9,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
 "359",6243,"6243_272_12","warm",12,1,"I","272",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "360",6244,"6244_284_12","warm",12,1,"I","284",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "361",6245,"6245_365_12","warm",12,1,"I","365",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "362",6246,"6246_265_12","warm",12,0,"I","265","2018-05-24_135020","RNA High sensitivity","Sample_#180524-135058",2018-05-24 13:50:00,"181","7.24",5,40,"RNAzol","all",50,325.8,"pellet",NA,NA,NA,"no post"
 "363",6247,"6247_287_12","warm",12,0,"I","287","2018-05-24_135020","RNA High sensitivity","Sample_#180524-135119",2018-05-24 13:51:00,"138","5.52",5,40,"RNAzol","all",50,248.4,"pellet",NA,NA,NA,"no post"
 "364",6248,"6248_378_12","warm",12,0,"I","378",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"365",6249,"6249_279_12","warm",12,1,"I","279",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"366",6250,"6250_294_12","warm",12,1,"I","294",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"367",6251,"6251_376_12","warm",12,1,"I","376",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"365",6249,"6249_279_12","warm",12,1,"I","279","2019-10-28_171734","RNA High sensitivity","Sample_#191028-172027",2019-10-28 17:21:29,"355","35.5",2,100,"Zymo_microprep","35",15,461.5,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
+"366",6250,"6250_294_12","warm",12,1,"I","294","2019-10-28_171734","RNA High sensitivity","Sample_#191028-172035",2019-10-28 17:21:29,"52.3","5.23",2,100,"Zymo_microprep","35",15,67.99,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
+"367",6251,"6251_376_12","warm",12,1,"I","376","2019-10-28_171734","RNA High sensitivity","Sample_#191028-172044",2019-10-28 17:21:29,"84.7","8.4700000000000006",2,100,"Zymo_microprep","35",15,110.11,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
 "368",6253,"6253_275_12","warm",12,0,"I","275",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"369",6254,"6254_296_12","warm",12,0,"I","296",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"369",6254,"6254_296_12","warm",12,0,"I","296","2019-10-28_171734","RNA High sensitivity","Sample_#191028-172054",2019-10-28 17:21:29,"84.9","8.49",2,100,"Zymo_microprep","35",15,110.37,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
 "370",6255,"6255_262_12","warm",12,1,"I","262",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "371",6256,"6256_283_12","warm",12,1,"I","283",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "372",6257,"6257_363_12","warm",12,1,"I","363",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "373",6258,"6258_261_12","warm",12,3,"M","261",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"374",6259,"6259_281_12","warm",12,0,"M","281",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"375",6260,"6260_374_12","warm",12,0,"M","374",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"374",6259,"6259_281_12","warm",12,0,"M","281","2019-10-28_171734","RNA High sensitivity","Sample_#191028-172102",2019-10-28 17:21:29,"231","23.1",2,100,"Zymo_microprep","35",15,300.3,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
+"375",6260,"6260_374_12","warm",12,0,"M","374","2019-10-28_171734","RNA High sensitivity","Sample_#191028-172111",2019-10-28 17:21:29,"183","18.3",2,100,"Zymo_microprep","35",15,237.9,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
 "376",6261,"6261_273_12","warm",12,1,"I","273",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "377",6262,"6262_289_12","warm",12,1,"I","289",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "378",6263,"6263_368_12","warm",12,1,"I","368",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"379",6264,"6264_268_12","warm",12,0,"I","268",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"380",6265,"6265_282_12","warm",12,0,"I","282",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"379",6264,"6264_268_12","warm",12,0,"I","268","2019-10-28_171734","RNA High sensitivity","Sample_#191028-172120",2019-10-28 17:21:29,"152","15.2",2,100,"Zymo_microprep","35",15,197.6,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
+"380",6265,"6265_282_12","warm",12,0,"I","282","2019-10-28_171734","RNA High sensitivity","Sample_#191028-172129",2019-10-28 17:21:29,"244","24.4",2,100,"Zymo_microprep","35",15,317.2,"pellet",NA,NA,"https://grace-ac.github.io/day12-extractions/",NA
 "381",6266,"6266_264_12","warm",12,1,"I","264",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "382",6267,"6267_288_12","warm",12,1,"I","288","2019-04-30_143341","RNA High sensitivity","Sample_#190430-143724",2019-04-30 14:37:24,"248","24.8",2,100,"Zymo_microprep","70",15,322.4,"pellet","y",NA,"https://robertslab.github.io/sams-notebook/2019/05/21/Sample-Submission-Tanner-Crab-Infected-vs-Uninfected-RNAseq.html","https://robertslab.github.io/sams-notebook/2019/04/30/RNA-Isolation-and-Quantification-C.bairdi-Hemolymph-Pellet-in-RNAlater.html"
 "383",6268,"6268_369_12","warm",12,0,"I","369","2019-04-30_143341","RNA High sensitivity","Sample_#190430-143849",2019-04-30 14:38:49,"315","31.5",2,100,"Zymo_microprep","70",15,409.5,"pellet","y",NA,"https://robertslab.github.io/sams-notebook/2019/05/21/Sample-Submission-Tanner-Crab-Infected-vs-Uninfected-RNAseq.html","https://robertslab.github.io/sams-notebook/2019/04/30/RNA-Isolation-and-Quantification-C.bairdi-Hemolymph-Pellet-in-RNAlater.html"
