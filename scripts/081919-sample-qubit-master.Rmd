@@ -7,7 +7,7 @@ Markdown for joining master qubit file with hemolymph sample file
 
 install package: readxl
 ```{r}
-install.packages("readxl")
+#install.packages("readxl")
 ```
 
 ```{r}
