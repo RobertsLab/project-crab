@@ -1,0 +1,13 @@
+{
+	"n_targets": 143172,
+	"n_bootstraps": 0,
+	"n_processed": 19604689,
+	"n_pseudoaligned": 14467327,
+	"n_unique": 7785224,
+	"p_pseudoaligned": 73.8,
+	"p_unique": 39.7,
+	"kallisto_version": "0.46.1",
+	"index_version": 10,
+	"start_time": "Fri Nov  8 11:55:55 2019",
+	"call": "/Applications/bioinfo/kallisto/kallisto quant -i ../data/Cbairdi_transcriptome-1.fai -o ../analyses/329775_L2 -t 4 ../data/329775_S2_L002_R1_001.fastq.gz ../data/329775_S2_L002_R2_001.fastq.gz"
+}
