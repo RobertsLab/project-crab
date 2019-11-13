@@ -1,0 +1,148 @@
+term_ID,description,frequency,plot_X,plot_Y,plot_size,value,uniqueness,dispensability,representative,eliminated
+GO:0008152,"metabolic process",75.387%,-1.132,-0.582,6.986,1.3235,0.997,0.000,8152,0
+GO:0016197,"endosomal transport",0.131%,-0.406, 0.661,4.225,2.8461,0.986,0.000,16197,0
+GO:0019388,"galactose catabolic process",0.005%,-1.701,-4.695,2.817,35.5763,0.769,0.000,19388,0
+GO:0019320,"hexose catabolic process",0.043%,null,null,3.745,7.7621,0.737,0.767,19388,1
+GO:0042590,"antigen processing and presentation of exogenous peptide antigen via MHC class I",0.001%,-4.139, 3.311,2.188,6.4684,0.956,0.000,42590,0
+GO:0002479,"antigen processing and presentation of exogenous peptide antigen via MHC class I, TAP-dependent",0.001%,null,null,1.892,6.7764,0.956,0.876,42590,1
+GO:0043248,"proteasome assembly",0.049%,-4.361,-2.877,3.795,20.3293,0.910,0.000,43248,0
+GO:0032259,"methylation",3.103%, 0.975, 1.769,5.600,2.5564,0.955,0.010,32259,0
+GO:0009056,"catabolic process",4.820%,-2.491, 1.463,5.791,1.6975,0.952,0.021,9056,0
+GO:0006457,"protein folding",0.903%,-1.656, 0.663,5.064,3.1071,0.941,0.026,6457,0
+GO:0035246,"peptidyl-arginine N-methylation",0.015%, 1.005,-8.318,3.281,23.7175,0.786,0.031,35246,0
+GO:0006807,"nitrogen compound metabolic process",38.744%, 0.245, 4.571,6.696,1.4747,0.936,0.035,6807,0
+GO:0038061,"NIK/NF-kappaB signaling",0.018%,-5.574,-0.910,3.360,5.3198,0.819,0.044,38061,0
+GO:0051188,"cofactor biosynthetic process",2.763%, 6.320, 3.277,5.550,4.6657,0.830,0.048,51188,0
+GO:0005975,"carbohydrate metabolic process",5.260%, 2.156, 2.931,5.829,2.0120,0.887,0.049,5975,0
+GO:0009058,"biosynthetic process",31.611%,-0.461, 2.798,6.608,1.3285,0.939,0.066,9058,0
+GO:1901135,"carbohydrate derivative metabolic process",6.319%, 1.498, 4.468,5.909,1.7118,0.898,0.079,1901135,0
+GO:0051186,"cofactor metabolic process",3.985%, 3.350, 5.740,5.709,2.5874,0.882,0.087,51186,0
+GO:0090305,"nucleic acid phosphodiester bond hydrolysis",2.271%, 7.668,-2.150,5.464,3.0713,0.744,0.089,90305,0
+GO:0071704,"organic substance metabolic process",58.357%,-1.057, 4.577,6.874,1.3158,0.931,0.094,71704,0
+GO:1901360,"organic cyclic compound metabolic process",30.324%, 3.994, 2.028,6.590,1.5274,0.868,0.113,1901360,0
+GO:0044238,"primary metabolic process",53.743%,-0.726, 5.552,6.839,1.2920,0.932,0.120,44238,0
+GO:0055114,"oxidation-reduction process",15.060%,-2.692, 5.380,6.286,2.3163,0.906,0.133,55114,0
+GO:0006725,"cellular aromatic compound metabolic process",29.628%, 5.800, 4.116,6.580,1.5745,0.838,0.134,6725,0
+GO:0006521,"regulation of cellular amino acid metabolic process",0.018%,-4.032,-1.494,3.361,7.9058,0.737,0.173,6521,0
+GO:0044237,"cellular metabolic process",53.061%, 4.238, 5.820,6.833,1.3391,0.877,0.176,44237,0
+GO:0010467,"gene expression",19.671%, 6.144,-5.777,6.402,1.3946,0.783,0.208,10467,0
+GO:1901564,"organonitrogen compound metabolic process",17.886%, 6.763,-0.582,6.361,1.6659,0.817,0.211,1901564,0
+GO:0043170,"macromolecule metabolic process",39.491%, 4.555, 1.750,6.705,1.2781,0.861,0.211,43170,0
+GO:0043488,"regulation of mRNA stability",0.018%,-3.562,-5.489,3.366,3.9257,0.758,0.217,43488,0
+GO:0051439,"regulation of ubiquitin-protein ligase activity involved in mitotic cell cycle",0.001%,-1.348,-6.911,2.185,7.9058,0.638,0.234,51439,0
+GO:1903362,"regulation of cellular protein catabolic process",0.062%,null,null,3.902,2.8348,0.505,0.920,51439,1
+GO:2000060,"positive regulation of protein ubiquitination involved in ubiquitin-dependent protein catabolic process",0.005%,null,null,2.790,6.2552,0.505,0.856,51439,1
+GO:2000058,"regulation of protein ubiquitination involved in ubiquitin-dependent protein catabolic process",0.009%,null,null,3.040,5.6358,0.505,0.703,51439,1
+GO:1903321,"negative regulation of protein modification by small protein conjugation or removal",0.020%,null,null,3.400,5.0823,0.604,0.799,51439,1
+GO:1903322,"positive regulation of protein modification by small protein conjugation or removal",0.049%,null,null,3.799,3.5936,0.563,0.917,51439,1
+GO:0009896,"positive regulation of catabolic process",0.072%,null,null,3.966,2.5641,0.601,0.930,51439,1
+GO:0042176,"regulation of protein catabolic process",0.112%,null,null,4.158,3.0769,0.510,0.807,51439,1
+GO:1904667,"negative regulation of ubiquitin protein ligase activity",0.004%,null,null,2.740,7.7975,0.623,0.765,51439,1
+GO:1904668,"positive regulation of ubiquitin protein ligase activity",0.024%,null,null,3.488,6.9417,0.572,0.890,51439,1
+GO:1904666,"regulation of ubiquitin protein ligase activity",0.028%,null,null,3.551,6.6188,0.588,0.975,51439,1
+GO:0051436,"negative regulation of ubiquitin-protein ligase activity involved in mitotic cell cycle",0.001%,null,null,2.182,8.0172,0.634,0.916,51439,1
+GO:0051437,"positive regulation of ubiquitin-protein ligase activity involved in regulation of mitotic cell cycle transition",0.001%,null,null,1.924,7.4897,0.532,0.703,51439,1
+GO:0045732,"positive regulation of protein catabolic process",0.054%,null,null,3.844,3.3223,0.511,0.912,51439,1
+GO:0051438,"regulation of ubiquitin-protein transferase activity",0.034%,null,null,3.639,5.9792,0.588,0.892,51439,1
+GO:0031398,"positive regulation of protein ubiquitination",0.045%,null,null,3.765,3.9095,0.561,0.950,51439,1
+GO:0031397,"negative regulation of protein ubiquitination",0.017%,null,null,3.342,4.4126,0.600,0.924,51439,1
+GO:0051443,"positive regulation of ubiquitin-protein transferase activity",0.028%,null,null,3.550,6.9080,0.569,0.966,51439,1
+GO:0051444,"negative regulation of ubiquitin-protein transferase activity",0.006%,null,null,2.851,7.1153,0.620,0.873,51439,1
+GO:0006414,"translational elongation",0.777%, 4.608,-4.701,4.999,4.1854,0.683,0.244,6414,0
+GO:0046483,"heterocycle metabolic process",29.664%, 6.049, 4.261,6.580,1.5627,0.838,0.245,46483,0
+GO:0019222,"regulation of metabolic process",11.942%,-5.547,-2.604,6.185,1.3375,0.732,0.246,19222,0
+GO:0098732,"macromolecule deacylation",0.085%, 0.201,-8.383,4.040,5.6922,0.822,0.264,98732,0
+GO:0044710,"single-organism metabolic process",31.682%,-1.756, 6.218,6.609,1.4710,0.906,0.268,44710,0
+GO:0043412,"macromolecule modification",9.785%, 5.837,-6.392,6.099,1.2603,0.807,0.285,43412,0
+GO:0006476,"protein deacetylation",0.072%, 1.849,-8.064,3.967,6.0555,0.760,0.294,6476,0
+GO:0035601,"protein deacylation",0.082%,null,null,4.020,5.7497,0.758,0.984,6476,1
+GO:0031145,"anaphase-promoting complex-dependent catabolic process",0.021%, 1.280,-6.620,3.421,7.2053,0.661,0.319,31145,0
+GO:0034660,"ncRNA metabolic process",3.407%, 6.528,-3.245,5.641,2.2469,0.703,0.338,34660,0
+GO:0007005,"mitochondrion organization",0.418%,-3.713,-2.593,4.729,2.1793,0.911,0.372,7005,0
+GO:0016071,"mRNA metabolic process",0.798%, 7.509,-3.391,5.010,1.9059,0.749,0.376,16071,0
+GO:0009894,"regulation of catabolic process",0.146%,-2.539,-5.357,4.272,2.5162,0.643,0.384,9894,0
+GO:0034645,"cellular macromolecule biosynthetic process",19.291%, 6.162,-1.995,6.394,1.3913,0.650,0.404,34645,0
+GO:0044267,"cellular protein metabolic process",14.293%, 5.127,-4.980,6.263,1.2488,0.679,0.404,44267,0
+GO:0044723,"single-organism carbohydrate metabolic process",2.457%,-2.335, 5.577,5.499,1.9524,0.851,0.411,44723,0
+GO:0044281,"small molecule metabolic process",15.138%,-2.780, 5.109,6.288,1.6047,0.906,0.415,44281,0
+GO:0034641,"cellular nitrogen compound metabolic process",34.137%, 6.726, 1.054,6.641,1.5095,0.776,0.415,34641,0
+GO:0044260,"cellular macromolecule metabolic process",34.276%, 6.482,-1.943,6.643,1.3235,0.722,0.417,44260,0
+GO:0034470,"ncRNA processing",2.222%, 6.108,-3.531,5.455,2.4237,0.709,0.429,34470,0
+GO:0090304,"nucleic acid metabolic process",21.449%, 6.195,-1.704,6.440,1.4898,0.658,0.444,90304,0
+GO:0002223,"stimulatory C-type lectin receptor signaling pathway",0.001%,-5.621, 0.316,2.199,5.4211,0.777,0.449,2223,0
+GO:0002220,"innate immune response activating cell surface receptor signaling pathway",0.002%,null,null,2.310,5.3198,0.775,0.720,2223,1
+GO:0038093,"Fc receptor signaling pathway",0.005%,null,null,2.806,2.9281,0.791,0.748,2223,1
+GO:0006396,"RNA processing",3.210%, 6.173,-3.608,5.615,1.8766,0.696,0.453,6396,0
+GO:0060071,"Wnt signaling pathway, planar cell polarity pathway",0.010%,-5.205, 0.001,3.106,5.3198,0.758,0.453,60071,0
+GO:0035567,"non-canonical Wnt signaling pathway",0.014%,null,null,3.249,3.6724,0.788,0.752,60071,1
+GO:0030177,"positive regulation of Wnt signaling pathway",0.028%,null,null,3.550,3.6962,0.744,0.864,60071,1
+GO:0090263,"positive regulation of canonical Wnt signaling pathway",0.019%,null,null,3.386,4.7043,0.750,0.738,60071,1
+GO:0090175,"regulation of establishment of planar polarity",0.011%,null,null,3.156,5.1747,0.824,0.937,60071,1
+GO:0060828,"regulation of canonical Wnt signaling pathway",0.047%,null,null,3.780,2.9524,0.770,0.914,60071,1
+GO:0001736,"establishment of planar polarity",0.019%,null,null,3.379,4.6657,0.928,0.971,60071,1
+GO:0001738,"morphogenesis of a polarized epithelium",0.021%,null,null,3.437,4.2164,0.934,0.732,60071,1
+GO:0007164,"establishment of tissue polarity",0.019%,-3.734, 2.347,3.380,4.6657,0.945,0.462,7164,0
+GO:0009059,"macromolecule biosynthetic process",19.548%, 7.106,-2.302,6.399,1.3474,0.716,0.506,9059,0
+GO:1901362,"organic cyclic compound biosynthetic process",17.871%, 7.602,-0.573,6.360,1.3807,0.743,0.510,1901362,0
+GO:0043414,"macromolecule methylation",1.255%, 3.175,-7.581,5.207,3.2099,0.744,0.510,43414,0
+GO:0019438,"aromatic compound biosynthetic process",16.954%, 7.512, 0.560,6.338,1.3832,0.731,0.517,19438,0
+GO:0033209,"tumor necrosis factor-mediated signaling pathway",0.016%,-5.464,-0.496,3.305,4.0951,0.797,0.517,33209,0
+GO:0018130,"heterocycle biosynthetic process",17.388%, 7.530, 0.310,6.348,1.4195,0.730,0.520,18130,0
+GO:0000288,"nuclear-transcribed mRNA catabolic process, deadenylation-dependent decay",0.051%, 5.059,-4.222,3.820,5.9294,0.636,0.537,288,0
+GO:0000956,"nuclear-transcribed mRNA catabolic process",0.137%,null,null,4.244,4.1448,0.610,0.871,288,1
+GO:0006402,"mRNA catabolic process",0.232%,null,null,4.475,3.8635,0.594,0.825,288,1
+GO:0006401,"RNA catabolic process",0.395%,null,null,4.705,3.4290,0.579,0.867,288,1
+GO:0034655,"nucleobase-containing compound catabolic process",0.760%,null,null,4.989,3.7449,0.628,0.725,288,1
+GO:0046700,"heterocycle catabolic process",1.044%, 2.885,-4.184,5.127,3.4624,0.657,0.546,46700,0
+GO:0030163,"protein catabolic process",0.997%,null,null,5.107,1.9302,0.610,0.860,46700,1
+GO:0044257,"cellular protein catabolic process",0.772%,null,null,4.996,2.0654,0.567,0.912,46700,1
+GO:0044270,"cellular nitrogen compound catabolic process",1.045%,null,null,5.127,3.4044,0.656,0.726,46700,1
+GO:0044265,"cellular macromolecule catabolic process",1.268%,null,null,5.211,2.4787,0.604,0.750,46700,1
+GO:0019941,"modification-dependent protein catabolic process",0.612%,null,null,4.895,2.1893,0.570,0.985,46700,1
+GO:0043632,"modification-dependent macromolecule catabolic process",0.627%,null,null,4.905,2.1598,0.616,0.844,46700,1
+GO:0019439,"aromatic compound catabolic process",1.164%,null,null,5.174,3.3642,0.653,0.734,46700,1
+GO:0051603,"proteolysis involved in cellular protein catabolic process",0.759%,null,null,4.988,1.9494,0.564,0.963,46700,1
+GO:0006511,"ubiquitin-dependent protein catabolic process",0.584%,null,null,4.874,2.2197,0.571,0.811,46700,1
+GO:0016570,"histone modification",0.373%, 1.369,-7.043,4.680,2.2639,0.698,0.553,16570,0
+GO:0016569,"covalent chromatin modification",0.424%,null,null,4.736,2.3286,0.747,0.900,16570,1
+GO:0044249,"cellular biosynthetic process",30.048%, 7.018, 2.191,6.586,1.3258,0.749,0.556,44249,0
+GO:0043487,"regulation of RNA stability",0.021%,-3.436,-5.508,3.421,3.7449,0.756,0.573,43487,0
+GO:0018205,"peptidyl-lysine modification",0.355%, 2.580,-7.741,4.658,2.4475,0.735,0.573,18205,0
+GO:0016070,"RNA metabolic process",15.951%, 6.006,-2.543,6.311,1.4696,0.646,0.577,16070,0
+GO:0044271,"cellular nitrogen compound biosynthetic process",22.502%, 7.101, 0.602,6.460,1.3520,0.716,0.585,44271,0
+GO:1901990,"regulation of mitotic cell cycle phase transition",0.158%,-5.628,-3.332,4.308,2.7366,0.780,0.589,1901990,0
+GO:1901987,"regulation of cell cycle phase transition",0.163%,null,null,4.320,2.5412,0.782,0.959,1901990,1
+GO:0006139,"nucleobase-containing compound metabolic process",26.547%, 6.425,-0.109,6.532,1.5228,0.706,0.597,6139,0
+GO:0006012,"galactose metabolic process",0.109%,-3.697, 4.459,4.145,21.8931,0.874,0.601,6012,0
+GO:0046365,"monosaccharide catabolic process",0.115%,null,null,4.167,6.9986,0.722,0.701,6012,1
+GO:0042255,"ribosome assembly",0.164%,-4.316,-2.721,4.322,7.1153,0.901,0.621,42255,0
+GO:0033238,"regulation of cellular amine metabolic process",0.021%,-2.020,-3.844,3.438,5.7691,0.749,0.631,33238,0
+GO:1901361,"organic cyclic compound catabolic process",1.164%, 2.611,-4.246,5.174,3.1979,0.680,0.640,1901361,0
+GO:0042787,"protein ubiquitination involved in ubiquitin-dependent protein catabolic process",0.060%, 1.611,-6.876,3.888,3.2051,0.565,0.643,42787,0
+GO:1903320,"regulation of protein modification by small protein conjugation or removal",0.078%,-0.395,-6.527,3.999,3.0936,0.605,0.654,1903320,0
+GO:1901576,"organic substance biosynthetic process",30.365%, 7.089, 1.920,6.591,1.2798,0.768,0.658,1901576,0
+GO:0006355,"regulation of transcription, DNA-templated",9.917%, 4.076,-2.591,6.105,1.5009,0.462,0.664,6355,0
+GO:0032774,"RNA biosynthetic process",10.925%,null,null,6.147,1.4577,0.611,0.729,6355,1
+GO:0080090,"regulation of primary metabolic process",11.675%,null,null,6.175,1.3745,0.637,0.858,6355,1
+GO:0010468,"regulation of gene expression",10.815%,null,null,6.142,1.4411,0.571,0.843,6355,1
+GO:0031323,"regulation of cellular metabolic process",11.662%,null,null,6.175,1.3393,0.615,0.871,6355,1
+GO:0031326,"regulation of cellular biosynthetic process",10.816%,null,null,6.142,1.3951,0.569,0.890,6355,1
+GO:0051252,"regulation of RNA metabolic process",10.029%,null,null,6.109,1.4753,0.487,0.886,6355,1
+GO:2001141,"regulation of RNA biosynthetic process",9.969%,null,null,6.107,1.4840,0.462,0.896,6355,1
+GO:0019219,"regulation of nucleobase-containing compound metabolic process",10.258%,null,null,6.119,1.4217,0.535,0.860,6355,1
+GO:2000112,"regulation of cellular macromolecule biosynthetic process",10.683%,null,null,6.137,1.4619,0.509,0.875,6355,1
+GO:0006351,"transcription, DNA-templated",10.659%,null,null,6.136,1.4211,0.599,0.876,6355,1
+GO:0060255,"regulation of macromolecule metabolic process",11.716%,null,null,6.177,1.3704,0.582,0.872,6355,1
+GO:1903506,"regulation of nucleic acid-templated transcription",9.965%,null,null,6.107,1.4917,0.462,0.899,6355,1
+GO:0097659,"nucleic acid-templated transcription",10.721%,null,null,6.138,1.4340,0.606,0.882,6355,1
+GO:0009889,"regulation of biosynthetic process",10.834%,null,null,6.143,1.3775,0.610,0.844,6355,1
+GO:0010556,"regulation of macromolecule biosynthetic process",10.749%,null,null,6.140,1.4206,0.532,0.887,6355,1
+GO:0051171,"regulation of nitrogen compound metabolic process",10.926%,null,null,6.147,1.4864,0.616,0.827,6355,1
+GO:0006325,"chromatin organization",0.668%,-3.960,-2.713,4.933,1.8529,0.895,0.689,6325,0
+GO:0034622,"cellular macromolecular complex assembly",1.211%,null,null,5.191,1.7009,0.887,0.775,6325,1
+GO:0034654,"nucleobase-containing compound biosynthetic process",14.533%, 6.650,-0.203,6.271,1.3391,0.674,0.695,34654,0
+GO:0006412,"translation",5.686%, 5.015,-3.735,5.863,1.9980,0.604,0.696,6412,0
+GO:0043043,"peptide biosynthetic process",5.770%,null,null,5.869,1.9202,0.738,0.927,6412,1
+GO:0009057,"macromolecule catabolic process",1.953%, 3.364,-6.037,5.399,2.1328,0.656,0.700,9057,0
+GO:0044248,"cellular catabolic process",3.266%,null,null,5.622,1.9373,0.673,0.785,9057,1
+GO:1901575,"organic substance catabolic process",4.612%,null,null,5.772,1.8080,0.678,0.888,9057,1
