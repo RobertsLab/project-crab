@@ -1,8 +1,8 @@
 tube_number,Uniq_ID,trtmnt_tank,sample_day,infection_status,maturity,run_ID,assay_name,test_name,test_date,qubit_tube_conc_ng.ml,original_sample_conc_ng.ul,sample_vol_ul,dilution_factor,RNA_iso_date,extraction_method,RNA_isolation_initials,ul_sample-used,elution_vol_ul,total-yield_ng,sample_type,sequenced_y_n,transcriptome_ID,notes,notebook_post_link
-112,6128_112_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,20200123,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
-114,6204_114_9,cold,9,3,M,NA,NA,NA,NA,NA,NA,NA,NA,20200123,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
-123,6141_123_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,20200123,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
-126,6245_126_9,warm,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,20200123,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+112,6128_112_9,cold,9,1,I,2020-01-23_102238,RNA High sensitivity,Sample_#200123-102302,2020/01/23 10:23:02,171,17.1,2,100,20200123,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+114,6204_114_9,cold,9,3,M,2020-01-23_102238,RNA High sensitivity,Sample_#200123-102309,2020/01/23 10:23:09,53.7,5.37,2,100,20200123,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+123,6141_123_9,cold,9,1,I,2020-01-23_102238,RNA High sensitivity,Sample_#200123-102316,2020/01/23 10:23:16,131,13.1,2,100,20200123,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+126,6245_126_9,warm,9,1,I,2020-01-23_102238,RNA High sensitivity,Sample_#200123-102325,2020/01/23 10:23:25,172,17.2,2,100,20200123,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
 261,6258_261_12,warm,12,3,M,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081128,2020/01/24 08:11:28,106,10.6,2,100,20200124,Zymo_microprep,SJW,NA,15,159,pellet,NA,NA,NA,NA
 269,6270_269_12,warm,12,0,M,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081135,2020/01/24 08:11:35,317,31.7,2,100,20200124,Zymo_microprep,SJW,NA,15,475.5,pellet,NA,NA,NA,NA
 302,6161_302_12,ambient,12,0,M,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081142,2020/01/24 08:11:42,80.4,8.04,2,100,20200124,Zymo_microprep,SJW,NA,15,120.6,pellet,NA,NA,NA,NA
