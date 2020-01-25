@@ -66,35 +66,35 @@ tube_number,Uniq_ID,trtmnt_tank,sample_day,infection_status,maturity,run_ID,assa
 354,6182_354_12,ambient,12,1,I,NA,RNA High sensitivity,NA,4/26/2018 0:00,Out of range,Out of range,NA,NA,NA,RNAzol,,all,50,NA,pellet,NA,NA,isolated on 4/26/19 - all contaminated,https://grace-ac.github.io/RNA-isolation-data-org-in-R/
 372,6275_372_12,warm,12,3,M,NA,NA,NA,NA,NA,NA,NA,NA,20200124,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
 373,6218_373_12,warm,12,3,I,NA,NA,NA,NA,NA,NA,NA,NA,20200124,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
-404,6153_404_26,cold,26,0,M,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130151,8/9/2018 13:01,Out of range,Out of range,1,200,2018-08-09,RNeasy,,all,14,NA,pellet,NA,NA,NA,http://onsnetwork.org/kubu4/2018/08/09/rna-isolation-quantificaiton-tanner-crab-hemolymph/
-406,6132_406_26,cold,26,0,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
-407,6162_407_26,cold,26,1,I,2018-11-21_185949,RNA High sensitivity,Sample_#181121-190232,11/21/2018 19:02,Out of range,Out of range,1,200,2018-11-21,RNeasy,,all,14,NA,pellet,NA,NA,NA,https://grace-ac.github.io/Pool-RNeasy-DecaPod-S1E13/
+404,6153_404_26,cold,26,0,M,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130151,8/9/2018 13:01,Out of range,Out of range,1,200,20200124,RNeasy,SJW,all,14,NA,pellet,NA,NA,NA,http://onsnetwork.org/kubu4/2018/08/09/rna-isolation-quantificaiton-tanner-crab-hemolymph/
+406,6132_406_26,cold,26,0,I,NA,NA,NA,NA,NA,NA,NA,NA,20200124,NA,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+407,6162_407_26,cold,26,1,I,2018-11-21_185949,RNA High sensitivity,Sample_#181121-190232,11/21/2018 19:02,Out of range,Out of range,1,200,20200124,RNeasy,SJW,all,14,NA,pellet,NA,NA,NA,https://grace-ac.github.io/Pool-RNeasy-DecaPod-S1E13/
 408,6196_408_26,cold,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
-410,6178_410_26,cold,26,0,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
+410,6178_410_26,cold,26,0,M,NA,NA,NA,NA,NA,NA,NA,NA,20200124,NA,SJW,NA,NA,NA,NA,NA,NA,NA,NA
 422,6189_422_26,cold,26,0,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
-424,6163_424_26,cold,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
-429,6140_429_26,cold,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
-433,6174_433_26,cold,26,1,I,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130301,8/9/2018 13:03,Out of range,Out of range,1,200,2018-08-09,RNeasy,,all,14,NA,pellet,NA,NA,NA,http://onsnetwork.org/kubu4/2018/08/09/rna-isolation-quantificaiton-tanner-crab-hemolymph/
+424,6163_424_26,cold,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,20200124,NA,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+429,6140_429_26,cold,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,20200124,NA,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+433,6174_433_26,cold,26,1,I,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130301,8/9/2018 13:03,Out of range,Out of range,1,200,20200124,RNeasy,SJW,all,14,NA,pellet,NA,NA,NA,http://onsnetwork.org/kubu4/2018/08/09/rna-isolation-quantificaiton-tanner-crab-hemolymph/
 438,6105_438_26,cold,26,1,I,NA,RNA High sensitivity,NA,3/19/2019 0:00,Out of range,Out of range,1,NA,NA,RNeasy,,15,14,NA,pellet,NA,NA,NA,https://grace-ac.github.io/24sample-RNeasy-extraction/
-445,6199_445_26,cold,26,1,I,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130329,8/9/2018 13:03,Out of range,Out of range,1,200,2018-08-09,RNeasy,,all,14,NA,pellet,NA,NA,NA,http://onsnetwork.org/kubu4/2018/08/09/rna-isolation-quantificaiton-tanner-crab-hemolymph/
-446,6156_446_26,cold,26,0,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
-450,6106_450_26,cold,26,0,M,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130359,8/9/2018 13:03,Out of range,Out of range,1,200,2018-08-09,RNeasy,,all,14,NA,pellet,NA,NA,NA,http://onsnetwork.org/kubu4/2018/08/09/rna-isolation-quantificaiton-tanner-crab-hemolymph/
-454,6151_454_26,cold,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
-456,6177_456_26,cold,26,1,I,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130407,8/9/2018 13:04,Out of range,Out of range,1,200,2018-08-09,RNeasy,,all,14,NA,pellet,NA,NA,NA,http://onsnetwork.org/kubu4/2018/08/09/rna-isolation-quantificaiton-tanner-crab-hemolymph/
-461,6119_461_26,cold,26,0,I,2018-04-10_172219,RNA High sensitivity,Sample_#180410-172322,4/10/2018 17:23,0,0,5,40,2018-04-10,RNAzol,,all,50,0,pellet,NA,NA,NA,https://github.com/grace-ac/grace-ac.github.io/blob/master/_posts/2018-04-10-Crab-updates.md
-464,6124_464_26,ambient,26,0,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
-465,6134_465_26,ambient,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
-466,6168_466_26,ambient,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
-467,6152_467_26,ambient,26,0,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
+445,6199_445_26,cold,26,1,I,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130329,8/9/2018 13:03,Out of range,Out of range,1,200,20200124,RNeasy,SJW,all,14,NA,pellet,NA,NA,NA,http://onsnetwork.org/kubu4/2018/08/09/rna-isolation-quantificaiton-tanner-crab-hemolymph/
+446,6156_446_26,cold,26,0,I,NA,NA,NA,NA,NA,NA,NA,NA,20200124,NA,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+450,6106_450_26,cold,26,0,M,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130359,8/9/2018 13:03,Out of range,Out of range,1,200,20200124,RNeasy,SJW,all,14,NA,pellet,NA,NA,NA,http://onsnetwork.org/kubu4/2018/08/09/rna-isolation-quantificaiton-tanner-crab-hemolymph/
+454,6151_454_26,cold,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,20200124,NA,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+456,6177_456_26,cold,26,1,I,2018-08-09_130126,RNA High sensitivity,Sample_#180809-130407,8/9/2018 13:04,Out of range,Out of range,1,200,20200124,RNeasy,SJW,all,14,NA,pellet,NA,NA,NA,http://onsnetwork.org/kubu4/2018/08/09/rna-isolation-quantificaiton-tanner-crab-hemolymph/
+461,6119_461_26,cold,26,0,I,2018-04-10_172219,RNA High sensitivity,Sample_#180410-172322,4/10/2018 17:23,0,0,5,40,20200124,RNAzol,SJW,all,50,0,pellet,NA,NA,NA,https://github.com/grace-ac/grace-ac.github.io/blob/master/_posts/2018-04-10-Crab-updates.md
+464,6124_464_26,ambient,26,0,M,NA,NA,NA,NA,NA,NA,NA,NA,20200124,NA,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+465,6134_465_26,ambient,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,20200124,NA,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+466,6168_466_26,ambient,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,20200124,NA,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+467,6152_467_26,ambient,26,0,M,NA,NA,NA,NA,NA,NA,NA,NA,20200124,NA,SJW,NA,NA,NA,NA,NA,NA,NA,NA
 468,6111_468_26,ambient,26,1,I,NA,RNA High sensitivity,NA,3/19/2019 0:00,Out of range,Out of range,1,NA,NA,RNeasy,,15,14,NA,pellet,NA,NA,NA,https://grace-ac.github.io/24sample-RNeasy-extraction/
-472,6121_472_26,ambient,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
+472,6121_472_26,ambient,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,20200124,NA,SJW,NA,NA,NA,NA,NA,NA,NA,NA
 474,6142_474_26,ambient,26,0,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
-475,6205_475_26,ambient,26,0,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
-476,6155_476_26,ambient,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
+475,6205_475_26,ambient,26,0,I,NA,NA,NA,NA,NA,NA,NA,NA,20200124,NA,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+476,6155_476_26,ambient,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,20200124,NA,SJW,NA,NA,NA,NA,NA,NA,NA,NA
 477,6144_477_26,ambient,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
-479,6143_479_26,ambient,26,0,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
-483,6158_483_26,ambient,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
-486,6169_486_26,ambient,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
+479,6143_479_26,ambient,26,0,M,NA,NA,NA,NA,NA,NA,NA,NA,20200124,NA,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+483,6158_483_26,ambient,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,20200124,NA,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+486,6169_486_26,ambient,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,20200124,NA,SJW,NA,NA,NA,NA,NA,NA,NA,NA
 489,6122_489_26,ambient,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
 490,6176_490_26,ambient,26,0,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
 491,6136_491_26,ambient,26,0,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
