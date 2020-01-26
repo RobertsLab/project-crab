@@ -44,7 +44,6 @@ tube_number,Uniq_ID,trtmnt_tank,sample_day,infection_status,maturity,run_ID,assa
 42,6117_42_9,cold,9,0,I,2018-04-24_145028,RNA High sensitivity,Sample_#180424-145130,4/24/2018 14:51,0,0,5,40,2018-04-24,RNAzol,,all,50,0,pellet,NA,NA,NA,https://grace-ac.github.io/RNA-isolation-update/
 30,6147_30_9,cold,9,0,I,2018-04-29_175738,RNA High sensitivity,Sample_#180429-175802,4/29/2018 17:58,0,0,5,40,2018-04-29,RNAzol,,all,50,0,pellet,NA,NA,NA,https://grace-ac.github.io/RNA-isolations-DecaPod/
 63,6173_63_9,cold,9,1,I,2019-10-25_171528,RNA High sensitivity,Sample_#191025-171600,10/25/2019 17:16,100,10,2,100,2019-10-25,Zymo_microprep,,35,15,130,pellet,NA,NA,NA,https://grace-ac.github.io/second-batch-extracted-RNA-and-results/
-325,6122_325_12,ambient,12,1,I,2019-10-28_171734,RNA High sensitivity,Sample_#191028-171816,10/28/2019 17:21,311,31.1,2,100,2019-10-28,Zymo_microprep,,35,15,404.3,pellet,NA,NA,NA,https://grace-ac.github.io/day12-extractions/
 337,6202_337_12,ambient,12,1,I,2019-10-31_165749,RNA High sensitivity,Sample_#191031-165925,10/31/2019 16:59,Out of range,Out of range,2,100,2019-10-31,Zymo_microprep,,35,15,NA,pellet,NA,NA,NA,https://grace-ac.github.io/rna-day12-results/
 6,6108_6_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
 43,6105_43_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
