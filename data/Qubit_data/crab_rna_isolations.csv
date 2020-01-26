@@ -1,4 +1,25 @@
 tube_number,Uniq_ID,trtmnt_tank,sample_day,infection_status,maturity,run_ID,assay_name,test_name,test_date,qubit_tube_conc_ng.ml,original_sample_conc_ng.ul,sample_vol_ul,dilution_factor,RNA_iso_date,extraction_method,RNA_isolation_initials,ul_sample-used,elution_vol_ul,total-yield_ng,sample_type,sequenced_y_n,transcriptome_ID,notes,notebook_post_link
+6,6108_6_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
+43,6105_43_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
+58,6244_58_9,warm,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
+61,6162_61_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
+64,6149_64_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
+72,6250_72_9,warm,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
+76,6116_76_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
+79,6126_79_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
+93,6218_93_9,warm,9,3,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
+94,6200_94_9,cold,9,3,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
+96,6249_96_9,warm,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
+99,6252_99_9,ambient,9,3,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
+110,6275_110_9,warm,9,3,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
+140,6258_140_9,warm,9,3,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
+155,6265_155_9,warm,9,0,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
+165,6120_165_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
+173,6243_173_9,warm,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
+180,6264_180_9,warm,9,0,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
+208,6200_208_12,cold,12,3,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
+252,6204_252_12,cold,12,3,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
+256,6190_256_12,cold,12,3,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
 112,6128_112_9,cold,9,1,I,2020-01-23_102238,RNA High sensitivity,Sample_#200123-102302,2020/01/23 10:23:02,171,17.1,2,100,20200123,Zymo_microprep,SJW,NA,15,256.5,pellet,NA,NA,NA,NA
 114,6204_114_9,cold,9,3,M,2020-01-23_102238,RNA High sensitivity,Sample_#200123-102309,2020/01/23 10:23:09,53.7,5.37,2,100,20200123,Zymo_microprep,SJW,NA,15,80.55,pellet,NA,NA,NA,NA
 123,6141_123_9,cold,9,1,I,2020-01-23_102238,RNA High sensitivity,Sample_#200123-102316,2020/01/23 10:23:16,131,13.1,2,100,20200123,Zymo_microprep,SJW,NA,15,196.5,pellet,NA,NA,NA,NA
@@ -37,43 +58,12 @@ tube_number,Uniq_ID,trtmnt_tank,sample_day,infection_status,maturity,run_ID,assa
 479,6143_479_26,ambient,26,0,M,2020-01-24_143711,RNA High sensitivity,Sample_#200124-144000,2020/01/24 14:40:00,153,15.3,2,100,20200124,Zymo_microprep,SJW,NA,15,229.5,pellet,NA,NA,NA,NA
 483,6158_483_26,ambient,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-144007,2020/01/24 14:40:07,133,13.3,2,100,20200124,Zymo_microprep,SJW,NA,15,199.5,pellet,NA,NA,NA,NA
 486,6169_486_26,ambient,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-144014,2020/01/24 14:40:14,58.7,5.87,2,100,20200124,Zymo_microprep,SJW,NA,15,88.05,pellet,NA,NA,NA,NA
-65,6142_65_9,ambient,9,0,I,2018-03-27_150807,RNA High sensitivity,Sample_#180327-150836,3/27/2018 15:08,0,0,5,40,2018-03-27,RNAzol,,all,50,0,pellet,NA,NA,NA,https://grace-ac.github.io/RNA-isolation-third-batch-with-Qubit-results/
-66,6155_66_9,ambient,9,1,I,2018-04-06_140231,RNA High sensitivity,Sample_#180406-140317,4/6/2018 14:03,0,0,5,40,2018-04-06,RNAzol,,all,50,0,pellet,NA,NA,NA,https://grace-ac.github.io/Qubit-and-DecaPod/
-12,6146_12_9,ambient,9,0,I,2018-04-09_133705,RNA High sensitivity,Sample_#180409-133728,4/9/2018 13:37,0,0,5,40,2018-04-09,RNAzol,,all,50,0,pellet,NA,NA,NA,https://github.com/grace-ac/grace-ac.github.io/blob/master/_posts/2018-04-10-Crab-updates.md
-339,6130_339_12,ambient,12,0,I,2018-04-09_131825,RNA High sensitivity,Sample_#180409-131924,4/9/2018 13:19,22,0.88,5,40,2018-04-09,RNAzol,,all,50,39.6,pellet,NA,NA,NA,https://github.com/grace-ac/grace-ac.github.io/blob/master/_posts/2018-04-10-Crab-updates.md
-42,6117_42_9,cold,9,0,I,2018-04-24_145028,RNA High sensitivity,Sample_#180424-145130,4/24/2018 14:51,0,0,5,40,2018-04-24,RNAzol,,all,50,0,pellet,NA,NA,NA,https://grace-ac.github.io/RNA-isolation-update/
-30,6147_30_9,cold,9,0,I,2018-04-29_175738,RNA High sensitivity,Sample_#180429-175802,4/29/2018 17:58,0,0,5,40,2018-04-29,RNAzol,,all,50,0,pellet,NA,NA,NA,https://grace-ac.github.io/RNA-isolations-DecaPod/
-63,6173_63_9,cold,9,1,I,2019-10-25_171528,RNA High sensitivity,Sample_#191025-171600,10/25/2019 17:16,100,10,2,100,2019-10-25,Zymo_microprep,,35,15,130,pellet,NA,NA,NA,https://grace-ac.github.io/second-batch-extracted-RNA-and-results/
 337,6202_337_12,ambient,12,1,I,2019-10-31_165749,RNA High sensitivity,Sample_#191031-165925,10/31/2019 16:59,Out of range,Out of range,2,100,2019-10-31,Zymo_microprep,,35,15,NA,pellet,NA,NA,NA,https://grace-ac.github.io/rna-day12-results/
-6,6108_6_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-43,6105_43_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-58,6244_58_9,warm,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-61,6162_61_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-64,6149_64_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-72,6250_72_9,warm,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-76,6116_76_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-79,6126_79_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-93,6218_93_9,warm,9,3,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-94,6200_94_9,cold,9,3,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-96,6249_96_9,warm,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-99,6252_99_9,ambient,9,3,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-110,6275_110_9,warm,9,3,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-140,6258_140_9,warm,9,3,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-155,6265_155_9,warm,9,0,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-165,6120_165_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-173,6243_173_9,warm,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-180,6264_180_9,warm,9,0,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-208,6200_208_12,cold,12,3,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-252,6204_252_12,cold,12,3,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-256,6190_256_12,cold,12,3,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-408,6196_408_26,cold,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
-422,6189_422_26,cold,26,0,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
 474,6142_474_26,ambient,26,0,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
 477,6144_477_26,ambient,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
 489,6122_489_26,ambient,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
 490,6176_490_26,ambient,26,0,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
 491,6136_491_26,ambient,26,0,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
-495,6202_495_26,ambient,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
 500,6137_500_26,ambient,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
 503,6125_503_26,ambient,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
 505,6145_505_26,ambient,26,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,NA,NA
