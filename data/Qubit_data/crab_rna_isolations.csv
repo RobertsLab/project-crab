@@ -1,77 +1,80 @@
 tube_number,Uniq_ID,trtmnt_tank,sample_day,infection_status,maturity,run_ID,assay_name,test_name,test_date,qubit_tube_conc_ng.ml,original_sample_conc_ng.ul,sample_vol_ul,dilution_factor,RNA_iso_date,extraction_method,RNA_isolation_initials,ul_sample-used,elution_vol_ul,total-yield_ng,sample_type,sequenced_y_n,transcriptome_ID,notes,notebook_post_link
-6,6108_6_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-43,6105_43_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-58,6244_58_9,warm,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-61,6162_61_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-64,6149_64_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-72,6250_72_9,warm,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-76,6116_76_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-79,6126_79_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-93,6218_93_9,warm,9,3,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-94,6200_94_9,cold,9,3,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-96,6249_96_9,warm,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-99,6252_99_9,ambient,9,3,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-110,6275_110_9,warm,9,3,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-140,6258_140_9,warm,9,3,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-155,6265_155_9,warm,9,0,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-165,6120_165_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-173,6243_173_9,warm,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-180,6264_180_9,warm,9,0,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-208,6200_208_12,cold,12,3,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-252,6204_252_12,cold,12,3,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-256,6190_256_12,cold,12,3,M,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,NA,NA
-112,6128_112_9,cold,9,1,I,2020-01-23_102238,RNA High sensitivity,Sample_#200123-102302,2020/01/23 10:23:02,171,17.1,2,100,20200123,Zymo_microprep,SJW,NA,15,256.5,pellet,NA,NA,NA,NA
-114,6204_114_9,cold,9,3,M,2020-01-23_102238,RNA High sensitivity,Sample_#200123-102309,2020/01/23 10:23:09,53.7,5.37,2,100,20200123,Zymo_microprep,SJW,NA,15,80.55,pellet,NA,NA,NA,NA
-123,6141_123_9,cold,9,1,I,2020-01-23_102238,RNA High sensitivity,Sample_#200123-102316,2020/01/23 10:23:16,131,13.1,2,100,20200123,Zymo_microprep,SJW,NA,15,196.5,pellet,NA,NA,NA,NA
-126,6245_126_9,warm,9,1,I,2020-01-23_102238,RNA High sensitivity,Sample_#200123-102325,2020/01/23 10:23:25,172,17.2,2,100,20200123,Zymo_microprep,SJW,NA,15,258,pellet,NA,NA,NA,NA
-261,6258_261_12,warm,12,3,M,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081128,2020/01/24 08:11:28,106,10.6,2,100,20200124,Zymo_microprep,SJW,NA,15,159,pellet,NA,NA,NA,NA
-269,6270_269_12,warm,12,0,M,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081135,2020/01/24 08:11:35,317,31.7,2,100,20200124,Zymo_microprep,SJW,NA,15,475.5,pellet,NA,NA,NA,NA
-302,6161_302_12,ambient,12,0,M,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081142,2020/01/24 08:11:42,80.4,8.04,2,100,20200124,Zymo_microprep,SJW,NA,15,120.6,pellet,NA,NA,NA,NA
-307,6115_307_12,ambient,12,1,I,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081148,2020/01/24 08:11:48,78.9,7.89,2,100,20200124,Zymo_microprep,SJW,NA,15,118.35,pellet,NA,NA,NA,NA
-319,6206_319_12,ambient,12,1,I,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081154,2020/01/24 08:11:54,112,11.2,2,100,20200124,Zymo_microprep,SJW,NA,15,168,pellet,NA,NA,NA,NA
-323,6241_323_12,ambient,12,1,I,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081201,2020/01/24 08:12:01,222,22.2,2,100,20200124,Zymo_microprep,SJW,NA,15,333,pellet,NA,NA,NA,NA
-324,6158_324_12,ambient,12,1,I,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081207,2020/01/24 08:12:07,165,16.5,2,100,20200124,Zymo_microprep,SJW,NA,15,247.5,pellet,NA,NA,NA,NA
-338,6272_338_12,ambient,12,0,I,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081214,2020/01/24 08:12:14,106,10.6,2,100,20200124,Zymo_microprep,SJW,NA,15,159,pellet,NA,NA,NA,NA
-344,6152_344_12,ambient,12,0,M,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081220,2020/01/24 08:12:20,66.5,6.65,2,100,20200124,Zymo_microprep,SJW,NA,15,99.75,pellet,NA,NA,NA,NA
-372,6275_372_12,warm,12,3,M,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081226,2020/01/24 08:12:26,101,10.1,2,100,20200124,Zymo_microprep,SJW,NA,15,151.5,pellet,NA,NA,NA,NA
-373,6218_373_12,warm,12,3,I,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081233,2020/01/24 08:12:33,143,14.3,2,100,20200124,Zymo_microprep,SJW,NA,15,214.5,pellet,NA,NA,NA,NA
-404,6153_404_26,cold,26,0,M,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143738,2020/01/24 14:37:38,122,12.2,2,100,20200124,Zymo_microprep,SJW,all,15,183,pellet,NA,NA,NA,http://onsnetwork.org/kubu4/2018/08/09/rna-isolation-quantificaiton-tanner-crab-hemolymph/
-406,6132_406_26,cold,26,0,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143745,2020/01/24 14:37:45,123,12.3,2,100,20200124,Zymo_microprep,SJW,NA,15,184.5,pellet,NA,NA,NA,NA
-407,6162_407_26,cold,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143752,2020/01/24 14:37:52,145,14.5,2,100,20200124,Zymo_microprep,SJW,all,15,217.5,pellet,NA,NA,NA,https://grace-ac.github.io/Pool-RNeasy-DecaPod-S1E13/
-410,6178_410_26,cold,26,0,M,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143800,2020/01/24 14:38:00,Out of range,Out of range,2,100,20200124,Zymo_microprep,SJW,NA,15,0,pellet,NA,NA,NA,NA
-424,6163_424_26,cold,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143811,2020/01/24 14:38:11,214,21.4,2,100,20200124,Zymo_microprep,SJW,NA,15,321,pellet,NA,NA,NA,NA
-429,6140_429_26,cold,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143818,2020/01/24 14:38:18,120,12,2,100,20200124,Zymo_microprep,SJW,NA,15,180,pellet,NA,NA,NA,NA
-433,6174_433_26,cold,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143824,2020/01/24 14:38:24,176,17.6,2,100,20200124,Zymo_microprep,SJW,all,15,264,pellet,NA,NA,NA,http://onsnetwork.org/kubu4/2018/08/09/rna-isolation-quantificaiton-tanner-crab-hemolymph/
-445,6199_445_26,cold,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143831,2020/01/24 14:38:31,204,20.4,2,100,20200124,Zymo_microprep,SJW,all,15,306,pellet,NA,NA,NA,http://onsnetwork.org/kubu4/2018/08/09/rna-isolation-quantificaiton-tanner-crab-hemolymph/
-446,6156_446_26,cold,26,0,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143838,2020/01/24 14:38:38,207,20.7,2,100,20200124,Zymo_microprep,SJW,NA,15,310.5,pellet,NA,NA,NA,NA
-450,6106_450_26,cold,26,0,M,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143845,2020/01/24 14:38:45,254,25.4,2,100,20200124,Zymo_microprep,SJW,all,15,381,pellet,NA,NA,NA,http://onsnetwork.org/kubu4/2018/08/09/rna-isolation-quantificaiton-tanner-crab-hemolymph/
-454,6151_454_26,cold,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143852,2020/01/24 14:38:52,114,11.4,2,100,20200124,Zymo_microprep,SJW,NA,15,171,pellet,NA,NA,NA,NA
-456,6177_456_26,cold,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143859,2020/01/24 14:38:59,199,19.9,2,100,20200124,Zymo_microprep,SJW,all,15,298.5,pellet,NA,NA,NA,http://onsnetwork.org/kubu4/2018/08/09/rna-isolation-quantificaiton-tanner-crab-hemolymph/
-461,6119_461_26,cold,26,0,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143907,2020/01/24 14:39:07,112,11.2,2,100,20200124,Zymo_microprep,SJW,all,15,168,pellet,NA,NA,NA,https://github.com/grace-ac/grace-ac.github.io/blob/master/_posts/2018-04-10-Crab-updates.md
-464,6124_464_26,ambient,26,0,M,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143914,2020/01/24 14:39:14,191,19.1,2,100,20200124,Zymo_microprep,SJW,NA,15,286.5,pellet,NA,NA,NA,NA
-465,6134_465_26,ambient,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143921,2020/01/24 14:39:21,91,9.1,2,100,20200124,Zymo_microprep,SJW,NA,15,136.5,pellet,NA,NA,NA,NA
-466,6168_466_26,ambient,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143927,2020/01/24 14:39:27,184,18.4,2,100,20200124,Zymo_microprep,SJW,NA,15,276,pellet,NA,NA,NA,NA
-467,6152_467_26,ambient,26,0,M,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143934,2020/01/24 14:39:34,54.5,5.45,2,100,20200124,Zymo_microprep,SJW,NA,15,81.75,pellet,NA,NA,NA,NA
-472,6121_472_26,ambient,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143940,2020/01/24 14:39:40,85.7,8.57,2,100,20200124,Zymo_microprep,SJW,NA,15,128.55,pellet,NA,NA,NA,NA
-475,6205_475_26,ambient,26,0,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143947,2020/01/24 14:39:47,131,13.1,2,100,20200124,Zymo_microprep,SJW,NA,15,196.5,pellet,NA,NA,NA,NA
-476,6155_476_26,ambient,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143953,2020/01/24 14:39:53,153,15.3,2,100,20200124,Zymo_microprep,SJW,NA,15,229.5,pellet,NA,NA,NA,NA
-479,6143_479_26,ambient,26,0,M,2020-01-24_143711,RNA High sensitivity,Sample_#200124-144000,2020/01/24 14:40:00,153,15.3,2,100,20200124,Zymo_microprep,SJW,NA,15,229.5,pellet,NA,NA,NA,NA
-483,6158_483_26,ambient,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-144007,2020/01/24 14:40:07,133,13.3,2,100,20200124,Zymo_microprep,SJW,NA,15,199.5,pellet,NA,NA,NA,NA
-486,6169_486_26,ambient,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-144014,2020/01/24 14:40:14,58.7,5.87,2,100,20200124,Zymo_microprep,SJW,NA,15,88.05,pellet,NA,NA,NA,NA
-337,6202_337_12,ambient,12,1,I,2020-01-26_083928,RNA High sensitivity,Sample_#200126-083950,2020/01/26 08:39:50,237,23.7,2,100,20200126,Zymo_microprep,SJW,35,15,NA,pellet,NA,NA,NA,https://grace-ac.github.io/rna-day12-results/
-474,6142_474_26,ambient,26,0,I,2020-01-26_083928,RNA High sensitivity,Sample_#200126-083957,2020/01/26 08:39:57,144,14.4,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
-477,6144_477_26,ambient,26,1,I,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084003,2020/01/26 08:40:03,203,20.3,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
-489,6122_489_26,ambient,26,1,I,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084010,2020/01/26 08:40:10,83.2,8.32,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
-490,6176_490_26,ambient,26,0,M,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084017,2020/01/26 08:40:17,107,10.7,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
-491,6136_491_26,ambient,26,0,M,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084023,2020/01/26 08:40:23,73.7,7.37,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
-500,6137_500_26,ambient,26,1,I,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084031,2020/01/26 08:40:31,138,13.8,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
-503,6125_503_26,ambient,26,1,I,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084037,2020/01/26 08:40:37,71.2,7.12,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
-505,6145_505_26,ambient,26,1,I,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084044,2020/01/26 08:40:44,47,4.7,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
-507,6131_507_26,ambient,26,0,I,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084051,2020/01/26 08:40:51,89,8.9,2,100,20200126,Zymo_microprep,SJW,50,14,NA,pellet,NA,NA,NA,https://grace-ac.github.io/RNeasyKit-with-QIAshredder/
-508,6159_508_26,ambient,26,1,I,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084057,2020/01/26 08:40:57,77.4,7.74,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
-509,6206_509_26,ambient,26,1,I,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084104,2020/01/26 08:41:04,97.5,9.75,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
-511,6150_511_26,ambient,26,0,M,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084110,2020/01/26 08:41:10,41.2,4.12,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
-512,6161_512_26,ambient,26,0,M,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084118,2020/01/26 08:41:18,109,10.9,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
-514,6115_514_26,ambient,26,1,I,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084125,2020/01/26 08:41:25,59.6,5.96,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
-515,6179_515_26,ambient,26,0,M,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084133,2020/01/26 08:41:33,72.3,7.23,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
-517,6172_517_26,cold,26,0,M,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084139,2020/01/26 08:41:39,Out of range,Out of range,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+6,6108_6_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,could not locate,https://wordpress.com/post/genefish.wordpress.com/4934
+43,6105_43_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,could not locate,https://wordpress.com/post/genefish.wordpress.com/4935
+58,6244_58_9,warm,9,1,I,2020-01-27_132737,RNA High sensitivity,Sample_#200127-132847,1/27/2020 13:28,Out of range,Out of range,2,100,NA,Zymo_microprep,KRM,all_20,15,NA,pellet,NA,NA,clear sample; tried Qubit with 4ul and still too low,https://wordpress.com/post/genefish.wordpress.com/4936
+61,6162_61_9,cold,9,1,I,2020-01-27_132737,RNA High sensitivity,Sample_#200127-132900,1/27/2020 13:29,Out of range,Out of range,2,100,NA,Zymo_microprep,KRM,35,15,NA,pellet,NA,NA,clear sample; tried Qubit with 4ul and still too low,https://wordpress.com/post/genefish.wordpress.com/4937
+64,6149_64_9,cold,9,1,I,2020-01-27_132737,RNA High sensitivity,Sample_#200127-132923,1/27/2020 13:29,73.3,7.33,2,100,NA,Zymo_microprep,KRM,35,15,109.95,pellet,NA,NA,NA,https://wordpress.com/post/genefish.wordpress.com/4938
+72,6250_72_9,warm,9,1,I,2020-01-27_132737,RNA High sensitivity,Sample_#200127-132943,1/27/2020 13:29,91.6,9.16,2,100,NA,Zymo_microprep,KRM,35,15,137.4,pellet,NA,NA,NA,https://wordpress.com/post/genefish.wordpress.com/4939
+76,6116_76_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,could not locate,https://wordpress.com/post/genefish.wordpress.com/4940
+79,6126_79_9,cold,9,1,I,2020-01-27_132737,RNA High sensitivity,Sample_#200127-133014,1/27/2020 13:30,178,17.8,2,100,NA,Zymo_microprep,KRM,35,15,267,pellet,NA,NA,NA,https://wordpress.com/post/genefish.wordpress.com/4941
+93,6218_93_9,warm,9,3,I,2020-01-27_132737,RNA High sensitivity,Sample_#200127-133038,1/27/2020 13:30,191,19.1,2,100,NA,Zymo_microprep,KRM,35,15,286.5,pellet,NA,NA,NA,https://wordpress.com/post/genefish.wordpress.com/4942
+94,6200_94_9,cold,9,3,M,2020-01-27_132737,RNA High sensitivity,Sample_#200127-133038,1/27/2020 13:30,191,19.1,2,100,NA,Zymo_microprep,KRM,35,15,286.5,pellet,NA,NA,NA,https://wordpress.com/post/genefish.wordpress.com/4943
+96,6249_96_9,warm,9,1,I,2020-01-27_132737,RNA High sensitivity,Sample_#200127-133051,1/27/2020 13:30,141,14.1,2,100,NA,Zymo_microprep,KRM,35,15,211.5,pellet,NA,NA,NA,https://wordpress.com/post/genefish.wordpress.com/4944
+99,6252_99_9,ambient,9,3,M,2020-01-27_132737,RNA High sensitivity,Sample_#200127-133111,1/27/2020 13:31,65.6,6.56,2,100,NA,Zymo_microprep,KRM,35,15,98.4,pellet,NA,NA,NA,https://wordpress.com/post/genefish.wordpress.com/4945
+110,6275_110_9,warm,9,3,M,2020-01-27_132737,RNA High sensitivity,Sample_#200127-133125,1/27/2020 13:31,114,11.4,2,100,NA,Zymo_microprep,KRM,35,15,171,pellet,NA,NA,NA,https://wordpress.com/post/genefish.wordpress.com/4946
+114,6204_114_9,cold,9,3,M,2020-01-27_132737,RNA High sensitivity,Sample_#200127-133141,1/27/2020 13:31,63.7,6.37,2,100,20200127,Zymo_microprep,KRM,35,15,95.55,pellet,NA,NA,NA,https://wordpress.com/post/genefish.wordpress.com/4947
+126,6245_126_9,warm,9,1,I,2020-01-27_132737,RNA High sensitivity,Sample_#200127-133200,1/27/2020 13:32,313,31.3,2,100,20200127,Zymo_microprep,KRM,35,15,469.5,pellet,NA,NA,NA,https://wordpress.com/post/genefish.wordpress.com/4948
+130,6163_130_9,cold,9,1,I,NA,NA,NA,NA,NA,NA,NA,NA,NA,Zymo_microprep,KRM,NA,NA,NA,NA,NA,NA,could not locate,https://wordpress.com/post/genefish.wordpress.com/4949
+140,6258_140_9,warm,9,3,M,2020-01-27_132737,RNA High sensitivity,Sample_#200127-133219,1/27/2020 13:32,69.2,6.92,2,100,NA,Zymo_microprep,KRM,35,15,103.8,pellet,NA,NA,NA,https://wordpress.com/post/genefish.wordpress.com/4950
+155,6265_155_9,warm,9,0,I,2020-01-27_132737,RNA High sensitivity,Sample_#200127-133231,1/27/2020 13:32,122,12.2,2,100,NA,Zymo_microprep,KRM,35,15,183,pellet,NA,NA,NA,https://wordpress.com/post/genefish.wordpress.com/4951
+165,6120_165_9,cold,9,1,I,2020-01-27_132737,RNA High sensitivity,Sample_#200127-133245,1/27/2020 13:32,71.5,7.15,2,100,NA,Zymo_microprep,KRM,35,15,107.25,pellet,NA,NA,NA,https://wordpress.com/post/genefish.wordpress.com/4952
+173,6243_173_9,warm,9,1,I,2020-01-27_132737,RNA High sensitivity,Sample_#200127-133258,1/27/2020 13:32,47.7,4.77,2,100,NA,Zymo_microprep,KRM,35,15,71.55,pellet,NA,NA,NA,https://wordpress.com/post/genefish.wordpress.com/4953
+180,6264_180_9,warm,9,0,I,2020-01-27_132737,RNA High sensitivity,Sample_#200127-133312,1/27/2020 13:33,144,14.4,2,100,NA,Zymo_microprep,KRM,35,15,216,pellet,NA,NA,NA,https://wordpress.com/post/genefish.wordpress.com/4954
+208,6200_208_12,cold,12,3,M,2020-01-27_132737,RNA High sensitivity,Sample_#200127-133332,1/27/2020 13:33,141,14.1,2,100,NA,Zymo_microprep,KRM,35,15,211.5,pellet,NA,NA,NA,https://wordpress.com/post/genefish.wordpress.com/4955
+252,6204_252_12,cold,12,3,M,2020-01-27_132737,RNA High sensitivity,Sample_#200127-133346,1/27/2020 13:33,105,10.5,2,100,NA,Zymo_microprep,KRM,35,15,157.5,pellet,NA,NA,NA,https://wordpress.com/post/genefish.wordpress.com/4956
+256,6190_256_12,cold,12,3,M,2020-01-27_132737,RNA High sensitivity,Sample_#200127-133400,1/27/2020 13:34,131,13.1,2,100,NA,Zymo_microprep,KRM,35,15,196.5,pellet,NA,NA,NA,https://wordpress.com/post/genefish.wordpress.com/4957
+112,6128_112_9,cold,9,1,I,2020-01-23_102238,RNA High sensitivity,Sample_#200123-102302,1/23/2020 10:23,171,17.1,2,100,20200123,Zymo_microprep,SJW,NA,15,256.5,pellet,NA,NA,NA,NA
+114,6204_114_9,cold,9,3,M,2020-01-23_102238,RNA High sensitivity,Sample_#200123-102309,1/23/2020 10:23,53.7,5.37,2,100,20200123,Zymo_microprep,SJW,NA,15,80.55,pellet,NA,NA,NA,NA
+123,6141_123_9,cold,9,1,I,2020-01-23_102238,RNA High sensitivity,Sample_#200123-102316,1/23/2020 10:23,131,13.1,2,100,20200123,Zymo_microprep,SJW,NA,15,196.5,pellet,NA,NA,NA,NA
+126,6245_126_9,warm,9,1,I,2020-01-23_102238,RNA High sensitivity,Sample_#200123-102325,1/23/2020 10:23,172,17.2,2,100,20200123,Zymo_microprep,SJW,NA,15,258,pellet,NA,NA,NA,NA
+261,6258_261_12,warm,12,3,M,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081128,1/24/2020 8:11,106,10.6,2,100,20200124,Zymo_microprep,SJW,NA,15,159,pellet,NA,NA,NA,NA
+269,6270_269_12,warm,12,0,M,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081135,1/24/2020 8:11,317,31.7,2,100,20200124,Zymo_microprep,SJW,NA,15,475.5,pellet,NA,NA,NA,NA
+302,6161_302_12,ambient,12,0,M,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081142,1/24/2020 8:11,80.4,8.04,2,100,20200124,Zymo_microprep,SJW,NA,15,120.6,pellet,NA,NA,NA,NA
+307,6115_307_12,ambient,12,1,I,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081148,1/24/2020 8:11,78.9,7.89,2,100,20200124,Zymo_microprep,SJW,NA,15,118.35,pellet,NA,NA,NA,NA
+319,6206_319_12,ambient,12,1,I,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081154,1/24/2020 8:11,112,11.2,2,100,20200124,Zymo_microprep,SJW,NA,15,168,pellet,NA,NA,NA,NA
+323,6241_323_12,ambient,12,1,I,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081201,1/24/2020 8:12,222,22.2,2,100,20200124,Zymo_microprep,SJW,NA,15,333,pellet,NA,NA,NA,NA
+324,6158_324_12,ambient,12,1,I,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081207,1/24/2020 8:12,165,16.5,2,100,20200124,Zymo_microprep,SJW,NA,15,247.5,pellet,NA,NA,NA,NA
+337,6202_337_12,ambient,12,1,I,2020-01-26_083928,RNA High sensitivity,Sample_#200126-083950,1/26/2020 8:39,237,23.7,2,100,20200126,Zymo_microprep,SJW,35,15,NA,pellet,NA,NA,NA,https://grace-ac.github.io/rna-day12-results/
+338,6272_338_12,ambient,12,0,I,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081214,1/24/2020 8:12,106,10.6,2,100,20200124,Zymo_microprep,SJW,NA,15,159,pellet,NA,NA,NA,NA
+344,6152_344_12,ambient,12,0,M,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081220,1/24/2020 8:12,66.5,6.65,2,100,20200124,Zymo_microprep,SJW,NA,15,99.75,pellet,NA,NA,NA,NA
+372,6275_372_12,warm,12,3,M,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081226,1/24/2020 8:12,101,10.1,2,100,20200124,Zymo_microprep,SJW,NA,15,151.5,pellet,NA,NA,NA,NA
+373,6218_373_12,warm,12,3,I,2020-01-24_081107,RNA High sensitivity,Sample_#200124-081233,1/24/2020 8:12,143,14.3,2,100,20200124,Zymo_microprep,SJW,NA,15,214.5,pellet,NA,NA,NA,NA
+404,6153_404_26,cold,26,0,M,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143738,1/24/2020 14:37,122,12.2,2,100,20200124,Zymo_microprep,SJW,all,15,183,pellet,NA,NA,NA,http://onsnetwork.org/kubu4/2018/08/09/rna-isolation-quantificaiton-tanner-crab-hemolymph/
+406,6132_406_26,cold,26,0,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143745,1/24/2020 14:37,123,12.3,2,100,20200124,Zymo_microprep,SJW,NA,15,184.5,pellet,NA,NA,NA,NA
+407,6162_407_26,cold,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143752,1/24/2020 14:37,145,14.5,2,100,20200124,Zymo_microprep,SJW,all,15,217.5,pellet,NA,NA,NA,https://grace-ac.github.io/Pool-RNeasy-DecaPod-S1E13/
+410,6178_410_26,cold,26,0,M,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143800,1/24/2020 14:38,Out of range,Out of range,2,100,20200124,Zymo_microprep,SJW,NA,15,0,pellet,NA,NA,NA,NA
+424,6163_424_26,cold,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143811,1/24/2020 14:38,214,21.4,2,100,20200124,Zymo_microprep,SJW,NA,15,321,pellet,NA,NA,NA,NA
+429,6140_429_26,cold,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143818,1/24/2020 14:38,120,12,2,100,20200124,Zymo_microprep,SJW,NA,15,180,pellet,NA,NA,NA,NA
+433,6174_433_26,cold,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143824,1/24/2020 14:38,176,17.6,2,100,20200124,Zymo_microprep,SJW,all,15,264,pellet,NA,NA,NA,http://onsnetwork.org/kubu4/2018/08/09/rna-isolation-quantificaiton-tanner-crab-hemolymph/
+445,6199_445_26,cold,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143831,1/24/2020 14:38,204,20.4,2,100,20200124,Zymo_microprep,SJW,all,15,306,pellet,NA,NA,NA,http://onsnetwork.org/kubu4/2018/08/09/rna-isolation-quantificaiton-tanner-crab-hemolymph/
+446,6156_446_26,cold,26,0,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143838,1/24/2020 14:38,207,20.7,2,100,20200124,Zymo_microprep,SJW,NA,15,310.5,pellet,NA,NA,NA,NA
+450,6106_450_26,cold,26,0,M,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143845,1/24/2020 14:38,254,25.4,2,100,20200124,Zymo_microprep,SJW,all,15,381,pellet,NA,NA,NA,http://onsnetwork.org/kubu4/2018/08/09/rna-isolation-quantificaiton-tanner-crab-hemolymph/
+454,6151_454_26,cold,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143852,1/24/2020 14:38,114,11.4,2,100,20200124,Zymo_microprep,SJW,NA,15,171,pellet,NA,NA,NA,NA
+456,6177_456_26,cold,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143859,1/24/2020 14:38,199,19.9,2,100,20200124,Zymo_microprep,SJW,all,15,298.5,pellet,NA,NA,NA,http://onsnetwork.org/kubu4/2018/08/09/rna-isolation-quantificaiton-tanner-crab-hemolymph/
+461,6119_461_26,cold,26,0,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143907,1/24/2020 14:39,112,11.2,2,100,20200124,Zymo_microprep,SJW,all,15,168,pellet,NA,NA,NA,https://github.com/grace-ac/grace-ac.github.io/blob/master/_posts/2018-04-10-Crab-updates.md
+464,6124_464_26,ambient,26,0,M,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143914,1/24/2020 14:39,191,19.1,2,100,20200124,Zymo_microprep,SJW,NA,15,286.5,pellet,NA,NA,NA,NA
+465,6134_465_26,ambient,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143921,1/24/2020 14:39,91,9.1,2,100,20200124,Zymo_microprep,SJW,NA,15,136.5,pellet,NA,NA,NA,NA
+466,6168_466_26,ambient,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143927,1/24/2020 14:39,184,18.4,2,100,20200124,Zymo_microprep,SJW,NA,15,276,pellet,NA,NA,NA,NA
+467,6152_467_26,ambient,26,0,M,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143934,1/24/2020 14:39,54.5,5.45,2,100,20200124,Zymo_microprep,SJW,NA,15,81.75,pellet,NA,NA,NA,NA
+472,6121_472_26,ambient,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143940,1/24/2020 14:39,85.7,8.57,2,100,20200124,Zymo_microprep,SJW,NA,15,128.55,pellet,NA,NA,NA,NA
+474,6142_474_26,ambient,26,0,I,2020-01-26_083928,RNA High sensitivity,Sample_#200126-083957,1/26/2020 8:39,144,14.4,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+475,6205_475_26,ambient,26,0,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143947,1/24/2020 14:39,131,13.1,2,100,20200124,Zymo_microprep,SJW,NA,15,196.5,pellet,NA,NA,NA,NA
+476,6155_476_26,ambient,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-143953,1/24/2020 14:39,153,15.3,2,100,20200124,Zymo_microprep,SJW,NA,15,229.5,pellet,NA,NA,NA,NA
+477,6144_477_26,ambient,26,1,I,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084003,1/26/2020 8:40,203,20.3,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+479,6143_479_26,ambient,26,0,M,2020-01-24_143711,RNA High sensitivity,Sample_#200124-144000,1/24/2020 14:40,153,15.3,2,100,20200124,Zymo_microprep,SJW,NA,15,229.5,pellet,NA,NA,NA,NA
+483,6158_483_26,ambient,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-144007,1/24/2020 14:40,133,13.3,2,100,20200124,Zymo_microprep,SJW,NA,15,199.5,pellet,NA,NA,NA,NA
+486,6169_486_26,ambient,26,1,I,2020-01-24_143711,RNA High sensitivity,Sample_#200124-144014,1/24/2020 14:40,58.7,5.87,2,100,20200124,Zymo_microprep,SJW,NA,15,88.05,pellet,NA,NA,NA,NA
+489,6122_489_26,ambient,26,1,I,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084010,1/26/2020 8:40,83.2,8.32,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+490,6176_490_26,ambient,26,0,M,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084017,1/26/2020 8:40,107,10.7,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+491,6136_491_26,ambient,26,0,M,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084023,1/26/2020 8:40,73.7,7.37,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+500,6137_500_26,ambient,26,1,I,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084031,1/26/2020 8:40,138,13.8,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+503,6125_503_26,ambient,26,1,I,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084037,1/26/2020 8:40,71.2,7.12,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+505,6145_505_26,ambient,26,1,I,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084044,1/26/2020 8:40,47,4.7,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+507,6131_507_26,ambient,26,0,I,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084051,1/26/2020 8:40,89,8.9,2,100,20200126,Zymo_microprep,SJW,50,14,NA,pellet,NA,NA,NA,https://grace-ac.github.io/RNeasyKit-with-QIAshredder/
+508,6159_508_26,ambient,26,1,I,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084057,1/26/2020 8:40,77.4,7.74,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+509,6206_509_26,ambient,26,1,I,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084104,1/26/2020 8:41,97.5,9.75,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+511,6150_511_26,ambient,26,0,M,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084110,1/26/2020 8:41,41.2,4.12,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+512,6161_512_26,ambient,26,0,M,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084118,1/26/2020 8:41,109,10.9,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+514,6115_514_26,ambient,26,1,I,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084125,1/26/2020 8:41,59.6,5.96,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+515,6179_515_26,ambient,26,0,M,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084133,1/26/2020 8:41,72.3,7.23,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
+517,6172_517_26,cold,26,0,M,2020-01-26_083928,RNA High sensitivity,Sample_#200126-084139,1/26/2020 8:41,Out of range,Out of range,2,100,20200126,Zymo_microprep,SJW,NA,NA,NA,NA,NA,NA,NA,NA
