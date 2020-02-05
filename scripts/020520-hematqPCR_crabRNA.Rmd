@@ -15,8 +15,20 @@ Note: I replaced "N/A"s in the "sq" column with "0"s
 qpcr <- read.csv("../analyses/hemat_qPCR.csv")
 ```
 
+Take mean of starting quantities and group by FRP number. Add to column "sq_all.runs_mean"
 ```{r}
-qpcr$sq_all.runs_mean <- tapply(qpcr$sq, qpcr$FRP, mean)
+qpcr <- qpcr %>%
+  group_by(FRP) %>%
+  mutate(sq_all.runs_mean = mean(sq))
+```
+
+Reduce number of rows to one row per FRP number
+```{r}
+
+```
+Reduce number of columns to "target", "sq", "sq_all.runs_mean", "sample_pos.neg", "FRP"
+```{r}
+
 ```
 
 
