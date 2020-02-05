@@ -22,6 +22,11 @@ qpcr <- qpcr %>%
   mutate(sq_all.runs_mean = mean(sq))
 ```
 
+write out csv for now
+```{r}
+write.csv(qpcr, "../analyses/qpcr_hemat-new.csv")
+```
+
 Reduce number of rows to one row per FRP number
 ```{r}
 
