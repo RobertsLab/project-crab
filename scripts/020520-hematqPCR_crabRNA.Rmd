@@ -1,0 +1,22 @@
+---
+title: "020520-qpcr_crabRNA"
+output: html_document
+---
+R markdown for cleaning up Pam's qPCR results spreadsheet and joining with Crab RNA extraction spreadsheet. 
+
+```{r}
+library(dplyr)
+library(tidyr)
+```
+
+#### Read in qpcr csv (taken from "all good by sample" tab in project-crab/data/Excel-data-from-Pam/20180518_Hemato_qPCR_results) 
+Note: I replaced "N/A"s in the "sq" column with "0"s
+```{r}
+qpcr <- read.csv("../analyses/hemat_qPCR.csv")
+```
+
+```{r}
+qpcr$sq_all.runs_mean <- tapply(qpcr$sq, qpcr$FRP, mean)
+```
+
+
