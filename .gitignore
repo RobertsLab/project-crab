@@ -20,3 +20,14 @@ analyses/dino-Blastquery-GOslim.sorted
 analyses/GO-GOslim.sorted
 analyses/uniprot-SP-GO.sorted
 analyses/_blast-annot.tab
+analyses/_blast-sep-crab.tab
+analyses/_blast-sep-hemat.tab
+analyses/_blast-sep2-crab.tab
+analyses/_blast-sep2-crab.tab
+data/Cbairdi_transcriptome-1.fa
+data/Cbairdi_transcriptome-1.fai
+analyses/_blast-sep2-crab.tab
+notebooks/_blast-GO-unfolded.tab
+notebooks/_intermediate.file
+notebooks/Cbairdi_transcriptome-1.fa
+.RDataTmp

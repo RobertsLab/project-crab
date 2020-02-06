@@ -1,0 +1,25 @@
+---
+title: "20191109-DEGs"
+date: "11/09/2019"
+output: html_document
+---
+
+Rmd to get two lists of DEGs. One for infected and one for uninfected. 
+
+Install/load packages needed: 
+```{r}
+library(dplyr)
+library(tidyr)
+```
+
+Load the table that SR made. DEG list, with count data and blast output.
+```{r}
+degblast <- read.table("https://raw.githubusercontent.com/sr320/nb-2019/master/C_bairdi/analyses/bigtable.txt", header = TRUE, sep = '\t')
+head(degblast)
+```
+Create two lists. one of DEGs only present in the uninfected (777 and 775):    
+```{r}
+
+  
+```
+And one of DEGs only present in the infected (774 and 776): 
