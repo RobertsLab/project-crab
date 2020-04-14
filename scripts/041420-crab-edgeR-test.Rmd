@@ -1,0 +1,13 @@
+---
+title: "crab-edgeR-test"
+output: html_document
+---
+Rmd to test `edgeR` on 2019 crab RNAseq data.
+
+Files needed:
+1. "targets_2019.txt" that contains treatment and sample information
+2. "raw data" that is comprised of annotated BLAST output with gene IDs and counts
+
+"targets_2019.txt" file was created based on manual for edgeR, what was done for EIMD 2019, and the data available in the 2019 crab seq. dataset
+upload file:
+
