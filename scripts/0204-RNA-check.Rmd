@@ -1,0 +1,13 @@
+---
+title: "0204-RNA-explore"
+output: html_document
+---
+
+```{r}
+library(dplyr)
+```
+
+
+```{r}
+rna <- read.csv("../data/crab_RNA_and_treatment-reduced_spreadsheet.csv")
+```
