@@ -1,0 +1,56 @@
+---
+title: "020520-qpcr_crabRNA"
+output: html_document
+---
+R markdown for cleaning up Pam's qPCR results spreadsheet and joining with Crab RNA extraction spreadsheet. 
+
+```{r}
+library(dplyr)
+library(tidyr)
+```
+
+#### Read in qpcr csv (taken from "all good by sample" tab in project-crab/data/Excel-data-from-Pam/20180518_Hemato_qPCR_results) 
+Note: I replaced "N/A"s in the "sq" column with "0"s
+```{r}
+qpcr <- read.csv("../analyses/hemat_qPCR.csv")
+```
+
+Take mean of starting quantities and group by FRP number. Add to column "sq_all.runs_mean"
+```{r}
+qpcr <- qpcr %>%
+  group_by(FRP) %>%
+  mutate(sq_all.runs_mean = mean(sq))
+```
+
+write out csv for now
+```{r}
+write.csv(qpcr, "../analyses/qpcr_hemat-new.csv")
+```
+
+reduce number of column in qpcr to target, sq_all.runs_mean, sample_pos.neg, FRP
+```{r}
+qpcr_reduced <- select(qpcr, target, sq_all.runs_mean, sample_pos.neg, FRP)
+```
+
+remove duplicate rows
+```{r}
+qpcr_reduced <- distinct(qpcr_reduced)
+
+```
+
+read in crab RNA results
+```{r}
+rna <- read.csv("../crab_RNA_and_trtmnt-reducted_GAC.csv")
+```
+
+Join with crab RNA results
+```{r}
+qpcr_crabRNA <- left_join(rna, qpcr_reduced, by = "FRP")
+
+```
+
+write qpcr_crabRNA to analyses
+```{r}
+
+write.csv(qpcr_crabRNA, "../analyses/qpcr_crabRNA-reduced.csv")
+```
