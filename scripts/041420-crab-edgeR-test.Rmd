@@ -8,7 +8,7 @@ library(edgeR)
 ```
 Files needed:
 1. "targets_2019.txt" that contains treatment and sample information
-2. "raw data" that is comprised of annotated BLAST output with gene IDs and counts (file made by Sam/Steven)
+2. "raw data" that is comprised gene counts for each sample (file made by Sam/Steven)
 
 "targets_2019.txt" file was created based on manual for edgeR, what was done for EIMD 2019, and the data available in the 2019 crab seq. dataset
 number of columns needs to be same as number count columns in rawdata_2019
