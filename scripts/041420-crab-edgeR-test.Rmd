@@ -49,12 +49,81 @@ recompute the library sizes: (this didn't work in nonZostera R, and isn't workin
 y_2019$samples$lib.size <- colSums(y_2019$counts)
 ```
 
-calculating normalization factors
+# Calculating normalization factors
 ```{r}
 y_2019 <- calcNormFactors(y_2019)
 y_2019$samples 
 ```
 From section 2.7 in manual: "a normalization factor below 1 indicates that a small number of high count genes are monopolizing the sequencing, causing the counts for other genes to be lower than would be usual given the library size. As a result, the library size will be scaled down, analogous to scaling the counts upwards in that library. Conversely, a factor above 1 scales up the library size, analogous to downscaling the counts"
+These numbers are pretty similar to those from EIMD.. not too high above 1, not too low below 1... and those were deemed "good"
+
+
+store lib.size in vector called "n" ... not sure why at the moment... 
+```{r}
+n <- y_2019$samples$lib.size
+```
+
+# Examining sample for outliers
+Section 4.1.5 in manual "Data exploration"
+Used same code as from EIMD... not sure if it works for crabs - will explore more 
+```{r}
+points <- c(0,1,2,3)
+colors <- (rep(c("blue","red"),2))
+plotMDS(y_2019, col=colors[group_2019], pch=points[group_2019])  
+legend ("top", legend=levels(group_2019), pch=points, col=colors, ncol=2)
+```
+Section 3.2.3 of manual: "GLM Approach"
+```{r}
+design <-model.matrix(~0+group_2019)
+colnames(design) <- levels(group_2019)
+design
+```
+Section 2.10 of manual: "More complex experiemnts (glm functionality)
+```{r}
+y_2019 <- estimateGLMCommonDisp(y_2019, design, verbose=TRUE)
+y_2019 <- estimateGLMTrendedDisp(y_2019,design)
+y_2019 <- estimateGLMTagwiseDisp(y_2019,design)
+plotBCV(y_2019)
+```
+Section 3.2.5 of manual: "A more traditional glm approach"
+```{r}
+fit <- glmQLFit(y_2019, design)
+design
+colnames(fit)
+```
+
+Estimating dispersion (pg 55 of manual)
+Section 4.2.7 "Estimating the dispersion"
+```{r}
+y_2019 <- estimateDisp(y_2019, design, robust=TRUE)
+```
+
+```{r}
+y_2019$common.dispersion
+```
+Value of common dispersion = 0.1399804. Dispersion is "estimating the genewise dispersion over all genes, allowing for possible abundance trend. The estimation is also robustified against potential outlier genes." 
+
+```{r}
+plotBCV(y_2019)
+```
+BCV = coefficient of biological variation - is the square root of dispersion
+Therefore, the BCV = 0.37419546
+Trended dispersion (blue) "shows a decreasing trend with expression level"
+
+# Defining contrast groupings
+Section 3.3.1 "Defining each treatment combination as a group"
+Contrasts: What genes are DE in crabs exposed to Hamtodinium vs. controls?
+The data file "targets_2019.txt" outlines the treatment conditions applied to each sample. 
+```{r}
+targets_2019
+```
+
+
+
+
+
+
+
 
 
 
