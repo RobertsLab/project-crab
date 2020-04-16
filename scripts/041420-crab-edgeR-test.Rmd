@@ -12,6 +12,11 @@ Files needed:
 
 "targets_2019.txt" file was created based on manual for edgeR, what was done for EIMD 2019, and the data available in the 2019 crab seq. dataset
 number of columns needs to be same as number count columns in rawdata_2019
+Note: "L" = Day 26, stands for 'later'
+      "E" = Day 12, stands for 'earlier'
+      "U" = uninfected
+      "I" = infected
+I don't think using 12 and 26 works for R
 upload file:
 ```{r}
 targets_2019 <- readTargets("../analyses/targets_2019.txt")
@@ -117,10 +122,55 @@ The data file "targets_2019.txt" outlines the treatment conditions applied to ea
 ```{r}
 targets_2019
 ```
+Make the different contrast options: 
+Day 26 --> "L" for later
+Day 12 --> "E" for earlier
+"U" --> uninfected
+"I" --> Infected
+```{r}
+my.contrasts <-makeContrasts(
+  LU.LI=L_U-L_I, LU.EU=L_U-E_U, EU.EI=E_U-E_I, EI.LI=E_I-L_I, levels=design)
+```
 
+```{r}
+qlf.LU.LI <- glmQLFTest(fit, contrast=my.contrasts[,"LU.LI"])
+topTags(qlf.LU.LI)
+qlf.LU.EU <- glmQLFTest(fit, contrast=my.contrasts[,"LU.EU"])
+topTags(qlf.LU.EU)
+qlf.EU.EI <- glmQLFTest(fit, contrast=my.contrasts[,"EU.EI"])
+topTags(qlf.EU.EI)
+qlf.EI.LI <- glmQLFTest(fit, contrast=my.contrasts[,"EI.LI"])
+topTags(qlf.EI.LI)
 
+summary(decideTests(qlf.LU.LI))
+#Down          35212
+#NotSig        16093
+#Up             4734
+summary(decideTests(qlf.LU.EU))
+#Down          14418
+#NotSig        40006
+#Up             1615
+summary(decideTests(qlf.EU.EI))
+#Down          26340
+#NotSig        20440
+#Up             9259
+summary(decideTests(qlf.EI.LI))
+#Down           1721
+#NotSig        53813
+#Up              505
 
+plotMD(qlf.LU.LI)
+abline(h=c(-2,2), col="green")
 
+plotMD(qlf.LU.EU)
+abline(h=c(-2,2), col="green")
+
+plotMD(qlf.EU.EI)
+abline(h=c(-2,2), col="green")
+
+plotMD(qlf.EI.LI)
+abline(h=c(-2,2), col="green")
+```
 
 
 
