@@ -3,7 +3,11 @@ title: "0204-RNA-explore"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r}
+library(dplyr)
 ```
 
+
+```{r}
+rna <- read.csv("../data/crab_RNA_and_treatment-reduced_spreadsheet.csv")
+```
