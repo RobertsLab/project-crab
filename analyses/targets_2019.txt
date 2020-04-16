@@ -1,1 +1,9 @@
-sample	Day_InfectionStatus1	12_Inf2	12_Uninf3	26_Inf4	26_Uninf
+sample	Day_InfectionStatus
+1	26_Uninf
+2	26_Uninf
+3	12_Uninf
+4	12_Uninf
+5	12_Inf
+6	12_Inf
+7	26_Inf
+8	26_Inf

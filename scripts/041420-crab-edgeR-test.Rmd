@@ -3,11 +3,72 @@ title: "crab-edgeR-test"
 output: html_document
 ---
 Rmd to test `edgeR` on 2019 crab RNAseq data.
-
+```{r}
+library(edgeR)
+```
 Files needed:
 1. "targets_2019.txt" that contains treatment and sample information
-2. "raw data" that is comprised of annotated BLAST output with gene IDs and counts
+2. "raw data" that is comprised of annotated BLAST output with gene IDs and counts (file made by Sam/Steven)
 
 "targets_2019.txt" file was created based on manual for edgeR, what was done for EIMD 2019, and the data available in the 2019 crab seq. dataset
+number of columns needs to be same as number count columns in rawdata_2019
 upload file:
+```{r}
+targets_2019 <- readTargets("../analyses/targets_2019.txt")
+targets_2019
+```
+set groups equal to the different samples
+```{r}
+group_2019 <- targets_2019$Day_InfectionStatus
+group_2019 <- as.factor(group_2019)
+group_2019
+```
+
+import raw count data 
+```{r}
+rawdata_2019 <- read.delim("https://raw.githubusercontent.com/sr320/nb-2019/master/C_bairdi/analyses/Abundance-merge.txt", header = TRUE)
+head(rawdata_2019)
+```
+Make list of differentially expressed genes (DGE)
+```{r}
+y_2019 <- DGEList(counts = rawdata_2019[,2:9], group = group_2019)
+head(y_2019$counts)
+```
+filtering out lowly expressed genes; from EIMD: 
+"since the smallest group size is four, we keeping genes with at least one count per million in at least four samples"
+I need to figure out how much I should filter out, but for now am trying same filtering that was done with EIMD nonzostera genes
+```{r}
+keep_2019 <- rowSums(cpm(y_2019)>1) >= 3
+y_2019 <- y_2019[keep_2019,]
+dim(y_2019) 
+```
+Keeping 56,039 genes in 8 libraries
+
+recompute the library sizes: (this didn't work in nonZostera R, and isn't working here. i think it's because there are two $ in the first phrase)
+```{r}
+y_2019$samples$lib.size <- colSums(y_2019$counts)
+```
+
+calculating normalization factors
+```{r}
+y_2019 <- calcNormFactors(y_2019)
+y_2019$samples 
+```
+From section 2.7 in manual: "a normalization factor below 1 indicates that a small number of high count genes are monopolizing the sequencing, causing the counts for other genes to be lower than would be usual given the library size. As a result, the library size will be scaled down, analogous to scaling the counts upwards in that library. Conversely, a factor above 1 scales up the library size, analogous to downscaling the counts"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
