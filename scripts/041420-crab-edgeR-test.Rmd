@@ -1,6 +1,6 @@
 ---
 title: "crab-edgeR-test"
-output: html_document
+output: github_document
 ---
 Rmd to test `edgeR` on 2019 crab RNAseq data.
 ```{r}
