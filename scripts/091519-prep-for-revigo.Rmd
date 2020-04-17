@@ -5,83 +5,8 @@ output: html_document
 
 Downloaded uniprot/sprot database (added GO terms) and will `join` with crab-uniprot blastoutput and hematodinium-uniprot blastoutput. Then I'll use GOterms and e-values in Revigo to make visualizations. 
 
-Link to database creating website: https://www.uniprot.org/uniprot/?query=reviewed:yes# 
-
-```{r}
-library(dplyr)
-library(tidyverse)
-library(data.table)
-```
-
 Read in crab and hematodinium blastoutputs. 
-Read in dinoflagellate-transcriptome BLAST output:
 ```{r}
-dino <- read.table("http://owl.fish.washington.edu/scaphapoda/grace/PCSGA-2019/Cb_v1_blastx_uniprot2864_imac.tab", sep = '\t', header = FALSE)
-```
+crab <- read.table("")
 
-Read in uniprot-transcriptome BLAST output: 
-```{r}
-uni <- read.csv("http://owl.fish.washington.edu/scaphapoda/grace/PCSGA-2019/1108-cbairdiblast-sprot.tab", sep = '\t', header = TRUE)
-```
-
-Rename columns
-```{r}
-blastcol <- c("Trinity_protein", "sseqid", "pident", "length", "mismatch", "gapopen", "qstart", "qend", "sstart", "send", "evalue", "bitscore")
-colnames(dino) <- blastcol
-colnames(uni) <- blastcol
-```
-
-anti_join tables based on Trinity_protein column
-```{r}
-crab <- anti_join(uni, dino, by = "Trinity_protein") %>%  distinct()
-```
-```{r}
-as_tibble(crab)
-```
-*get swiss-prot hits for dino!*
-```{r}
-hemat <- inner_join(uni, dino, by = "Trinity_protein") %>% distinct()
-```
-```{r}
-as_tibble(hemat)
-```
-Check and make sure hemat and crab Trinity # are unique.
-```{r}
-inner_join(hemat, crab, by = "Trinity_protein")
-```
-Save crab and hemat separately into analyses
-```{r}
-write.table(crab,  quote = FALSE, sep = "\t", row.names=FALSE, "../analyses/crab-blastx-sp-full.tab")
-write.table(hemat,  quote = FALSE,sep = "\t", row.names=FALSE, "../analyses/hemat-blastx-sp-full.tab")
-```
-
-Read in crab and hemat full blastoutputs
-```{r}
-crabfull <- read.table("../analyses/_blast-sep2-crab.tab", sep = '\t', header = FALSE)
-hematfull <- read.table("../analyses/_blast-sep2-hemat.tab", sep = '\t', header = FALSE)
-blastcrabcol <- c("Trinity_protein", "V2", "uniprot_ID", "V4", "V5", "V6", "V7", "V8", "V9", "10", "V11", "V12", "evalue", "14")
-colnames(crabfull) <- blastcrabcol
-blasthematcol <- c("Trinity_protein", "V2", "uniprot_ID", "4", "5", "6", "7", "8", "9", "10", "11", "12", "evalue", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27")
-colnames(hematfull) <- blasthematcol
-```
-
-
-Read in uniprot/sprot database with GO information from downloads. 
-```{r}
-db <- read.table("../../../../Downloads/uniprot-reviewed_yes2.tab", sep = '\t', fill = TRUE, header = TRUE)
-dbcols <- c("uniprot_ID", "entry_name", "status", "protein_names", "gene_names", "organism", "length", "GO", "GO_IDs")
-colnames(db) <- dbcols
-```
-`join` database with crab-blastoutput by uniprot ID and save GO ID and e-value into a new file (for REVIGO)
-```{r}
-crabGO <- left_join(crabfull, db, by = "uniprot_ID" )
-crabGO2 <- select(crabGO, "uniprot_ID")
-write.table(crabGO2, quote = FALSE, sep = '\t', row.names = FALSE,   "../analyses/crab-forRevigo.tab")
-```
-
-`join` databse with hematodinium-blastoutput
-```{r}
-hematGO <- left_join(hematfull, db, by = "uniprot_ID")
-hematGO2 <- select(hematGO, "GO_IDs", "evalue")
-write.table(hematGO2, quote = FALSE, sep = '\t', row.names = FALSE,  "../analyses/hemat-forRevigo.tab")
 ```
