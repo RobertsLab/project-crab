@@ -63,7 +63,8 @@ Resulting file is 783 rows (deg list is 772) and 30 columns.
 Annotation = complete. 
 
 # Enrichment
-
+EIMD 2019 class used GO-MWU for enrichment
+"rank-based gene ontology analysis" 
 
 
 
