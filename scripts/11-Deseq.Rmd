@@ -60,15 +60,15 @@ abline(h=c(-1,1), col="blue")
 ```
 
 ```{r}
-write.table(tmp.sig, "../analyses//2019-infection_DEGlist.tab", row.names = T)
+write.table(tmp.sig, "../analyses/2019-infection_DEGlist.tab", row.names = T)
 
 ```
 
 
 ```{bash}
-head ../analyses//2019-infection_DEGlist.tab
+head ../analyses/2019-infection_DEGlist.tab
 ```
 
 ```{bash}
-wc -l ../analyses//2019-infection_DEGlist.tab
+wc -l ../analyses/2019-infection_DEGlist.tab
 ```
