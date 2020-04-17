@@ -5,9 +5,9 @@ output: github_document
 Rmd for annotating a list of 773 DEGs from Steven (crab data 2019 - comparing infected and uninfected only). 
 
 Files needed: 
-1. 773 DEG list (2019-infection_DEGlist.tab) in project-crab/analyses
+1. 772 DEG list (2019-infection_DEGlist.tab) in project-crab/analyses
 2. BLAST output from the crab transcriptome 
-3. uniprot GO list (downloaded from uniprot.org)
+3. uniprot GO list (downloaded from uniprot.org - entire list with added columns of GO terms and IDs)
 
 ```{r}
 #install.packages("tidyverse")
@@ -16,13 +16,15 @@ library(tidyverse)
 
 # Annotation
 ## Upload files
+DEGlist was made by SR - compares infected and uninfected from the 2019 dataset
 Upload DEG list:
-I pasted list into excel in order to name the first column "Trinity_ID"
+(I pasted list into excel in order to name the first column "Trinity_ID")
 ```{r}
 degs <- read.table("../analyses/2019-DEGlist-infection-colnames.txt", header = TRUE)
 head(degs)
 ```
 Upload BLAST output from crab transcriptome: 
+(I pasted into excel to get the data into the correct columns...)
 ```{r}
 blastout <- read.delim("../analyses/crab-blastout.txt", header = FALSE)
 head(blastout)
@@ -61,6 +63,9 @@ Resulting file is 783 rows (deg list is 772) and 30 columns.
 Annotation = complete. 
 
 # Enrichment
+
+
+
 
 
 
