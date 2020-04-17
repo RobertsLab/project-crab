@@ -47,6 +47,15 @@ Join based on uniprot ID (Column "Entry")
 annot_blast <- left_join(blastout, go, by = "Entry")
 head(annot_blast)
 ```
+Resulted in a file that is the same length as 'blastout' (23065 rows) with 24 columns. Seems to have worked well! 
+
+## Annotate DEG list
+Now that the blast output is annotated and the column with the Trinity IDs matches the same name as that in the DEGlist, the files are ready to be `join`-ed!
+```{r}
+degs_annot <- left_join(degs, annot_blast, by = "Trinity_ID")
+head(degs_annot)
+```
+Resulting file is 783 rows (deg list is 772) and 30 columns. 
 
 
 
