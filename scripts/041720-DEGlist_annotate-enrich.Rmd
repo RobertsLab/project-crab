@@ -26,19 +26,27 @@ Upload BLAST output from crab transcriptome:
 blastout <- read.delim("../analyses/crab-blastout.txt", header = FALSE)
 head(blastout)
 ```
-Rename column "V3" --> "Entry" so that it matches the column name rom the uniprot ID list
+Rename column "V3" --> "Entry" so that it matches the column name rom the uniprot ID list; also rename column "V1" --> "Trinity_ID"
 ```{r}
-colnames()
+colnames(blastout) <- c("Trinity_ID", "V2", "Entry", "V4", "V5", "V6", "V7", "V8", "V9", "V10", "V11", "V12", "V13", "V14")
+head(blastout)
 ```
 
 Upload uniprot GO list:
+(File too big to be on Github --> downloaded and stored locally in my github repo for project-crab)
+But I downloaded the entire uniprot ID list with all GO IDs
 ```{r}
 go <- read.delim("../data/uniprot-reviewed.tab", sep = '\t', header = TRUE)
 head(go)
 ```
 
 ## Annotate blastout file with GO terms (downloaded from uniprot.org)
-Join based on uniprot ID (Q)
+Join based on uniprot ID (Column "Entry")
+
+```{r}
+annot_blast <- left_join(blastout, go, by = "Entry")
+head(annot_blast)
+```
 
 
 
