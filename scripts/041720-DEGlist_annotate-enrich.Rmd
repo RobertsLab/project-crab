@@ -65,7 +65,13 @@ Annotation = complete.
 # Enrichment
 EIMD 2019 class used GO-MWU for enrichment
 "rank-based gene ontology analysis" 
+MWU --> Mann-Whitney U test
+"tests whether the genes belonging to a certain GO category are significantly bunched up near the top or the bottom of the global ranked list of genes, instead of being spread evenly over it."
+"major advantage of this approach is that the experimenter does not have to impose an arbitrary threshold for initial selection of "significant genes", and thus the whole dataset can be used to gain information"
 
+https://github.com/z0on/GO_MWU 
+
+Enrichment will be done is a separate folder in analyses, called "GO-MWU". 
 
 
 
