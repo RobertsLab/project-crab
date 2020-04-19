@@ -97,7 +97,7 @@ head(crab_gene_log2FC)
 
 Save as .csv in analyses/GO-MWU
 ```{r}
-write.csv(crab_gene_log2FC, "../analyses/GO-MWU/2019-crab-GO-log2fc.csv")
+write.csv(crab_gene_log2FC, "../analyses/GO-MWU/2019-crab-GO-log2fc.csv", row.names = FALSE)
 ```
 
 
