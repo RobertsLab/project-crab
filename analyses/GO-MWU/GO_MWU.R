@@ -30,7 +30,8 @@ source("gomwu.functions.R")
 
 # Calculating stats. It might take ~3 min for MF and BP. Do not rerun it if you just want to replot the data with different cutoffs, go straight to gomwuPlot. If you change any of the numeric values below, delete the files that were generated in previos runs first.
 gomwuStats(input, goDatabase, goAnnotations, goDivision,
-	perlPath="", # replace with full path to perl executable if it is not in your system's PATH already
+	perlPath="../../../../../../../usr/bin/perl",
+ # replace with full path to perl executable if it is not in your system's PATH already
 	largest=0.1,  # a GO category will not be considered if it contains more than this fraction of the total number of genes
 	smallest=5,   # a GO category should contain at least this many genes to be considered
 	clusterCutHeight=0.25, # threshold for merging similar (gene-sharing) terms. See README for details.
