@@ -79,7 +79,15 @@ GO-MWU needs 2 files from the crab dataset:
 2. table of measure of interest of sequences (2 columns; gene ID + measure of significance like log(fold-change) or -log(p-value))
   needs to be .csv
 
-
+Create the first file by selecting columns "Trinity_ID" and "Gene.ontology.IDs" from the file called "degs_annot"
+```{r}
+crab_gene_go <- subset(degs_annot, select = c(Trinity_ID, Gene.ontology.IDs))
+head(crab_gene_go)
+```
+Write out the file to analyses/GO-MWU, making sure it's tab-delimited
+```{r}
+write.table(crab_gene_go, "../analyses/GO-MWU/2019-crab-GO-annot.tab")
+```
 
 
 
