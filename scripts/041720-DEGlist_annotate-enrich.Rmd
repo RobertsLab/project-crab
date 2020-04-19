@@ -73,6 +73,12 @@ https://github.com/z0on/GO_MWU
 
 Enrichment will be done is a separate folder in analyses, called "GO-MWU". 
 
+GO-MWU needs 2 files from the crab dataset:
+1. GO annotations table of sequences (2 columns; gene ID + GO terms)
+  needs to be tab-delimited, one line per gene, multiple GO terms separated by semicolon
+2. table of measure of interest of sequences (2 columns; gene ID + measure of significance like log(fold-change) or -log(p-value))
+  needs to be .csv
+
 
 
 
