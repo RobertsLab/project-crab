@@ -32,6 +32,18 @@ head(crab_counts)
 ```
 Good to go.
 
+Import BLAST output file from crab transcriptome:
+(I pasted into excel to get the data into the correct columns...)
+```{r}
+blastout <- read.delim("../analyses/crab-blastout.txt", header = FALSE)
+head(blastout)
+```
+Rename column "V3" --> "Entry" so that it matches the column name rom the uniprot ID list; also rename column "V1" --> "Trinity_ID"
+```{r}
+colnames(blastout) <- c("Trinity_ID", "V2", "Entry", "V4", "V5", "V6", "V7", "V8", "V9", "V10", "V11", "V12", "V13", "V14")
+head(blastout)
+```
+
 Import uniprot GO file downloaded from uniprot.org 
 (has GO IDs, GOBP, GOCC, and GO MF --> file too big to be on Github, but it's all the data and is saved locally in my project-crab repo)
 ```{r}
@@ -40,7 +52,26 @@ head(go)
 ```
 
 ## Create GO annotations table
-Join `go` and `cr
+Join `go` and `blastout` to annotate the crab transcriptome BLAST output with GO terms:
+```{r}
+annot_blast <- left_join(blastout, go, by = "Entry")
+head(annot_blast)
+```
+
+Create crab GO annotations .tab by pulling out Trinity_ID column along with "Gene.ontology.IDs" column: 
+```{r}
+crab_GO_annot <- subset(annot_blast, select = c(Trinity_ID, Gene.ontology.IDs))
+head(crab_GO_annot)
+```
+Write out the file to analyses/GO-MWU, making sure it's tab-delimited (remove row names)
+```{r}
+write.table(crab_GO_annot, "../analyses/GO-MWU/crab-GO-annot.tab", sep = "\t", row.names = FALSE, quote = FALSE, col.names = FALSE)
+```
+
+## Create Table of significance measures
+(basing off of script from EIMD: https://github.com/eimd-2019/project-EWD-transcriptomics/blob/master/analyses/GO-MWU/2019-07-11-Gene-Enrichment-with-GO-MWU.Rmd)
+
+
 
 
 
