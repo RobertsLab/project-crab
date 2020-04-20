@@ -18,7 +18,8 @@
 
 #Grace --> check working directory is analyses/GO-MWU
 getwd()
-#[1] "/Users/graciecrandall/Documents/GitHub/project-crab/analyses/GO-MWU"
+setwd("analyses/GO-MWU/")
+getwd()
 
 # Edit these to match your data file names: 
 input="2019-crab-GO-log2fc.csv" # two columns of comma-separated values: gene id, continuous measure of significance. To perform standard GO enrichment analysis based on Fisher's exact test, use binary measure (0 or 1, i.e., either sgnificant or not).
