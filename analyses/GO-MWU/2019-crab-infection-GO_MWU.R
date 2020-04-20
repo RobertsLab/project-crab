@@ -1,4 +1,5 @@
-install.packages("ape")
+#Grace: previous attempts said that "ape" was not installed or something, so I installed it below: (4/19/20)
+#install.packages("ape")
 library(ape)
 # GO_MWU uses continuous measure of significance (such as fold-change or -log(p-value) ) to identify GO categories that are significantly enriches with either up- or down-regulated genes. The advantage - no need to impose arbitrary significance cutoff.
 
