@@ -95,6 +95,16 @@ crab_gene_log2FC <- subset(degs_annot, select = c(Trinity_ID, log2FoldChange))
 head(crab_gene_log2FC)
 ```
 
+Input file isn't working in GO-MWU. Error message:
+ Error in read.table(inname, sep = "\t", header = T, check.names = F) : 
+  no lines available in input 
+
+Maybe I need to change column 1 header to "gene"... try that now:
+```{r}
+colnames(crab_gene_log2FC) <- c("gene", "log2FC")
+head(crab_gene_log2FC)
+```
+
 Save as .csv in analyses/GO-MWU
 ```{r}
 write.csv(crab_gene_log2FC, "../analyses/GO-MWU/2019-crab-GO-log2fc.csv", row.names = FALSE)
