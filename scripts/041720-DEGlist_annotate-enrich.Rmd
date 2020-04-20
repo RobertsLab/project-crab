@@ -65,13 +65,56 @@ Annotation = complete.
 # Enrichment
 EIMD 2019 class used GO-MWU for enrichment
 "rank-based gene ontology analysis" 
+MWU --> Mann-Whitney U test
+"tests whether the genes belonging to a certain GO category are significantly bunched up near the top or the bottom of the global ranked list of genes, instead of being spread evenly over it."
+"major advantage of this approach is that the experimenter does not have to impose an arbitrary threshold for initial selection of "significant genes", and thus the whole dataset can be used to gain information"
+
+https://github.com/z0on/GO_MWU 
+
+Enrichment will be done is a separate folder in analyses, called "GO-MWU". 
+
+GO-MWU needs 2 files from the crab dataset:
+1. GO annotations table of sequences (2 columns; gene ID + GO terms)
+  needs to be tab-delimited, one line per gene, multiple GO terms separated by semicolon
+2. table of measure of interest of sequences (2 columns; gene ID + measure of significance like log(fold-change) or -log(p-value))
+  needs to be .csv
+
+Create the first file by selecting columns "Trinity_ID" and "Gene.ontology.IDs" from the file called "degs_annot"
+```{r}
+crab_gene_go <- subset(degs_annot, select = c(Trinity_ID, Gene.ontology.IDs))
+head(crab_gene_go)
+```
+Write out the file to analyses/GO-MWU, making sure it's tab-delimited (remove row names)
+```{r}
+write.table(crab_gene_go, "../analyses/GO-MWU/2019-crab-GO-annot.tab", sep = "\t", row.names = FALSE, quote = FALSE, col.names = FALSE)
+```
+Confirm file format:
+```{r}
+crab_annot <- read.delim("../analyses/GO-MWU/2019-crab-GO-annot.tab", sep = '\t', header = FALSE)
+head(crab_annot)
+```
 
 
+Now create the second file, the list of genes along with some continuoous measure of significance. I'll use the "Trinity_ID" column along with "Log2FoldChange". 
+```{r}
+crab_gene_log2FC <- subset(degs_annot, select = c(Trinity_ID, log2FoldChange))
+head(crab_gene_log2FC)
+```
 
+Input file isn't working in GO-MWU. Error message:
+ Error in read.table(inname, sep = "\t", header = T, check.names = F) : 
+  no lines available in input 
 
+Maybe I need to change column 1 header to "gene"... try that now:
+```{r}
+colnames(crab_gene_log2FC) <- c("gene", "log2FC")
+head(crab_gene_log2FC)
+```
 
-
-
+Save as .csv in analyses/GO-MWU
+```{r}
+write.csv(crab_gene_log2FC, "../analyses/GO-MWU/2019-crab-GO-log2fc.csv", row.names = FALSE, quote = FALSE)
+```
 
 
 
