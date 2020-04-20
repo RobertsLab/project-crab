@@ -43,6 +43,46 @@ gomwuStats(input, goDatabase, goAnnotations, goDivision,
 )
 # do not continue if the printout shows that no GO terms pass 10% FDR.
 
+# --------------------------------------------------------------------------
+#Grace 4/20/2020
+#Results from above script: 
+#go.obo 2019-crab-GO-annot.tab 2019-crab-GO-log2fc.csv MF largest=0.1 smallest=5 cutHeight=0.25
+
+#Run parameters:
+  
+#  largest GO category as fraction of all genes (largest)  : 0.1
+#smallest GO category as # of genes (smallest)  : 5
+#clustering threshold (clusterCutHeight) : 0.25
+
+#-----------------
+ # retrieving GO hierarchy, reformatting data...
+
+#-------------
+#  go_reformat:
+ # Genes with GO annotations, but not listed in measure table: 0
+
+#Terms without defined level (old ontology?..): 0
+#-------------
+#  -------------
+#  go_nrify:
+#  410 categories, 324 genes; size range 5-32.4
+#13 too broad
+#317 too small
+#80 remaining
+
+#removing redundancy:
+  
+#  calculating GO term similarities based on shared genes...
+#45 non-redundant GO categories of good size
+#-------------
+  
+#  Secondary clustering:
+#  calculating similarities....
+#Continuous measure of interest: will perform MWU test
+#0 GO terms at 10% FDR
+
+# --------------------------------------------------------------------------
+
 
 # Plotting results
 quartz()
