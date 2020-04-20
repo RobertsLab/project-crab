@@ -88,6 +88,12 @@ Write out the file to analyses/GO-MWU, making sure it's tab-delimited (remove ro
 ```{r}
 write.table(crab_gene_go, "../analyses/GO-MWU/2019-crab-GO-annot.tab", sep = "\t", row.names = FALSE, quote = FALSE, col.names = FALSE)
 ```
+Confirm file format:
+```{r}
+crab_annot <- read.delim("../analyses/GO-MWU/2019-crab-GO-annot.tab", sep = '\t', header = FALSE)
+head(crab_annot)
+```
+
 
 Now create the second file, the list of genes along with some continuoous measure of significance. I'll use the "Trinity_ID" column along with "Log2FoldChange". 
 ```{r}
@@ -107,7 +113,7 @@ head(crab_gene_log2FC)
 
 Save as .csv in analyses/GO-MWU
 ```{r}
-write.csv(crab_gene_log2FC, "../analyses/GO-MWU/2019-crab-GO-log2fc.csv", row.names = FALSE)
+write.csv(crab_gene_log2FC, "../analyses/GO-MWU/2019-crab-GO-log2fc.csv", row.names = FALSE, quote = FALSE)
 ```
 
 
