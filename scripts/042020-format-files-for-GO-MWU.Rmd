@@ -71,8 +71,23 @@ write.table(crab_GO_annot, "../analyses/GO-MWU/crab-GO-annot.tab", sep = "\t", r
 ## Create Table of significance measures
 (basing off of script from EIMD: https://github.com/eimd-2019/project-EWD-transcriptomics/blob/master/analyses/GO-MWU/2019-07-11-Gene-Enrichment-with-GO-MWU.Rmd)
 
+read in file that SR made with DESeq that includes ALL the 2019 crab dataset, not just the differentially expressed genes:
+```{r}
+crabgenes <- read.table("../analyses/deseq2.res.tab", sep = "\t", header = TRUE)
+head(crabgenes)
+```
+Add name for first column with Trinity IDs is technically the row.names, so I can't rename the first column - it's not a real column.
 
+Attempt to create table of sig. measures by subsetting row names and adjusted p-values (padj)
+```{r}
+crab_all_padj <- subset(crabgenes, select = c(padj))
+head(crab_all_padj)
+```
+Write out as .csv, make sure to keep row names because those are the Trinity IDs!!!
 
+```{r}
+write.csv(crab_all_padj, "../analyses/GO-MWU/2019-crab-ALL-geneID-padj.csv", row.names = T, quote = FALSE)
+```
 
 
 
