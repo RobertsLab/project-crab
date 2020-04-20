@@ -86,7 +86,7 @@ head(crab_gene_go)
 ```
 Write out the file to analyses/GO-MWU, making sure it's tab-delimited (remove row names)
 ```{r}
-write.table(crab_gene_go, "../analyses/GO-MWU/2019-crab-GO-annot.tab", row.names = FALSE, quote = FALSE, col.names = FALSE)
+write.table(crab_gene_go, "../analyses/GO-MWU/2019-crab-GO-annot.tab", row.names = FALSE, quote = FALSE, col.names = FALSE, sep = '\t')
 ```
 
 Now create the second file, the list of genes along with some continuoous measure of significance. I'll use the "Trinity_ID" column along with "Log2FoldChange". 
