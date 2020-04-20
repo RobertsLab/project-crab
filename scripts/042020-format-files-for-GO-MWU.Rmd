@@ -6,7 +6,9 @@ Script for formatting files for GO-MWU.
 
 GO-MWU needs two files comprised of all inputs (not just the DEGs):
 1. tab-delimited file: two columns - gene IDs and GO terms separated by semicolons
+This means that I need an annnotated list of the 2019 crab dataset from BLAST
 2. .csv file: two columns - gene IDs and continuous measure of significance, like p-values. 
+These measures of significance need to be associated with GO enrichment. Need to be kME value, p-value, or dN/dS value... they come from DESeq? Or are can they be the p-values part of BLAST output? 
 
 Again, both files need to be all data inputs, not just the DEGs. 
 https://github.com/z0on/GO_MWU
@@ -19,6 +21,28 @@ library(tidyverse)
 Read in counts file from SR - 2019 crab dataset: 
 5 columns: Trinity_ID (need to add column name), and 4 sample names
 ```{r}
-crab_counts <- 
-
+crab_counts <- read.delim("../analyses/kallisto-0315.isoform.counts.matrix", header = TRUE)
+head(crab_counts)
 ```
+Add name to first column: "Trinity_ID"
+```{r}
+colnames(crab_counts) <- c("Trinity_ID", "329774_out", "329775_out", "329776_out", "329777_out")
+head(crab_counts)
+```
+Good to go.
+
+Import uniprot GO file downloaded from uniprot.org 
+(has GO IDs, GOBP, GOCC, and GO MF --> file too big to be on Github, but it's all the data and is saved locally in my project-crab repo)
+```{r}
+go <- read.delim("../data/uniprot-reviewed.tab", sep = '\t', header = TRUE)
+head(go)
+```
+
+## Create GO annotations table
+Join `go` and `cr
+
+
+
+
+
+
