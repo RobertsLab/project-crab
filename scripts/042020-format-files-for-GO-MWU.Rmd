@@ -1,0 +1,24 @@
+---
+title: "prep-for-GO-MWU"
+output: github_document
+---
+Script for formatting files for GO-MWU. 
+
+GO-MWU needs two files comprised of all inputs (not just the DEGs):
+1. tab-delimited file: two columns - gene IDs and GO terms separated by semicolons
+2. .csv file: two columns - gene IDs and continuous measure of significance, like p-values. 
+
+Again, both files need to be all data inputs, not just the DEGs. 
+https://github.com/z0on/GO_MWU
+
+```{r}
+library(tidyverse)
+```
+
+## Read in files:
+Read in counts file from SR - 2019 crab dataset: 
+5 columns: Trinity_ID (need to add column name), and 4 sample names
+```{r}
+crab_counts <- 
+
+```
