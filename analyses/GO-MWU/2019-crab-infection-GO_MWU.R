@@ -83,6 +83,10 @@ gomwuStats(input, goDatabase, goAnnotations, goDivision,
 
 # --------------------------------------------------------------------------
 
+#April 20, 2020:
+#Results show "0 GO terms at 10% FDR" --> means that there was no significant enrichment. Plotting will not work, so script ends here. 
+
+# -------------------------------------------------------------------------- 
 
 # Plotting results
 quartz()
