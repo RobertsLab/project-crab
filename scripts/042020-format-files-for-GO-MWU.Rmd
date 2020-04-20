@@ -6,10 +6,10 @@ Script for formatting files for GO-MWU.
 
 GO-MWU needs two files comprised of all inputs (not just the DEGs):
 1. tab-delimited file: two columns - gene IDs and GO terms separated by semicolons
-This means that I need an annnotated list of the 2019 crab dataset from BLAST
-2. .csv file: two columns - gene IDs and continuous measure of significance, like p-values. 
-These measures of significance need to be associated with GO enrichment. Need to be kME value, p-value, or dN/dS value... they come from DESeq? Or are can they be the p-values part of BLAST output? 
-I think they need to be from `DESeq` or `edgeR` because their needs to be a component of up and down regulation, enrichment, which you can only get using `DESeq` (I think?) and definitely `edgeR`
+Just need transcriptome BLAST output --> I have that! pull out gene ID and GO terms
+2. .csv file: two columns - gene IDs and continuous measure of significance, I'll used padj. 
+These measures of significance need to be associated with GO enrichment. 
+Come from `DESeq` from SR --> project-crab/analyses/deseq2.res.tab
 
 Again, both files need to be all data inputs, not just the DEGs. 
 https://github.com/z0on/GO_MWU
