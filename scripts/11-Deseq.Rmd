@@ -11,7 +11,7 @@ library(DESeq2)
 
 ```{r}
 d19 <- read.table("../data/kallisto-0315.isoform.counts.txt", header = T, sep = "\t")
-rownames(d19) <- d19$Feature
+rownames(d19) <- d19$FeatureID
 d19 <- d19[,-1]
 head(d19)
 ```
@@ -38,6 +38,15 @@ deseq2.res <- deseq2.res[order(rownames(deseq2.res)), ]
 head(deseq2.res)
 ```
 
+
+```{r}
+write.table(deseq2.res, "../analyses/deseq2.res.tab", row.names = T)
+```
+
+
+
+
+
 ```{r}
 # Count number of hits with adjusted p-value less then 0.05
 dim(deseq2.res[!is.na(deseq2.res$padj) & deseq2.res$padj <= 0.05, ])
@@ -59,8 +68,30 @@ points(tmp.sig$baseMean, tmp.sig$log2FoldChange, pch=20, cex=0.45, col="red")
 abline(h=c(-1,1), col="blue")
 ```
 
+
+
 ```{r}
-write.table(tmp.sig, "../analyses/2019-infection_DEGlist.tab", row.names = T)
+tmp <- deseq2.res
+# The main plot
+plot(tmp$baseMean, tmp$log2FoldChange, pch=20, cex=0.45, ylim=c(-3, 3), log="x", col="darkgray",
+     main="Infection  (pval <= 0.05)",
+     xlab="mean of normalized counts",
+     ylab="Log2 Fold Change")
+# Getting the significant points and plotting them again so they're a different color
+tmp.nosig <- deseq2.res[!is.na(deseq2.res$padj) & deseq2.res$padj >= 00.00, ]
+points(tmp.nosig$baseMean, tmp.nosig$log2FoldChange, pch=20, cex=0.45, col="red")
+# 2 FC lines
+abline(h=c(-1,1), col="blue")
+```
+
+
+
+
+
+
+
+```{r}
+write.table(tmp.nosig, "../analyses/2019-infection_all-list.tab", row.names = T)
 
 ```
 
