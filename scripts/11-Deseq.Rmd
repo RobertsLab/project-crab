@@ -40,7 +40,7 @@ head(deseq2.res)
 
 
 ```{r}
-write.table(deseq2.res, "../analyses/deseq2.res.tab", sep = "\t", row.names = FALSE, quote = FALSE, col.names = TRUE)
+write.table(deseq2.res, "../analyses/deseq2.res.tab", sep = "\t", row.names = T, quote = FALSE, col.names = TRUE)
 ```
 
 
