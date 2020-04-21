@@ -1,0 +1,61 @@
+---
+title: "2019-crab-infection-for-DAVID"
+output: github_document
+---
+Rmd to make Uniprot Accession # lists to put in DAVID. Lists will be: 
+1. backgound --> crab transcriptome Uniprot Accession IDs
+2. gene list --> 2019 crab dataset comparing infection status DEG list from SR (772 DEGs) Uniprot Accession IDs
+
+```{r}
+library(tidyverse)
+```
+
+## Upload files: 
+
+list of uniprot IDs with GO (downloaded from uniprot.org; saved locally because too big to put on github)
+```{r}
+go <- read.delim("../data/uniprot-reviewed.tab", sep = '\t', header = TRUE)
+head(go)
+```
+
+BLAST output from the whole crab transcriptome: 
+(I had pasted in excel to get the data into correct columns)
+```{r}
+blastout <- read.delim("../analyses/crab-blastout.txt", header = FALSE)
+head(blastout)
+```
+Rename some of the column for `join`-ing purposes: 
+```{r}
+colnames(blastout) <- c("Trinity_ID", "V2", "Entry", "V4", "V5", "V6", "V7", "V8", "V9", "V10", "V11", "V12", "V13", "V14")
+head(blastout)
+```
+
+List of 772 DEGs from SR (made using `DESeq`): 
+(I had put in excel to save the data into correct columns)
+```{r}
+degs <- read.delim("../analyses/2019-DEGlist-infection-colnames.txt")
+head(degs)
+```
+
+## Create the background list of Uniprot Accession IDs
+`join` the BLAST output from the whole crab transcriptome with the uniprot database:
+```{r}
+blast_annot <- left_join(blastout, go, by = "Entry")
+head(blast_annot)
+```
+Same number of rows (23065) as the BLAST output file!
+
+save just the column "ENTRY" (Uniprot Accession IDs) to project-crab/analyses
+```{r}
+background <- subset(blast_annot, select = c(Entry))
+head(background)
+```
+
+write it out 
+```{r}
+write.csv(background, "../analyses/crab_transc-uniprotacc-for-DAVID.csv", row.names = FALSE, quote = FALSE)
+```
+
+
+
+
