@@ -84,7 +84,7 @@ crabgenes <- tibble::rownames_to_column(crabgenes, "Trinity_ID")
 head(crabgenes)
 ```
 
-Attempt to create table of sig. measures by subsetting row names and adjusted p-values (padj)
+Attempt to create table of sig. measures by subsetting row names and  p-values
 ```{r}
 crab_all_pval <- subset(crabgenes, select = c(Trinity_ID, pvalue))
 head(crab_all_pval)
@@ -95,7 +95,17 @@ Write out as .csv
 write.csv(crab_all_pval, "../analyses/GO-MWU/2019-crab-ALL-geneID-pval.csv", row.names = FALSE, quote = FALSE)
 ```
 
+4/20/2020 5:29pm
+Did the same as above to create one for adjusted pvalues... neither are working in GO-MWU.
 
+make one with log2FC instead:
+```{r}
+crab_all_log2fc <- subset(crabgenes, select = c(Trinity_ID, log2FoldChange))
+head(crab_all_log2fc)
+```
 
-
+write out .csv 
+```{r}
+write.csv(crab_all_log2fc, "../analyses/GO-MWU/2019-crab-ALL-geneID-log2fc.csv", row.names = FALSE, quote = FALSE)
+```
 
