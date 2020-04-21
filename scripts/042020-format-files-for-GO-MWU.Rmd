@@ -86,13 +86,13 @@ head(crabgenes)
 
 Attempt to create table of sig. measures by subsetting row names and adjusted p-values (padj)
 ```{r}
-crab_all_padj <- subset(crabgenes, select = c(Trinity_ID, padj))
-head(crab_all_padj)
+crab_all_pval <- subset(crabgenes, select = c(Trinity_ID, pvalue))
+head(crab_all_pval)
 ```
 Write out as .csv
 
 ```{r}
-write.csv(crab_all_padj, "../analyses/GO-MWU/2019-crab-ALL-geneID-padj.csv", row.names = FALSE, quote = FALSE)
+write.csv(crab_all_pval, "../analyses/GO-MWU/2019-crab-ALL-geneID-pval.csv", row.names = FALSE, quote = FALSE)
 ```
 
 
