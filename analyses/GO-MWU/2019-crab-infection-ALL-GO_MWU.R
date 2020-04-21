@@ -105,4 +105,5 @@ results=gomwuPlot(input,goAnnotations,goDivision,
 
 # text representation of results, with actual adjusted p-values
 results
-
+#write out results
+write.csv(results, "2019-crab-ALL-GO_MWU-results.csv", quote = FALSE)
