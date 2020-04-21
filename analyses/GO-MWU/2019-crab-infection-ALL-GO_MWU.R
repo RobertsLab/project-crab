@@ -19,7 +19,7 @@ getwd()
 #[1] "/Users/graciecrandall/Documents/GitHub/project-crab/analyses/GO-MWU"
 
 # Edit these to match your data file names: 
-input="2019-crab-ALL-geneID-log2fc.csv" # two columns of comma-separated values: gene id, continuous measure of significance. To perform standard GO enrichment analysis based on Fisher's exact test, use binary measure (0 or 1, i.e., either sgnificant or not).
+input="2019-crab-ALL-geneID-pval.csv" # two columns of comma-separated values: gene id, continuous measure of significance. To perform standard GO enrichment analysis based on Fisher's exact test, use binary measure (0 or 1, i.e., either sgnificant or not).
 goAnnotations="crab-GO-annot.tab" # two-column, tab-delimited, one line per gene, multiple GO terms separated by semicolon. If you have multiple lines per gene, use nrify_GOtable.pl prior to running this script.
 goDatabase="go.obo" # download from http://www.geneontology.org/GO.downloads.ontology.shtml
 goDivision="MF" # either MF, or BP, or CC
@@ -115,7 +115,7 @@ write.csv(results, "2019-crab-ALL-GO_MWU-results.csv", quote = FALSE)
 
 ##### GO-BP #####
 #I'll use log2fc for these, like I did above
-input='2019-crab-ALL-geneID-log2fc.csv' # from `DESeq`, use for just 2019 crab dataset
+input='2019-crab-ALL-geneID-padj.csv' # from `DESeq`, use for just 2019 crab dataset
 goAnnotations='crab-GO-annot.tab' #use for entire crab transcriptome
 goDatabase='go.obo'
 goDivision='BP' #biological process GO 
@@ -161,10 +161,11 @@ results=gomwuPlot(input,goAnnotations,goDivision,
 # text representation of results, with actual adjusted p-values
 results
 #write out text representation of results for GO-BP
-write.csv(results, "2019-crab-ALL-GOBP-results.csv", quote = FALSE)
+write.csv(results, "2019-crab-ALL-GOBP-results-padj.csv", quote = FALSE)
 
 # ------------------------------------------------------------------
 ##### GO-MF #####
+#JUST REALIZED THIS IS THE SAME EXACT THING I DID AT THE TOP OF SCRIPT... SO I CAN DELETE ONE OF THE TWO RESULTS BECAUSE THEY ARE THE SAME
 #I'll use log2fc for these, like I did above
 input='2019-crab-ALL-geneID-log2fc.csv' # from `DESeq`, use for just 2019 crab dataset
 goAnnotations='crab-GO-annot.tab' #use for entire crab transcriptome
@@ -216,7 +217,7 @@ write.csv(results, "2019-crab-ALL-GOMF-results.csv", quote = FALSE)
 # ------------------------------------------------------------------
 ##### GO-CC #####
 #I'll use log2fc for these, like I did above
-input='2019-crab-ALL-geneID-log2fc.csv' # from `DESeq`, use for just 2019 crab dataset
+input='2019-crab-ALL-geneID-pval.csv' # from `DESeq`, use for just 2019 crab dataset
 goAnnotations='crab-GO-annot.tab' #use for entire crab transcriptome
 goDatabase='go.obo'
 goDivision='CC' #cellular component GO 
