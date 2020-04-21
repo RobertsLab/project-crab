@@ -19,7 +19,7 @@ getwd()
 #[1] "/Users/graciecrandall/Documents/GitHub/project-crab/analyses/GO-MWU"
 
 # Edit these to match your data file names: 
-input="2019-crab-ALL-geneID-log2fc.csv" # two columns of comma-separated values: gene id, continuous measure of significance. To perform standard GO enrichment analysis based on Fisher's exact test, use binary measure (0 or 1, i.e., either sgnificant or not).
+input="2019-crab-ALL-geneID-pval.csv" # two columns of comma-separated values: gene id, continuous measure of significance. To perform standard GO enrichment analysis based on Fisher's exact test, use binary measure (0 or 1, i.e., either sgnificant or not).
 goAnnotations="crab-GO-annot.tab" # two-column, tab-delimited, one line per gene, multiple GO terms separated by semicolon. If you have multiple lines per gene, use nrify_GOtable.pl prior to running this script.
 goDatabase="go.obo" # download from http://www.geneontology.org/GO.downloads.ontology.shtml
 goDivision="MF" # either MF, or BP, or CC
@@ -107,3 +107,163 @@ results=gomwuPlot(input,goAnnotations,goDivision,
 results
 #write out results
 write.csv(results, "2019-crab-ALL-GO_MWU-results.csv", quote = FALSE)
+
+# ------------------------------------------------------
+#April 21, 2020
+#model after script from EIMD: https://github.com/eimd-2019/project-EWD-transcriptomics/blob/master/analyses/GO-MWU/Zostera-GO_MWU.R 
+#separate out GO by BP, CC, and MF and rerun script:
+
+##### GO-BP #####
+#I'll use log2fc for these, like I did above
+input='2019-crab-ALL-geneID-padj.csv' # from `DESeq`, use for just 2019 crab dataset
+goAnnotations='crab-GO-annot.tab' #use for entire crab transcriptome
+goDatabase='go.obo'
+goDivision='BP' #biological process GO 
+source("gomwu.functions.R")
+
+#calculate stats. May take ~3 mins for MF and BP. 
+gomwuStats(input, goDatabase, goAnnotations, goDivision,
+          perlPath = "../../../../../../../usr/bin/perl",
+          largest=0.1, #GO category will not be considered if it contains more than this fraction of the total number of genes
+          smallest=5, #GO category should contain at least this many genes to be considered
+          clusterCutHeight=0.25, #threshold for merging similar (gene-sharing) terms. 
+          )
+#Do NOT continue to plotting if above results in "0 GO terms pass 10% FDR)
+###RESULTS:
+#go_nrify:
+#1544 categories, 4388 genes; size range 5-438.8
+#54 too broad
+#717 too small
+#773 remaining
+
+#removing redundancy:
+  
+#  calculating GO term similarities based on shared genes...
+#325 non-redundant GO categories of good size
+
+#7 GO terms at 10% FDR
+### Continue onto plotting for these 7 GO terms: 
+#### PLOTTING FOR GO-BP ####
+quartz()
+results=gomwuPlot(input,goAnnotations,goDivision,
+                  absValue=-log(0.05,10),  # genes with the measure value exceeding this will be counted as "good genes". This setting is for signed log-pvalues. Specify absValue=0.001 if you are doing Fisher's exact test for standard GO enrichment or analyzing a WGCNA module (all non-zero genes = "good genes").
+                  #	absValue=1, # un-remark this if you are using log2-fold changes
+                  level1=0.1, # FDR threshold for plotting. Specify level1=1 to plot all GO categories containing genes exceeding the absValue.
+                  level2=0.05, # FDR cutoff to print in regular (not italic) font.
+                  level3=0.01, # FDR cutoff to print in large bold font.
+                  txtsize=1.2,    # decrease to fit more on one page, or increase (after rescaling the plot so the tree fits the text) for better "word cloud" effect
+                  treeHeight=0.5, # height of the hierarchical clustering tree
+                  #	colors=c("dodgerblue2","firebrick1","skyblue2","lightcoral") # these are default colors, un-remar and change if needed
+)
+# manually rescale the plot so the tree matches the text 
+# if there are too many categories displayed, try make it more stringent with level1=0.05,level2=0.01,level3=0.001.  
+
+# text representation of results, with actual adjusted p-values
+results
+#write out text representation of results for GO-BP
+write.csv(results, "2019-crab-ALL-GOBP-results-padj.csv", quote = FALSE)
+
+# ------------------------------------------------------------------
+##### GO-MF #####
+#JUST REALIZED THIS IS THE SAME EXACT THING I DID AT THE TOP OF SCRIPT... SO I CAN DELETE ONE OF THE TWO RESULTS BECAUSE THEY ARE THE SAME
+#I'll use log2fc for these, like I did above
+input='2019-crab-ALL-geneID-log2fc.csv' # from `DESeq`, use for just 2019 crab dataset
+goAnnotations='crab-GO-annot.tab' #use for entire crab transcriptome
+goDatabase='go.obo'
+goDivision='MF' #molecular function GO 
+source("gomwu.functions.R")
+
+#calculate stats. May take ~3 mins for MF and BP. 
+gomwuStats(input, goDatabase, goAnnotations, goDivision,
+           perlPath = "../../../../../../../usr/bin/perl",
+           largest=0.1, #GO category will not be considered if it contains more than this fraction of the total number of genes
+           smallest=5, #GO category should contain at least this many genes to be considered
+           clusterCutHeight=0.25, #threshold for merging similar (gene-sharing) terms. 
+)
+#Do NOT continue to plotting if above results in "0 GO terms pass 10% FDR)
+###RESULTS:
+#go_nrify:
+#1280 categories, 9065 genes; size range 5-906.5
+#11 too broad
+#577 too small
+#692 remaining
+
+#removing redundancy:
+  
+#  calculating GO term similarities based on shared genes...
+#428 non-redundant GO categories of good size
+#15 GO terms at 10% FDR 
+
+### WILL CONTINUE ON TO TREE PLOTTING: 
+quartz()
+results=gomwuPlot(input,goAnnotations,goDivision,
+                  absValue=-log(0.05,10),  # genes with the measure value exceeding this will be counted as "good genes". This setting is for signed log-pvalues. Specify absValue=0.001 if you are doing Fisher's exact test for standard GO enrichment or analyzing a WGCNA module (all non-zero genes = "good genes").
+                  #	absValue=1, # un-remark this if you are using log2-fold changes
+                  level1=0.1, # FDR threshold for plotting. Specify level1=1 to plot all GO categories containing genes exceeding the absValue.
+                  level2=0.05, # FDR cutoff to print in regular (not italic) font.
+                  level3=0.01, # FDR cutoff to print in large bold font.
+                  txtsize=1.2,    # decrease to fit more on one page, or increase (after rescaling the plot so the tree fits the text) for better "word cloud" effect
+                  treeHeight=0.5, # height of the hierarchical clustering tree
+                  #	colors=c("dodgerblue2","firebrick1","skyblue2","lightcoral") # these are default colors, un-remar and change if needed
+)
+# manually rescale the plot so the tree matches the text 
+# if there are too many categories displayed, try make it more stringent with level1=0.05,level2=0.01,level3=0.001.  
+
+# text representation of results, with actual adjusted p-values
+results
+#write out text representation of results for GO-BP
+write.csv(results, "2019-crab-ALL-GOMF-results.csv", quote = FALSE)
+
+# ------------------------------------------------------------------
+##### GO-CC #####
+#I'll use log2fc for these, like I did above
+input='2019-crab-ALL-geneID-pval.csv' # from `DESeq`, use for just 2019 crab dataset
+goAnnotations='crab-GO-annot.tab' #use for entire crab transcriptome
+goDatabase='go.obo'
+goDivision='CC' #cellular component GO 
+source("gomwu.functions.R")
+
+#calculate stats. May take ~3 mins for MF and BP. 
+gomwuStats(input, goDatabase, goAnnotations, goDivision,
+           perlPath = "../../../../../../../usr/bin/perl",
+           largest=0.1, #GO category will not be considered if it contains more than this fraction of the total number of genes
+           smallest=5, #GO category should contain at least this many genes to be considered
+           clusterCutHeight=0.25, #threshold for merging similar (gene-sharing) terms. 
+)
+#Do NOT continue to plotting if above results in "0 GO terms pass 10% FDR)
+####RESULTS: 
+#go_nrify:
+#380 categories, 5232 genes; size range 5-523.2
+#18 too broad
+#147 too small
+#215 remaining
+
+#removing redundancy:
+  
+#  calculating GO term similarities based on shared genes...
+#129 non-redundant GO categories of good size
+#10 GO terms at 10% FDR 
+
+#### CONTINUE ON TO PLOTTING:
+quartz()
+results=gomwuPlot(input,goAnnotations,goDivision,
+                  absValue=-log(0.05,10),  # genes with the measure value exceeding this will be counted as "good genes". This setting is for signed log-pvalues. Specify absValue=0.001 if you are doing Fisher's exact test for standard GO enrichment or analyzing a WGCNA module (all non-zero genes = "good genes").
+                  #	absValue=1, # un-remark this if you are using log2-fold changes
+                  level1=0.1, # FDR threshold for plotting. Specify level1=1 to plot all GO categories containing genes exceeding the absValue.
+                  level2=0.05, # FDR cutoff to print in regular (not italic) font.
+                  level3=0.01, # FDR cutoff to print in large bold font.
+                  txtsize=1.2,    # decrease to fit more on one page, or increase (after rescaling the plot so the tree fits the text) for better "word cloud" effect
+                  treeHeight=0.5, # height of the hierarchical clustering tree
+                  #	colors=c("dodgerblue2","firebrick1","skyblue2","lightcoral") # these are default colors, un-remar and change if needed
+)
+# manually rescale the plot so the tree matches the text 
+# if there are too many categories displayed, try make it more stringent with level1=0.05,level2=0.01,level3=0.001.  
+
+# text representation of results, with actual adjusted p-values
+results
+#write out text representation of results for GO-BP
+write.csv(results, "2019-crab-ALL-GOCC-results.csv", quote = FALSE)
+
+
+
+
