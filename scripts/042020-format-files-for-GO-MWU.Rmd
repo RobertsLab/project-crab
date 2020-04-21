@@ -92,7 +92,7 @@ head(crab_all_padj)
 Write out as .csv, make sure to keep row names because those are the Trinity IDs!!!
 
 ```{r}
-write.csv(crab_all_padj, "../analyses/GO-MWU/2019-crab-ALL-geneID-padj.csv", row.names = T, quote = FALSE)
+write.csv(crab_all_padj, "../analyses/GO-MWU/2019-crab-ALL-geneID-padj.csv", row.names = F, quote = FALSE)
 ```
 
 
