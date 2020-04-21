@@ -19,8 +19,8 @@ getwd()
 #[1] "/Users/graciecrandall/Documents/GitHub/project-crab/analyses/GO-MWU"
 
 # Edit these to match your data file names: 
-input="crab-GO-annot.tab" # two columns of comma-separated values: gene id, continuous measure of significance. To perform standard GO enrichment analysis based on Fisher's exact test, use binary measure (0 or 1, i.e., either sgnificant or not).
-goAnnotations="2019-crab-ALL-geneID-log2fc.csv" # two-column, tab-delimited, one line per gene, multiple GO terms separated by semicolon. If you have multiple lines per gene, use nrify_GOtable.pl prior to running this script.
+input="2019-crab-ALL-geneID-log2fc.csv" # two columns of comma-separated values: gene id, continuous measure of significance. To perform standard GO enrichment analysis based on Fisher's exact test, use binary measure (0 or 1, i.e., either sgnificant or not).
+goAnnotations="crab-GO-annot.tab" # two-column, tab-delimited, one line per gene, multiple GO terms separated by semicolon. If you have multiple lines per gene, use nrify_GOtable.pl prior to running this script.
 goDatabase="go.obo" # download from http://www.geneontology.org/GO.downloads.ontology.shtml
 goDivision="MF" # either MF, or BP, or CC
 source("gomwu.functions.R")
@@ -38,6 +38,45 @@ gomwuStats(input, goDatabase, goAnnotations, goDivision,
 )
 # do not continue if the printout shows that no GO terms pass 10% FDR.
 
+# ------------------------------------------------------
+# Results (4/20/2020 - 5:40pm)
+#go.obo crab-GO-annot.tab 2019-crab-ALL-geneID-log2fc.csv MF largest=0.1 smallest=5 cutHeight=0.25
+
+#Run parameters:
+  
+#  largest GO category as fraction of all genes (largest)  : 0.1
+#smallest GO category as # of genes (smallest)  : 5
+#clustering threshold (clusterCutHeight) : 0.25
+
+#-----------------
+#  retrieving GO hierarchy, reformatting data...
+
+#-------------
+#  go_reformat:
+#  Genes with GO annotations, but not listed in measure table: 3678
+
+#Terms without defined level (old ontology?..): 0
+#-------------
+#  -------------
+#  go_nrify:
+#  1280 categories, 9065 genes; size range 5-906.5
+#11 too broad
+#577 too small
+#692 remaining
+
+#removing redundancy:
+  
+#  calculating GO term similarities based on shared genes...
+#428 non-redundant GO categories of good size
+#-------------
+  
+#  Secondary clustering:
+#  calculating similarities....
+#Continuous measure of interest: will perform MWU test
+#15 GO terms at 10% FDR
+# ------------------------------------------------------
+
+### WILL CONTINUE WITH PLOTTING ###
 
 # Plotting results
 quartz()
@@ -53,6 +92,16 @@ results=gomwuPlot(input,goAnnotations,goDivision,
 )
 # manually rescale the plot so the tree matches the text 
 # if there are too many categories displayed, try make it more stringent with level1=0.05,level2=0.01,level3=0.001.  
+
+# ------------------------------------------------------
+#GO terms dispayed: 15
+#"Good genes" accounted for:  914 out of 2994 ( 31% )
+#Warning messages:
+#  1: In plot.formula(c(1:top) ~ c(1:top), type = "n", axes = F, xlab = "",  :
+#                       the formula 'c(1:top) ~ c(1:top)' is treated as 'c(1:top) ~ 1'
+#                     2: In plot.formula(c(1:top) ~ c(1:top), type = "n", axes = F, xlab = "",  :
+#                                          the formula 'c(1:top) ~ c(1:top)' is treated as 'c(1:top) ~ 1'
+# ------------------------------------------------------
 
 # text representation of results, with actual adjusted p-values
 results
