@@ -89,10 +89,10 @@ Attempt to create table of sig. measures by subsetting row names and adjusted p-
 crab_all_padj <- subset(crabgenes, select = c(Trinity_ID, padj))
 head(crab_all_padj)
 ```
-Write out as .csv, make sure to keep row names because those are the Trinity IDs!!!
+Write out as .csv
 
 ```{r}
-write.csv(crab_all_padj, "../analyses/GO-MWU/2019-crab-ALL-geneID-padj.csv", row.names = F, quote = FALSE)
+write.csv(crab_all_padj, "../analyses/GO-MWU/2019-crab-ALL-geneID-padj.csv", row.names = FALSE, quote = FALSE)
 ```
 
 
