@@ -65,7 +65,7 @@ From GO-MWU script:
 input="2019-crab-ALL-geneID-binary.csv" # two columns of comma-separated values: gene id, continuous measure of significance. To perform standard GO enrichment analysis based on Fisher's exact test, use binary measure (0 or 1, i.e., either sgnificant or not).
 goAnnotations="crab-GO-annot.tab" # two-column, tab-delimited, one line per gene, multiple GO terms separated by semicolon. If you have multiple lines per gene, use nrify_GOtable.pl prior to running this script.
 goDatabase="go.obo" # download from http://www.geneontology.org/GO.downloads.ontology.shtml
-goDivision="MF" # either MF, or BP, or CC
+goDivision="BP" # specify biological process
 source("gomwu.functions.R")
 ```
 
@@ -83,7 +83,7 @@ gomwuStats(input, goDatabase, goAnnotations, goDivision,
 )
 # do not continue if the printout shows that no GO terms pass 10% FDR.
 ```
-Found 2 GO terms.... 
+Found 1 GO terms.... 
 Won't plot, but I'll look at results: 
 ```{r}
 results
