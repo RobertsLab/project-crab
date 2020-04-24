@@ -1,0 +1,71 @@
+---
+title: "2019-crab-macropinocytosis"
+output: html_document
+---
+Rmd to get genes associated with macropinocytosis GO term that was enriched according to DAVID when comparing the 772 DEG list from the 2019 crab infection comparison to the annotated crab transcriptome. 
+
+```{r}
+library(tidyverse)
+library(dplyr)
+library(stringr)
+```
+
+## Upload files
+Upload list of 772 DEGs from 2019 crab data
+```{r}
+degs <- read.delim("../analyses/2019-DEGlist-infection-colnames.txt", sep = '\t')
+head(degs)
+```
+Upload GO database downloaded from uniprot.org (too large to be on github --> saved locally)
+```{r}
+go <- read.delim("../data/uniprot-reviewed.tab", sep = '\t')
+head(go)
+```
+
+upload the crab trasncriptome BLAST output
+```{r}
+blast <- read.delim("../analyses/crab-blastout.txt", header = FALSE)
+head(blast)
+```
+rename the columnsfor the blast table
+```{r}
+colnames(blast) <- c("Trinity_ID", "V2", "Entry", "V4", "V5", "V6", "V7", "V8", "V9", "V10", "V11", "V12", "V13", "V14")
+head(blast)
+```
+
+## Annotate the DEG list
+`join` the deg list with the blast output by "Trinity_ID"
+
+```{r}
+degs_annot <- left_join(degs, blast, by = "Trinity_ID")
+head(degs_annot)
+```
+
+## Get GO information for DEG list
+`join` the go database with the annotated DEG list by "Entry"
+
+```{r}
+degs_annot_GO <- left_join(degs_annot, go, by = "Entry")
+head(degs_annot_GO)
+```
+
+## Get list of genes to do with macropinocytosis
+pull out rows that contain "macropinocytosis"
+
+```{r}
+macro <- degs_annot_GO %>%
+  filter(str_detect(Gene.ontology.IDs, "GO:0044351"))
+head(macro)
+```
+
+```{r}
+blast_annot <- left_join(blast, go, by = "Entry")
+head(blast_annot)
+```
+
+```{r}
+stress <- blast_annot %>%
+  filter(str_detect(Gene.ontology..biological.process., "stress"))
+head(stress)
+```
+
