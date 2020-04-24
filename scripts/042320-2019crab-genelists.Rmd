@@ -69,3 +69,37 @@ stress <- blast_annot %>%
 head(stress)
 ```
 
+## April 24, 2020
+Getting list of 12 things that contribute to macropinocytosis
+
+Upload the DAVID output
+```{r}
+david <- read.delim("../analyses/chart_12EFD.txt", header = TRUE)
+head(david)
+```
+
+Pull out list of 12 Uniprot Accession IDs from the first row for macropinocytosis
+```{r}
+genes_macro <- c("Q54QS3", "P20054", "Q54E04", "Q54JP5", "Q8T6J5", "Q54ES9", "Q55E60", "Q5VZK9", "Q54IZ9", "Q54GE3", "Q54JC8", "Q54J75")
+```
+
+Need to figure out code to get the above vector into a column... but I just copy and pasted them into excel and I'll read in the column now:
+```{r}
+genes_macro_col <- read.delim("../analyses/macropinocytosis_uniprotAcc-ids.csv")
+head(genes_macro_col)
+```
+
+Get the info on those genes by `join`-ing with the GO database:
+```{r}
+genes_macro_annot <- left_join(genes_macro_col, go, by = "Entry")
+head(genes_macro_annot)
+```
+
+write out this as a table in analyses:
+```{r}
+write.table(genes_macro_annot, "../analyses/macropinocytosis_gene_list.tab", quote = FALSE, sep = '\t')
+```
+
+
+
+
