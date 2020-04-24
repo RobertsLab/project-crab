@@ -97,7 +97,7 @@ head(genes_macro_annot)
 
 write out this as a table in analyses:
 ```{r}
-write.table(genes_macro_annot, "../analyses/macropinocytosis_gene_list.tab", quote = FALSE, sep = '\t')
+write.csv(genes_macro_annot, "../analyses/macropinocytosis_gene_list.csv", quote = FALSE, row.names = FALSE)
 ```
 
 
