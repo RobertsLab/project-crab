@@ -1,0 +1,46 @@
+---
+title: "get-stress-gene-list"
+output: html_document
+---
+Rmd to get the list of 5317 stress response genes that were identified using  https://github.com/RobertsLab/project-crab/blob/master/notebooks/042320-bairdi_transcriptome-BLAST-to-GOslim.ipynb.
+
+Make a list of the genes that have the GOslim term "stress response" from the full, annotated crab transcriptome. List should be 5317 rows. 
+
+
+```{r}
+library(tidyverse)
+library(dplyr)
+```
+
+Read in the table from the BLAST to GOslim jupter notebook linked above called "Blastquery-GOslim.tab". (file is saved locally on my computer)
+```{r}
+blastquery_goslim <- read.table("../analyses/Blastquery-GOslim.tab", sep = '\t')
+head(blastquery_goslim)
+```
+
+Column "V3" is the GOslim terms. 
+Call out the GOslim terms that have the word "stress" in them: 
+```{r}
+stress <- blastquery_goslim %>%
+  filter(str_detect(V3, "stress"))
+head(stress)
+```
+
+List is 5317 rows! Excellent!
+
+Save list as is, and write it out to project-crab/analyses. May go back and get gene IDs if needed. 
+
+Name columns first: 
+```{r}
+colnames(stress) <- c("Trinity_ID", "GO_ID", "GOslim", "Biological_process")
+head(stress)
+```
+
+Write out table:
+```{r}
+write.table(stress, "../analyses/crab_stress-response-genes.tab", sep = '\t', quote = FALSE)
+```
+
+
+
+
