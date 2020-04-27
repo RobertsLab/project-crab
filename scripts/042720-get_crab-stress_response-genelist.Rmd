@@ -38,7 +38,7 @@ head(stress)
 
 Write out table:
 ```{r}
-write.table(stress, "../analyses/crab_stress-response-genes.tab", sep = '\t', quote = FALSE)
+write.table(stress, "../analyses/crab_stress-response-genes.tab", sep = '\t', quote = FALSE, row.names = FALSE)
 ```
 
 
