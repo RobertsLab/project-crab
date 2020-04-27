@@ -14,7 +14,7 @@ library(dplyr)
 
 Read in the table from the BLAST to GOslim jupter notebook linked above called "Blastquery-GOslim.tab". (file is saved locally on my computer)
 ```{r}
-blastquery_goslim <- read.table("../analyses/Blastquery-GOslim.tab", sep = '\t')
+blastquery_goslim <- read.table("../analyses/BLAST_to_GOslim/Blastquery-GOslim.tab", sep = '\t')
 head(blastquery_goslim)
 ```
 
