@@ -12,6 +12,16 @@ library(tidyverse)
 library(dplyr)
 ```
 
+Read in the uniprot-SP-GO.sorted file from the jupyter notebook:
+```{r}
+uniprot_sp_GO <- read.delim("http://owl.fish.washington.edu/halfshell/bu-alanine-wd/17-07-20/uniprot-SP-GO.sorted", sep = '\t', header = FALSE)
+head(uniprot_sp_GO)
+```
+
+Read in the `BLAST`
+
+
+
 Read in the table from the BLAST to GOslim jupter notebook linked above called "Blastquery-GOslim.tab". (file is saved locally on my computer)
 ```{r}
 blastquery_goslim <- read.table("../analyses/BLAST_to_GOslim/Blastquery-GOslim.tab", sep = '\t')
