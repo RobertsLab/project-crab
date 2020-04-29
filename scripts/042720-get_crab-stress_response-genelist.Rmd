@@ -12,43 +12,69 @@ library(tidyverse)
 library(dplyr)
 ```
 
-Read in the uniprot-SP-GO.sorted file from the jupyter notebook:
+### Read in the uniprot-SP-GO.sorted file from the jupyter notebook:
 ```{r}
 uniprot_sp_GO <- read.delim("http://owl.fish.washington.edu/halfshell/bu-alanine-wd/17-07-20/uniprot-SP-GO.sorted", sep = '\t', header = FALSE)
 head(uniprot_sp_GO)
 ```
+168361 rows, 12 columns. 
+#### Rename column "V1" to "uniprot_acc_ID"
+```{r}
+colnames(uniprot_sp_GO) <- c("uniprot_acc_ID", "entry_name", "review_status", "protein_name", "gene_name", "organism", "length", "V8", "V9", "V10", "V11", "gene_ontology_IDs")
+head(uniprot_sp_GO)
+```
 
-Read in the `BLAST`
 
+### Read in the `BLAST` output, but the one that is called "_blast-sep.tab" from the above jupyter notebook
+```{r}
+blastout <- read.delim("../analyses/BLAST_to_GOslim/_blast-sep.tab", sep = '\t', header = FALSE)
+head(blastout)
+```
+23605 rows, 14 columns
 
+#### Rename columnn "V3" "uniprot_acc_ID"
+```{r}
+colnames(blastout) <- c("Trinity_ID", "V2", "uniprot_acc_ID", "V4", "V5", "V6", "V7", "V8", "V9", "V10", "V11", "V12", "V13", "V14")
+head(blastout)
+```
 
-Read in the table from the BLAST to GOslim jupter notebook linked above called "Blastquery-GOslim.tab". (file is saved locally on my computer)
+### `join` blastout and uniprot_sp_GO by "uniprot_acc_ID" column:
+```{r}
+blastout_uniprot <- left_join(blastout, uniprot_sp_GO, by = "uniprot_acc_ID")
+head(blastout_uniprot)
+```
+same amount of rows as the blastout... good to go. 
+
+### Read in the table from the BLAST to GOslim jupter notebook linked above called "Blastquery-GOslim.tab". (file is saved locally on my computer)
 ```{r}
 blastquery_goslim <- read.table("../analyses/BLAST_to_GOslim/Blastquery-GOslim.tab", sep = '\t')
 head(blastquery_goslim)
 ```
+#### add column names
+```{r}
+colnames(blastquery_goslim) <- c("Trinity_ID", "GO_ID", "GOslim", "biological_process")
+head(blastquery_goslim)
+```
 
-Column "V3" is the GOslim terms. 
-Call out the GOslim terms that have the word "stress" in them: 
+#### Call out the GOslim terms that have the word "stress" in them: 
 ```{r}
 stress <- blastquery_goslim %>%
-  filter(str_detect(V3, "stress"))
+  filter(str_detect(GOslim, "stress"))
 head(stress)
 ```
 
 List is 5317 rows! Excellent!
 
-Save list as is, and write it out to project-crab/analyses. May go back and get gene IDs if needed. 
-
-Name columns first: 
+### `join` the stress list with the annotated blast output (blastout_uniprot)
 ```{r}
-colnames(stress) <- c("Trinity_ID", "GO_ID", "GOslim", "Biological_process")
-head(stress)
+stress_annot <- left_join(stress, blastout_uniprot, by = "Trinity_ID")
+head(stress_annot)
 ```
+Lots of missing row entries... maybe because I should instead use a newer version of the uniprot-SP-GO? Maybe I should use what I downloaded from uniprot.org?
 
 Write out table:
 ```{r}
-write.table(stress, "../analyses/crab_stress-response-genes.tab", sep = '\t', quote = FALSE, row.names = FALSE)
+write.table(stress_annot, "../analyses/crab_stress-response-genes.tab", sep = '\t', quote = FALSE, row.names = FALSE)
 ```
 
 
