@@ -59,7 +59,7 @@ head(degs_annot)
 
 Write out annotated DEG list to project-crab/analyses:
 ```{r}
-write.table(degs_annot, "../analyses/degs_annot_2019-infection_status.tab", quote = FALSE, row.names = FALSE, sep = '\t')
+write.table(degs_annot, "../analyses/2019-infection_annot-DEGlist.tab", quote = FALSE, row.names = FALSE, sep = '\t')
 ```
 
 
