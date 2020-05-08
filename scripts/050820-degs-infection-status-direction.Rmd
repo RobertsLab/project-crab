@@ -11,7 +11,7 @@ library(dplyr)
 
 Read in table of annotated DEGs
 ```{r}
-degs <- read.delim("../analyses/2019-infection_annot-DEGlist.tab", sep = '\t')
+degs <- read.table("../analyses/2019-DEGlist-infection-colnames.txt", header = TRUE)
 head(degs)
 ```
 
@@ -48,7 +48,7 @@ Infected
 infected <- filter(degs_counts, log2FoldChange > 0)
 head(infected)
 ```
-704 rows...
+698 rows...
 
 Uninfected
 ```{r}
@@ -56,9 +56,10 @@ uninfected <- filter(degs_counts, log2FoldChange < 0)
 head(uninfected)
 ```
 
-79 rows... 
+74 rows... 
 
-There are actually 772 degs, but the annotated deg table has extra rows... so... those numbers aren't exactly accurate right now. 
+Find the DEGs that are unique to each infection status: 
+
 
 
 
