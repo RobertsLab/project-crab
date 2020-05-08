@@ -57,6 +57,12 @@ head(degs_annot)
 
 783 observations. 
 
+See if duplicate Trinity_IDs in crab transcriptome BLAST output:
+```{r}
+#View(blastout[which(duplicated(blastout$Trinity_ID)),])
+blastout$Trinity_ID[duplicated(blastout$Trinity_ID)]
+```
+
 Write out annotated DEG list to project-crab/analyses:
 ```{r}
 write.table(degs_annot, "../analyses/2019-infection_annot-DEGlist.tab", quote = FALSE, row.names = FALSE, sep = '\t')
