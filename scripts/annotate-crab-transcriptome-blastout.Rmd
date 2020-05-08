@@ -42,6 +42,13 @@ head(blastout_sp_go)
 
 resulting file is 23,065 rows with 25 columns
 
+Check to see how many were annotated with GO: 
+```{r}
+yes_go <- blastout_sp_go[grep("reviewed", blastout_sp_go$review_status), ]
+head(yes_go)
+```
+Created an object with 11,503 observation, so 11,503 of the 23,065 blast output genes were able to be annotated with GO. 
+
 Write out to project-crab/analyses:
 ```{r}
 write.table(blastout_sp_go, "../analyses/crab_transc-sp-GO.tab", sep = '\t', quote = FALSE, row.names = FALSE)
