@@ -1,0 +1,70 @@
+---
+title: "which_degs_for_each_infection_status"
+output: html_document
+---
+Rmd to figure out which of the DEGs (comparing infection status from the 2019 data set) are associated with each infection status (infected and uninfected)
+
+```{r}
+library(tidyverse)
+library(dplyr)
+```
+
+Read in table of annotated DEGs
+```{r}
+degs <- read.delim("../analyses/2019-infection_annot-DEGlist.tab", sep = '\t')
+head(degs)
+```
+
+Read in table of gene counts: 
+```{r}
+counts <- read.delim("https://raw.githubusercontent.com/sr320/nb-2020/master/C_bairdi/analyses/kallisto-0315.isoform.counts.matrix")
+head(counts)
+```
+
+40,435 rows, 5 columns (Trinity ID plus the 4 samples)
+
+Rename columns in 'counts'
+329774 - infected (d12)
+329775 - uninfected (d12)
+329776 - infected (d26)
+329777 - uninfected (d26)
+```{r}
+colnames(counts) <- c("Trinity_ID", "infected_12", "uninfected_12", "infected_26", "uninfected_26")
+head(counts)
+```
+
+`join` the degs with counts based on column "Trinity_ID"
+```{r}
+degs_counts <- left_join(degs, counts, by = "Trinity_ID")
+head(degs_counts)
+```
+
+positive log2fc --> deg in infected crabs
+negative log2fc --> deg in uninfected crabs
+
+Figure out how many degs are associated with each infection status: 
+Infected
+```{r}
+infected <- filter(degs_counts, log2FoldChange > 0)
+head(infected)
+```
+704 rows...
+
+Uninfected
+```{r}
+uninfected <- filter(degs_counts, log2FoldChange < 0)
+head(uninfected)
+```
+
+79 rows... 
+
+There are actually 772 degs, but the annotated deg table has extra rows... so... those numbers aren't exactly accurate right now. 
+
+
+
+
+
+
+
+
+
