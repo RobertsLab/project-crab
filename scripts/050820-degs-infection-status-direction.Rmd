@@ -39,23 +39,23 @@ degs_counts <- left_join(degs, counts, by = "Trinity_ID")
 head(degs_counts)
 ```
 
-positive log2fc --> deg in infected crabs
-negative log2fc --> deg in uninfected crabs
+positive log2fc --> high DEG in infected crabs
+negative log2fc --> low DEG in infected crabs
+Based off of gene counts for each infection status
 
 Figure out how many degs are associated with each infection status: 
 Infected
 ```{r}
-infected <- filter(degs_counts, log2FoldChange > 0)
-head(infected)
+high_infected <- filter(degs_counts, log2FoldChange > 0)
+head(high_infected)
 ```
 698 rows...
 
 Uninfected
 ```{r}
-uninfected <- filter(degs_counts, log2FoldChange < 0)
-head(uninfected)
+low_infected <- filter(degs_counts, log2FoldChange < 0)
+head(low_infected)
 ```
-
 74 rows... 
 
 Find the DEGs that are unique to each infection status: 
