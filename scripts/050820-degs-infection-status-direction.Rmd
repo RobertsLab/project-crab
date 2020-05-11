@@ -59,8 +59,10 @@ head(low_infected)
 74 rows... 
 
 Find the DEGs that are unique to each infection status: 
-
-
+```{r}
+uniq_infected <- filter(degs_counts, infected_12 == 0)
+head(uniq_infected)
+```
 
 
 
