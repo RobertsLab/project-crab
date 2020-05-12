@@ -43,6 +43,11 @@ positive log2fc --> high DEG in infected crabs
 negative log2fc --> low DEG in infected crabs
 Based off of gene counts for each infection status
 
+Write out degs with counts to analyses:
+```{r}
+write.csv(degs_counts, "../analyses/2019-infection-degs_genecounts.csv", quote = FALSE, row.names = FALSE)
+```
+
 Figure out how many degs are associated with each infection status: 
 Infected
 ```{r}
