@@ -70,7 +70,7 @@ List is 5317 rows! Excellent!
 stress_annot <- left_join(blastout_uniprot, stress, by = "Trinity_ID")
 head(stress_annot)
 ```
-Lots of missing row entries... maybe because I should instead use a newer version of the uniprot-SP-GO? Maybe I should use what I downloaded from uniprot.org?
+Not all were annotated with GO. 
 
 Write out table:
 ```{r}
