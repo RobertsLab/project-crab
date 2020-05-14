@@ -83,6 +83,15 @@ head(stress_annot)
 ```
 36,735 rows --> but not all got GO terms. 
 
+Find how many of stress response genes have GO;
+```{r}
+GOstress <- stress_annot %>%
+  filter(str_detect(review_status, "reviewed"))
+head(GOstress)
+```
+15,545 annrotated with GO 
+
+
 write out new transcriptome stress genes to project-crab/analyses
 ```{r}
 write.table(stress_annot, "../analyses/stress-response-genes.tab", sep = '\t', quote = FALSE, row.names = FALSE)
