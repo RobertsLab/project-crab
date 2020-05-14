@@ -1,0 +1,37 @@
+---
+title: "get-new-stress-gene-list"
+output: html_document
+---
+Rmd to get the list of 35,478 stress response genes that were identified using https://github.com/RobertsLab/project-crab/blob/master/notebooks/051320-bairdi_new-transcript_Blast-toGOslim.ipynb 
+
+This was done using the NEW transcriptome (no filtering based on taxa)
+
+```{r}
+library(tidyverse)
+library(dplyr)
+```
+
+### Read in the uniprot-SP-GO.sorted file from the jupyter notebook:
+```{r}
+uniprot_sp_GO <- read.delim("http://owl.fish.washington.edu/halfshell/bu-alanine-wd/17-07-20/uniprot-SP-GO.sorted", sep = '\t', header = FALSE)
+head(uniprot_sp_GO)
+```
+168361 rows, 12 columns.
+
+#### Rename column "V1" to "uniprot_acc_ID"
+```{r}
+colnames(uniprot_sp_GO) <- c("uniprot_acc_ID", "entry_name", "review_status", "protein_name", "gene_name", "organism", "length", "V8", "V9", "V10", "V11", "gene_ontology_IDs")
+head(uniprot_sp_GO)
+```
+
+### Read in the `BLAST` output, but the one that is called "_blast-sep.tab" from the above jupyter notebook
+
+
+
+
+
+
+
+
+
+
