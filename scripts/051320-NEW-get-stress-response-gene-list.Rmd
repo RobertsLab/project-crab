@@ -25,11 +25,68 @@ head(uniprot_sp_GO)
 ```
 
 ### Read in the `BLAST` output, but the one that is called "_blast-sep.tab" from the above jupyter notebook
+```{r}
+blastout <- read.delim("../analyses/BLAST_to_GOslim/new_transcriptome/_blast-sep.tab", sep = '\t', header = FALSE)
+head(blastout)
+```
+147454 rows, 14 cols
+
+#### Rename columnn "V3" "uniprot_acc_ID"
+```{r}
+colnames(blastout) <- c("Trinity_ID", "V2", "uniprot_acc_ID", "V4", "V5", "V6", "V7", "V8", "V9", "V10", "V11", "V12", "V13", "V14")
+head(blastout)
+```
+
+### `join` blastout and uniprot_sp_GO by "uniprot_acc_ID" column:
+```{r}
+blastout_uniprot <- left_join(blastout, uniprot_sp_GO, by = "uniprot_acc_ID")
+head(blastout_uniprot)
+```
+147,454 rows, 25 cols
+
+Call out number of Trinity IDs that have GO terms
+```{r}
+GOblast <- blastout_uniprot %>%
+  filter(str_detect(review_status, "reviewed"))
+head(GOblast)
+```
+
+70,078 of the transcriptome `blast` output hits with swissprot got GO annotation
 
 
+### Read in the table from the BLAST to GOslim jupter notebook linked above called "Blastquery-GOslim.tab". (file is saved locally on my computer)
+```{r}
+blastquery_goslim <- read.table("../analyses/BLAST_to_GOslim/new_transcriptome/Blastquery-GOslim.tab", sep = '\t')
+head(blastquery_goslim)
+```
+1395724 rows 
 
+#### add column names
+```{r}
+colnames(blastquery_goslim) <- c("Trinity_ID", "GO_ID", "GOslim", "biological_process")
+head(blastquery_goslim)
+```
 
+#### Call out the GOslim terms that have the word "stress" in them: 
+```{r}
+stress <- blastquery_goslim %>%
+  filter(str_detect(GOslim, "stress"))
+head(stress)
+```
 
+List is 35478 rows --> great!
+
+### `join` the stress list with the annotated blast output (blastout_uniprot)
+```{r}
+stress_annot <- left_join(stress, blastout_uniprot, by = "Trinity_ID")
+head(stress_annot)
+```
+36,735 rows --> but not all got GO terms. 
+
+write out new transcriptome stress genes to project-crab/analyses
+```{r}
+write.table(stress_annot, "../analyses/stress-response-genes.tab", sep = '\t', quote = FALSE, row.names = FALSE)
+```
 
 
 
