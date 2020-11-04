@@ -39,7 +39,10 @@ After the initial sampling of hemolymph from the 180 crab, the crab were then se
 
 The hemolymph was then sampled again on Day 2 of the temperature treatment, and on Day 17 of the temperature treatment (the end of the experiment). 
 
-The crab in the warm tank experienced a mass die-off between day 2 and day 17 due to a heater malfunction. Only three crab survived to the final sampling day. 
+The crab in the warm tank experienced a mass die-off between day 2 and day 17 due to a heater malfunction. Only three crab survived to the final sampling day.     
+<p float="left">
+  <img src="https://github.com/RobertsLab/project-crab/blob/master/images/survival-fig.png" width="300" />
+</p>
 
 
 
