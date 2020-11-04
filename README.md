@@ -1,11 +1,11 @@
 # project-crab
 
-## Effects of temperature change and *Hematodinium sp.* infection (Bitter Crab Disease) on the gene expression of Alaskan Tanner crab (*Chionoecetes bairdi*)
+## Effects of temperature change and *Hematodinium sp.* - infection (Bitter Crab Disease) on the gene expression of Alaskan Tanner crab (*Chionoecetes bairdi*) (NPRB #1705)      
 
 This repository contains data, analyses, protocols, and scripts.  
 
 Project website: [bittercrab.science](https://bittercrab.wordpress.com)    
-Project podcast: [DecaPod](https://podcasts.apple.com/us/podcast/decapod-bittercrab-science/id1437675248)
+Project podcast: [DecaPod](https://podcasts.apple.com/us/podcast/decapod-bittercrab-science/id1437675248)         
 
 ## [analyses](https://github.com/RobertsLab/project-crab/tree/master/analyses)
 This folder contains files that are created by merging files in the data folder. 
