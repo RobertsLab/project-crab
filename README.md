@@ -17,9 +17,26 @@ In Fall 2017, about 400 male crab were sampled from the Alaska Department of Fis
 
 The crab were then allowed to acclimate to tanks for 9 days. After the 9 days, 180 of the surviving crab were chosen to continue in the project, such that 90 were infected with _Hematodinium_ and 90 were uninfected, as determined by the conventional PCR done upon their initial arrival to the laboratory. 
 
+Image of crab in a tank. Lid of tank was taken off for samping, normally there's a foam lid to keep crab from climbing out:       
+![img](https://github.com/RobertsLab/project-crab/blob/master/images/experimental-design/crabsintank.jpeg)
+
 Once the 180 crab were chosen, hemolymph was sampled from each crab and stored in RNAlater to preserve the integrity of the RNA. Also, some hemolymph was sampled for later qPCR and hemolymph smears. Hemolymph smears are smears of hemolymph on a slide, then a dye is used to visualize the _Hematodinium_, if present, and allows for the determination of life stage of the _Hematodinium_ and visual confirmation of its presence in host hemolymph. 
 
-Hemolymph sampling was done by using a cotton swab to disinfect the outer carapace with ethanol, then a syringe was used to sample the hemolymph (image below).    
+Hemolymph sampling was done by using a cotton swab to disinfect the outer carapace with ethanol, then a syringe was used to sample the hemolymph (image below).     
+![img](https://github.com/RobertsLab/project-crab/blob/master/images/experimental-design/hemo-sample.jpeg)
+
+After the initial sampling of hemolymph from the 180 crab, the crab were then separated into 9 tanks, such that there were 20 crab per tank, 10 infected with _Hematodinium_, and 10 uninfected. The temperature in three tanks was then raised to 10˚C (center image), three tanks were kept at ambient (~7˚C) (right image), and three tanks were lowered to a decreased temperature (4˚C) (left image). Images of tanks below:       
+
+<p float="left">
+  <img src="https://github.com/RobertsLab/project-crab/blob/master/images/experimental-design/cold.jpeg" width="300" />
+  <img src="https://github.com/RobertsLab/project-crab/blob/master/images/experimental-design/warm.jpeg" width="300" /> 
+  <img src="https://github.com/RobertsLab/project-crab/blob/master/images/experimental-design/ambient.jpeg" width="300" />
+</p>
+
+The hemolymph was then sampled again on Day 2 of the temperature treatment, and on Day 17 of the temperature treatment (the end of the experiment). 
+
+The crab in the warm tank experienced a mass die-off between day 2 and day 17 due to a heater malfunction. Only three crab survived to the final sampling day. 
+
 
 
 ## Repository structure and contents
