@@ -32,9 +32,9 @@ Hemolymph sampling was done by using a cotton swab to disinfect the outer carapa
 After the initial sampling of hemolymph from the 180 crab, the crab were then separated into 9 tanks, such that there were 20 crab per tank, 10 infected with _Hematodinium_, and 10 uninfected. The temperature in three tanks was then raised to 10˚C (center image), three tanks were kept at ambient (~7˚C) (right image), and three tanks were lowered to a decreased temperature (4˚C) (left image). Images of tanks below:       
 
 <p float="left">
-  <img src="https://github.com/RobertsLab/project-crab/blob/master/images/experimental-design/cold.jpeg" width="280" />
-  <img src="https://github.com/RobertsLab/project-crab/blob/master/images/experimental-design/warm.jpeg" width="280" /> 
-  <img src="https://github.com/RobertsLab/project-crab/blob/master/images/experimental-design/ambient.jpeg" width="280" />
+  <img src="https://github.com/RobertsLab/project-crab/blob/master/images/experimental-design/cold.jpeg" width="250" />
+  <img src="https://github.com/RobertsLab/project-crab/blob/master/images/experimental-design/warm.jpeg" width="250" /> 
+  <img src="https://github.com/RobertsLab/project-crab/blob/master/images/experimental-design/ambient.jpeg" width="250" />
 </p>
 
 The hemolymph was then sampled again on Day 2 of the temperature treatment, and on Day 17 of the temperature treatment (the end of the experiment). 
