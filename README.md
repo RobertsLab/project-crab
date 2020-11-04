@@ -18,12 +18,16 @@ In Fall 2017, about 400 male crab were sampled from the Alaska Department of Fis
 The crab were then allowed to acclimate to tanks for 9 days. After the 9 days, 180 of the surviving crab were chosen to continue in the project, such that 90 were infected with _Hematodinium_ and 90 were uninfected, as determined by the conventional PCR done upon their initial arrival to the laboratory. 
 
 Image of crab in a tank. Lid of tank was taken off for samping, normally there's a foam lid to keep crab from climbing out:       
-![img](https://github.com/RobertsLab/project-crab/blob/master/images/experimental-design/crabsintank.jpeg)
+<p float="left">
+  <img src="https://github.com/RobertsLab/project-crab/blob/master/images/experimental-design/crabsintank.jpeg" width="300" />
+</p>
 
 Once the 180 crab were chosen, hemolymph was sampled from each crab and stored in RNAlater to preserve the integrity of the RNA. Also, some hemolymph was sampled for later qPCR and hemolymph smears. Hemolymph smears are smears of hemolymph on a slide, then a dye is used to visualize the _Hematodinium_, if present, and allows for the determination of life stage of the _Hematodinium_ and visual confirmation of its presence in host hemolymph. 
 
 Hemolymph sampling was done by using a cotton swab to disinfect the outer carapace with ethanol, then a syringe was used to sample the hemolymph (image below).     
-![img](https://github.com/RobertsLab/project-crab/blob/master/images/experimental-design/hemo-sample.jpeg)
+<p float="left">
+  <img src="https://github.com/RobertsLab/project-crab/blob/master/images/experimental-design/hemo-sample.jpeg" width="300" />
+</p>
 
 After the initial sampling of hemolymph from the 180 crab, the crab were then separated into 9 tanks, such that there were 20 crab per tank, 10 infected with _Hematodinium_, and 10 uninfected. The temperature in three tanks was then raised to 10˚C (center image), three tanks were kept at ambient (~7˚C) (right image), and three tanks were lowered to a decreased temperature (4˚C) (left image). Images of tanks below:       
 
