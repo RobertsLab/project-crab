@@ -1,9 +1,0 @@
-sample	Day_InfectionStatus
-1	L_U
-2	L_U
-3	E_U
-4	E_U
-5	E_I
-6	E_I
-7	L_I
-8	L_I
