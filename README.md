@@ -2,7 +2,7 @@
 
 ## Effects of temperature change and *Hematodinium sp.* - infection (Bitter Crab Disease) on the gene expression of Alaskan Tanner crab (*Chionoecetes bairdi*) (NPRB #1705)      
 
-This repository contains data, analyses, protocols, and scripts.  
+This repository contains the main data and information for the project.  
 
 Project website: [bittercrab.science](https://bittercrab.wordpress.com)    
 Project podcast: [DecaPod](https://podcasts.apple.com/us/podcast/decapod-bittercrab-science/id1437675248)         
@@ -12,7 +12,7 @@ Alaska Tanner crabs (_Chionoecetes bairdi_) are an important commercial species.
 
 This project aims to understand how infection with _Hematodinium_ impacts the crab hosts physiologically at different temperatures over time, as well as crab that are not infected with _Hematodinium_ using transcriptomic methods (more details in section below). 
 
-### Design and sampling
+### Design and sampling:
 In Fall 2017, about 400 male crab were sampled from the Alaska Department of Fish and Game (ADF&G) during their normal fall surveys of the region. The crab were then brought to the Ted Stevens Marine Institute at the Auke Bay Laboratories of NOAA. Upon arrival, conventional PCR was done to determine initial infection status with _Hematodinium_. 
 
 The crab were then allowed to acclimate to tanks for 9 days. After the 9 days, 180 of the surviving crab were chosen to continue in the project, such that 90 were infected with _Hematodinium_ and 90 were uninfected, as determined by the conventional PCR done upon their initial arrival to the laboratory. 
@@ -45,6 +45,12 @@ The crab in the warm tank experienced a mass die-off between day 2 and day 17 du
 </p>
 
 
+### RNA Isolation, quantitation, and sequencing:
+RNA was isolated from the hemolymph samples. Several kits were used and tried, but the best kit that yielded the cleanest and most high yields of RNA per sample is the Quick DNA/RNA Microprep Plus Kit (Zymo Research). We then used the Qubit 3.0 using the RNA High Sensitivity Kit for quantitation of the samples. The samples were then sent to the Northwest Genomic Sequencing Center (Foege Hall, UW) and the GeneWiz for library preparation and sequencing. 
+
+Sequencing raw data can be found:    
+
+### Transcriptome assembly and annotation: 
 
 ## Repository structure and contents
 
@@ -52,10 +58,15 @@ The crab in the warm tank experienced a mass die-off between day 2 and day 17 du
 This folder contains files that are created by merging files in the data folder. 
 
 ## [data](https://github.com/RobertsLab/project-crab/tree/master/data)
-This folder contains data spreadsheets (.csv and .xlsx) on all things crab. 
+This folder contains data spreadsheets (.csv and .xlsx) on all things crab.  
 
-## [protcols](https://github.com/RobertsLab/project-crab/tree/master/protocols)
-This folder contains .md protocols for the RNA isolation process. 
+## [images](https://github.com/RobertsLab/project-crab/tree/master/images)       
+This folder contains images that are used in this readme to describe the project. 
+
+## [notebooks](https://github.com/RobertsLab/project-crab/tree/master/notebooks)      
+This folder contains example jupyter notebooks for analyses. The notebooks themselves are from old analyses, but the process is still useful for when you want to do your own analyses. 
 
 ## [scripts](https://github.com/RobertsLab/project-crab/tree/master/scripts)
 This folder contains R scripts for creating merged data spreadsheets and to work towards creating an ultimate master crab data spreadsheet. 
+
+
