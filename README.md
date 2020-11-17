@@ -54,19 +54,19 @@ Sequencing raw data can be found:
 
 ## Repository structure and contents
 
-## [analyses](https://github.com/RobertsLab/project-crab/tree/master/analyses)
+### [analyses](https://github.com/RobertsLab/project-crab/tree/master/analyses)
 This folder contains files that are created by merging files in the data folder. 
 
-## [data](https://github.com/RobertsLab/project-crab/tree/master/data)
+### [data](https://github.com/RobertsLab/project-crab/tree/master/data)
 This folder contains data spreadsheets (.csv and .xlsx) on all things crab.  
 
-## [images](https://github.com/RobertsLab/project-crab/tree/master/images)       
+### [images](https://github.com/RobertsLab/project-crab/tree/master/images)       
 This folder contains images that are used in this readme to describe the project. 
 
-## [notebooks](https://github.com/RobertsLab/project-crab/tree/master/notebooks)      
+### [notebooks](https://github.com/RobertsLab/project-crab/tree/master/notebooks)      
 This folder contains example jupyter notebooks for analyses. The notebooks themselves are from old analyses, but the process is still useful for when you want to do your own analyses. 
 
-## [scripts](https://github.com/RobertsLab/project-crab/tree/master/scripts)
+### [scripts](https://github.com/RobertsLab/project-crab/tree/master/scripts)
 This folder contains R scripts for creating merged data spreadsheets and to work towards creating an ultimate master crab data spreadsheet. 
 
 
