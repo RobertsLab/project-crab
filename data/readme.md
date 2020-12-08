@@ -33,3 +33,9 @@ Crabs included have either 0 (uninfected) or 1 (infected) infection status, as d
 The holding tank is where the crabs were before Day 9 sampling day. They were only kept in tanks 1-3 and 7-9. They are listed as 1C, 2C, 3C, and 7A, 8A, and 9A because that is what those tanks became after the Day 9 sampling day and temperatures were to be changed. 
 
 ALL CRABS START AT AMBIENT (Day 9 sampling day) AND THEN ARE MOVED TO EITHER COLD, WARM, OR REMAIN IN AMBIENT TANKS (Day 12 and 26 sampling days)
+
+
+---
+
+# See also
+https://docs.google.com/spreadsheets/d/1d17yg5F5gKKC66O8QkTIlPxljJeuX7ZsG46pkBr1lNQ/edit#gid=0
