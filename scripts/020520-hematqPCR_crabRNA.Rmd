@@ -77,16 +77,15 @@ head(qpcr_crabRNA)
 ```
 
 04072021:
-Add a column showing what library the samples contribute to, if any: 
-```{r}
-qpcr_crabRNA['library_ID'] <- NA
-head(qpcr_crabRNA)
-```
+Now, add in the sequencing ID associated with each sample, if the sample was sequenced. Some were sequenced as individuals, some were pooled. 
 
-Now, 
+New file in project-crab 
 
+
+
+Rename column 
 
 write qpcr_crabRNA to analyses: 04072021
 ```{r}
-write.csv(qpcr_crabRNA, "../analyses/hematqpcr_crabRNA.csv")
+write.csv(qpcr_crabRNA, "../analyses/hematqpcr_crabRNA.csv", row.names = FALSE, quote = FALSE)
 ```
