@@ -79,13 +79,31 @@ head(qpcr_crabRNA)
 04072021:
 Now, add in the sequencing ID associated with each sample, if the sample was sequenced. Some were sequenced as individuals, some were pooled. 
 
-New file in project-crab 
+New file in project-crab:
+```{r}
+sample_rnaseq <- read.csv("../data/sample-list-RNAseq.csv")
+head(sample_rnaseq)
+```
 
-
+```{r}
+sample_rnaseq <- select(sample_rnaseq, sample_number, Library_ID)
+head(sample_rnaseq)
+```
 
 Rename column 
+```{r}
+colnames(sample_rnaseq) <- c("tube_number", "Library_ID")
+head(sample_rnaseq)
+```
+
+`join` with qpcr_crabRNA based on "tube_number":
+```{r}
+qpcr_crabRNA_seq <- left_join(qpcr_crabRNA, sample_rnaseq, by = "tube_number")
+head(qpcr_crabRNA_seq)
+```
+
 
 write qpcr_crabRNA to analyses: 04072021
 ```{r}
-write.csv(qpcr_crabRNA, "../analyses/hematqpcr_crabRNA.csv", row.names = FALSE, quote = FALSE)
+write.csv(qpcr_crabRNA_seq, "../analyses/hematqpcr_crabRNA_seq.csv", row.names = FALSE, quote = FALSE)
 ```
