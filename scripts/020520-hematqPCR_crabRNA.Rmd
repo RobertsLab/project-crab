@@ -105,5 +105,5 @@ head(qpcr_crabRNA_seq)
 
 write qpcr_crabRNA to analyses: 04072021
 ```{r}
-write.csv(qpcr_crabRNA_seq, "../analyses/hematqpcr_crabRNA_seq.csv", row.names = FALSE, quote = FALSE)
+write.csv(qpcr_crabRNA_seq, "../analyses/hematqpcr_crabRNA.csv", row.names = FALSE, quote = FALSE)
 ```
