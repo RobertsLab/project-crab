@@ -13,6 +13,7 @@ library(tidyr)
 Note: I replaced "N/A"s in the "sq" column with "0"s
 ```{r}
 qpcr <- read.csv("../analyses/hemat_qPCR.csv")
+head(qpcr)
 ```
 
 Take mean of starting quantities and group by FRP number. Add to column "sq_all.runs_mean"
@@ -20,37 +21,72 @@ Take mean of starting quantities and group by FRP number. Add to column "sq_all.
 qpcr <- qpcr %>%
   group_by(FRP) %>%
   mutate(sq_all.runs_mean = mean(sq))
+head(qpcr)
 ```
 
-write out csv for now
+write out csv for now 
 ```{r}
-write.csv(qpcr, "../analyses/qpcr_hemat-new.csv")
+#write.csv(qpcr, "../analyses/qpcr_hemat-new.csv")
 ```
 
 reduce number of column in qpcr to target, sq_all.runs_mean, sample_pos.neg, FRP
 ```{r}
 qpcr_reduced <- select(qpcr, target, sq_all.runs_mean, sample_pos.neg, FRP)
+head(qpcr_reduced)
 ```
 
 remove duplicate rows
 ```{r}
 qpcr_reduced <- distinct(qpcr_reduced)
-
+head(qpcr_reduced)
 ```
 
 read in crab RNA results
 ```{r}
-rna <- read.csv("../crab_RNA_and_trtmnt-reducted_GAC.csv")
+rna <- read.csv("../analyses/crab_RNA_and_trtmnt-reducted_GAC.csv")
+head(rna)
 ```
 
 Join with crab RNA results
 ```{r}
 qpcr_crabRNA <- left_join(rna, qpcr_reduced, by = "FRP")
-
+head(qpcr_crabRNA)
 ```
 
-write qpcr_crabRNA to analyses
-```{r}
+04072021
+For consistency with updated version of naming sample days, Change "9" --> "0", "12" --> "2" (note, in my original day naming, it should have been 9, 11, 26), "26" --> "17". 
 
-write.csv(qpcr_crabRNA, "../analyses/qpcr_crabRNA-reduced.csv")
+df1$Sp2[df1$Sp2 == 8] <- 800
+
+Change "9" to "0"
+```{r}
+qpcr_crabRNA$sample_day[qpcr_crabRNA$sample_day == 9] <- 0
+head(qpcr_crabRNA)
+```
+
+Change "12" to "2"
+```{r}
+qpcr_crabRNA$sample_day[qpcr_crabRNA$sample_day == 12] <- 2
+head(qpcr_crabRNA)
+```
+
+Change "26" to "17
+```{r}
+qpcr_crabRNA$sample_day[qpcr_crabRNA$sample_day == 26] <- 17
+head(qpcr_crabRNA)
+```
+
+04072021:
+Add a column showing what library the samples contribute to, if any: 
+```{r}
+qpcr_crabRNA['library_ID'] <- NA
+head(qpcr_crabRNA)
+```
+
+Now, 
+
+
+write qpcr_crabRNA to analyses: 04072021
+```{r}
+write.csv(qpcr_crabRNA, "../analyses/hematqpcr_crabRNA.csv")
 ```
